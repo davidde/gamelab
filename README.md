@@ -8,6 +8,12 @@
   - [Troubleshooting](#troubleshooting)
 
 ## Git Intro
+> Install git:
+> ```
+> winget install --id Git.Git -e --source winget
+> ```
+> (https://git-scm.com/downloads/win)
+
 * General workflow:  
   ```
   "Save file" => git add => git commit => git push
