@@ -1,6 +1,6 @@
 # To do
 * Brainstormen naam
-* Random game knop
+* Random game knop: stuurt je direct door naar een random game (In nieuwe tab)
 * Categorieën
 * Vraagstelling
 * Search bar
