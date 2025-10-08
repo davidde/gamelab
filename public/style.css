@@ -1,9 +1,6 @@
-/* * {
-  outline: 1px solid red;
-} */
-
 *, *::before, *::after {
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -32,8 +29,7 @@ header {
 }
 
 main {
-  padding-top: 2vh;
-  padding-bottom: 4vw; 
+  padding-block: 2vh;
 }
 
 footer {
@@ -41,28 +37,106 @@ footer {
   color: oklch(0.9961 0.0034 325.6);
 }
 
-nav ul {
+.navlist {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-left: -2rem;
 }
 
-nav a {
+.navlink {
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding-block: 1rem;
-  padding-inline: 2rem;
   color: inherit;
   text-decoration: none;
 }
 
-nav a:hover {
+.navlink:hover {
   background-color: oklch(55.098% 0.13529 261.892);
 }
 
-nav a:focus-visible {
-  outline: 4px dotted oklch(66.628% 0.18945 44.235);
+.blocklink {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: oklch(55.098% 0.13529 261.892);;
+  text-decoration: none;
+}
+
+.py1 {
+  padding-block: 1rem;
+}
+
+.px1 {
+  padding-inline: 1rem;
+}
+
+.my1 {
+  margin-block: 1rem;
+}
+
+.mx1 {
+  margin-inline: 1rem;
+}
+
+.row-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-icon {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.teasers {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.teasers li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.teasers h3, a, p {
+  padding-inline: 1rem;
+}
+
+.teasers a:not(.overlay-link) {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.teasers li > img {
+  order: -1;
+  border-radius: 1rem 1rem 0 0;
+  width: 225px;
+}
+
+.overlay-link {
+  position: absolute;
+  background-color: oklch(82.275% 0.10674 230.175 / 0.2);
+  border-radius: 1rem;
+  inset: 0;
+  text-indent: 120%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.overlay-link:hover {
+  background-color: oklch(82.275% 0.10674 230.175 / 0.3);
 }
 
