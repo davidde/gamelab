@@ -29,7 +29,8 @@ header {
 }
 
 main {
-  padding-block: 2vh;
+  padding-top: 4vh;
+  padding-bottom: 8vh;
 }
 
 footer {
