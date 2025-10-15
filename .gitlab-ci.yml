@@ -1,5 +1,5 @@
 # The Docker image that will be used to build the app:
-image: node:25-alpine
+image: node:20-alpine
 
 create-pages:
   pages:
