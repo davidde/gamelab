@@ -4,6 +4,7 @@
 
 - [Gamegrid](#gamegrid)
   - [Git Intro](#git-intro)
+  - [Steam API Scripts](#steam-api-scripts)
   - [GitLab CI](#gitlab-ci)
   - [GitLab User or Group Pages](#gitlab-user-or-group-pages)
   - [Did you fork this project?](#did-you-fork-this-project)
@@ -34,6 +35,14 @@
   ```bash
   git pull
   ```
+
+## Steam API Scripts
+* `steam-backend-fetch.js`: This fetches the Steam data on the server (Gitlab build process). To get this data for local development, run:
+  ```shell
+  node public/js/steam-backend-fetch.js
+  ```
+  It writes the steam data to `.json` files inside `public/steam-data`.
+* `steam-frontend-init.js`: This script is called in the `<head>` of `index.html` and writes the steam data from the above `.json` files into the corresponding `id`'s of `index.html`.
 
 ## GitLab CI
 This project's static Pages are built by [GitLab CI][ci], following the steps

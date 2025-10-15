@@ -10,6 +10,8 @@
   <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
+
+  <script src="./js/steam-frontend-init.js"></script>
 </head>
 
 <body>
@@ -56,97 +58,54 @@
 </header>
 
 <main class="container">
-  <section>
-    <h1>Trending Games</h1>
-
-    <ul class="teasers">
+  <nav class="container">
+    <ul class="navlist row-between" id="game-nav">
       <li>
-        <h3>Game X</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game X"
-          width="200">
-        <a class="overlay-link" href="./">Game X</a>
+        <a class="navlink py1" href="#trending" title="Trending Games">
+          Trending Games
+        </a>
       </li>
       <li>
-        <h3>Game Y</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game Y"
-          width="200">
-        <a class="overlay-link" href="./">Game Y</a>
+        <a class="navlink py1" href="#top-selling" title="Top Selling Games">
+          Top Selling
+        </a>
       </li>
       <li>
-        <h3>Game Z</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game Z"
-          width="200">
-        <a class="overlay-link" href="./">Game Z</a>
+        <a class="navlink py1" href="#on-sale" title="On Sale">
+          On Sale
+        </a>
       </li>
     </ul>
+  </nav>
+
+  <section>
+    <a class="title-link" href="#game-nav">
+      <h1>Trending Games</h1>
+    </a>
+
+    <div id="trending">
+
+    </div>
   </section>
 
   <section>
-    <h1>Top Selling</h1>
+    <a class="title-link" href="#game-nav">
+      <h1>Top Selling</h1>
+    </a>
 
-    <ul class="teasers">
-      <li>
-        <h3>Game A</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game A"
-          width="200">
-        <a class="overlay-link" href="./">Game A</a>
-      </li>
-      <li>
-        <h3>Game B</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game B"
-          width="200">
-        <a class="overlay-link" href="./">Game B</a>
-      </li>
-      <li>
-        <h3>Game C</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game C"
-          width="200">
-        <a class="overlay-link" href="./">Game C</a>
-      </li>
-    </ul>
+    <div id="top-selling">
+
+    </div>
   </section>
 
   <section>
-    <h1>On Sale</h1>
-    
-    <ul class="teasers">
-      <li>
-        <h3>Game U</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game U"
-          width="200">
-        <a class="overlay-link" href="./">Game U</a>
-      </li>
-      <li>
-        <h3>Game V</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game V"
-          width="200">
-        <a class="overlay-link" href="./">Game V</a>
-      </li>
-      <li>
-        <h3>Game W</h3>
-        <img
-          src="./images/gaming_logo_idea.jpg"
-          alt="Game W"
-          width="200">
-        <a class="overlay-link" href="./">Game W</a>
-      </li>
-    </ul>
+    <a class="title-link" href="#game-nav">
+      <h1>On Sale</h1>
+    </a>
+
+    <div id="on-sale">
+
+    </div>
   </section>
 </main>
 
