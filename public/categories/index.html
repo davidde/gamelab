@@ -1,64 +1,133 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>  <meta charset="utf-8">
-  <meta name="generator" content="GitLab Pages">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game picker website</title>
-  <link rel="stylesheet" href="../style.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="GitLab Pages">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game picker website</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 <header>
-  <nav class="container">
-    <ul class="navlist row-between">
-      <li>
-        <a class="navlink py1" href="../" title="Homepage">
-          <img
-            class="image-icon"
-            src="../images/gaming_logo_idea.jpg"
-            width="30"
-            alt="Homepage">
-        </a>
-      </li>
-      <li>
-        <a class="navlink py1" href="../" title="Homepage">Home</a>
-      </li>
-      <li>
-        <a class="navlink py1" href="./" title="Categories">Categories</a>
-          <ul>
-              <li><a class="navlink py1" href="#">Indie</a></li>
-              <li><a class="navlink py1" href="#">Action</a></li>
-              <li><a class="navlink py1" href="#">Adventure</a></li>
-              <li><a class="navlink py1" href="#">Casual</a></li>
-              <li><a class="navlink py1" href="#">Singleplayer</a></li>
-              <li><a class="navlink py1" href="#">RPG</a></li>
-              <li><a class="navlink py1" href="#">Simulation</a></li>
-              <li><a class="navlink py1" href="#">Strategy</a></li>
-          </ul>
-      </li>
-      <li>
-        <a class="navlink py1" href="../questions" title="Questions">Questions</a>
-      </li>
-      <li>
-        <a class="navlink py1" href="../random_game" title="Random Game">Random Game</a>
-      </li>
-    </ul>
-    <form class="search" role="search" action="#" method="get">
-        <input type="search" name="q" placeholder="Search games…" aria-label="Search">
-        <button type="submit">Search</button>
-      </form>
-  </nav>
+    <nav class="container">
+        <ul class="navlist row-between">
+            <li>
+                <a class="navlink py1" href="../" title="Homepage">
+                    <img
+                            class="image-icon"
+                            src="../images/gaming_logo_idea.jpg"
+                            width="30"
+                            alt="Homepage">
+                </a>
+            </li>
+            <li>
+                <a class="navlink py1" href="../" title="Homepage">Home</a>
+            </li>
+            <li>
+                <a class="navlink py1" href="./" title="Categories">Categories</a>
+                <ul>
+                    <li><a class="navlink py1" href="#">Indie</a></li>
+                    <li><a class="navlink py1" href="#">Action</a></li>
+                    <li><a class="navlink py1" href="#">Adventure</a></li>
+                    <li><a class="navlink py1" href="#">Casual</a></li>
+                    <li><a class="navlink py1" href="#">Singleplayer</a></li>
+                    <li><a class="navlink py1" href="#">RPG</a></li>
+                    <li><a class="navlink py1" href="#">Simulation</a></li>
+                    <li><a class="navlink py1" href="#">Strategy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navlink py1" href="../questions" title="Questions">Questions</a>
+            </li>
+            <li>
+                <a class="navlink py1" href="../random_game" title="Random Game">Random Game</a>
+            </li>
+        </ul>
+        <form class="search" role="search" action="#" method="get">
+            <input type="search" name="q" placeholder="Search games…" aria-label="Search">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
 </header>
 
 <main class="container">
- <h1>Categories</h1>
+    <section>
+        <h1>Categories</h1>
+        <h2>Showing category-#</h2>
+
+        <ul class="teasers">
+            <li>
+                <h3>Game X</h3>
+                <img
+                        src="../images/gaming_logo_idea.jpg"
+                        alt="Game X"
+                        width="200">
+                <a class="overlay-link" href="./">Game X</a>
+            </li>
+            <li>
+                <h3>Game Y</h3>
+                <img
+                        src="../images/gaming_logo_idea.jpg"
+                        alt="Game Y"
+                        width="200">
+                <a class="overlay-link" href="./">Game Y</a>
+            </li>
+            <li>
+                <h3>Game Z</h3>
+                <img
+                        src="../images/gaming_logo_idea.jpg"
+                        alt="Game Z"
+                        width="200">
+                <a class="overlay-link" href="./">Game Z</a>
+            </li>
+        </ul>
+        <p></p>
+        <ul class="teasers">
+            <li>
+                <h3>Game A</h3>
+                <img
+                        src="../images/gaming_logo_idea.jpg"
+                        alt="Game A"
+                        width="200">
+                <a class="overlay-link" href="./">Game A</a>
+            </li>
+            <li>
+                <h3>Game B</h3>
+                <img
+                        src="../images/gaming_logo_idea.jpg"
+                        alt="Game B"
+                        width="200">
+                <a class="overlay-link" href="./">Game B</a>
+            </li>
+            <li>
+                <h3>Game C</h3>
+                <img
+                        src="../images/gaming_logo_idea.jpg"
+                        alt="Game C"
+                        width="200">
+                <a class="overlay-link" href="./">Game C</a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">category-#</a></li>
+                <li><a href="#">category-x</a></li>
+                <li><a href="#">category-y</a></li>
+                <li><a href="#">category-z</a></li>
+            </ul>
+        </aside>
+    </section>
 </main>
 
 <footer>
-  <div class="container row-around">
-    <p>&copy; 2025 Gamegrid</p>
-    <p></p>
-  </div>
+    <div class="container row-around">
+        <p>&copy; 2025 Gamegrid</p>
+        <p></p>
+    </div>
 </footer>
 </body>
 </html>
