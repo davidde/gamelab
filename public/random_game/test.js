@@ -1,5 +1,4 @@
-<!-- /assets/js/steam-search-direct.js -->
-<script>
+
 (() => {
   const CC = 'be';
   const LANG = 'en';
@@ -206,5 +205,4 @@
   // Expose for console testing
   window.fillFromSearch = fillFromSearch;
 })();
-</script>
  
