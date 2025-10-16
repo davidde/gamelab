@@ -53,6 +53,9 @@ footer {
   text-decoration: none;
 }
 
+.title-link {
+  text-decoration: none;
+}
 
 .navlink:hover {
   background-color: oklch(55.098% 0.13529 261.892);

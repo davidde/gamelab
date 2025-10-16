@@ -1,15 +1,14 @@
-# The Docker image that will be used to build your app
-image: alpine:latest
+# The Docker image that will be used to build the app:
+image: node:20-alpine
+
 create-pages:
   pages:
-    # The folder that contains the files to be exposed at the Page URL
+    # The folder that contains the files to be exposed at the Pages URL:
     publish: public
   rules:
-    # This ensures that only pushes to the default branch will trigger
-    # a pages deploy
+    # Ensures that only pushes to the default branch
+    # will trigger a Pages deploy:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
   script:
-    # ensure public folder exists
-    - mkdir -p public
-    # copy everything except the public folder itself
-    - find . -mindepth 1 -maxdepth 1 ! -name public -exec cp -r {} public/ \;
+    # Run Steam data fetch script:
+    - node public/js/steam-backend-fetch.js
