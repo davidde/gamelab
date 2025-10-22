@@ -14,6 +14,12 @@ const COLLECTIONS = [
     name: 'on-sale',
     url: 'https://store.steampowered.com/search/results/?specials=1&infinite=1&json=1'
   },
+  // Huge file of hundreds of MB's!
+  // Alternative: IGDB (Internet Game Database -> Requires Twitch Developer Account)
+  // {
+  //   name: 'app-list',
+  //   url: 'https://api.steampowered.com/ISteamApps/GetAppList/v2/'
+  // },
 ];
 
 async function fetchSteamData(collection) {
