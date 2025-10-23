@@ -1,6 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 :root {
@@ -279,14 +279,11 @@ footer {
 }
 
 .sidebar {
-    color: white;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 300px;
-    background-color: oklch(0.1454 0.062 264);
-    overflow-y: auto;
-    z-index: 10;
+  height: 100%;
+  width: 300px;
+  color: white;
+  background-color: oklch(0.1454 0.062 264);
+
 }
 
 .sidebar ul {
@@ -306,7 +303,15 @@ footer {
     text-decoration: underline;
 }
 
-.category-container {
+.sidebar-container {
     display: flex;
     flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
