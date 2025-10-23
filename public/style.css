@@ -277,3 +277,36 @@ footer {
   .game { flex-direction: column; }
   .game-img { min-width: auto; }
 }
+
+.sidebar {
+    color: white;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: oklch(0.1454 0.062 264);
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    color: white;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: row;
+}
