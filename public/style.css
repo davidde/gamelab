@@ -1,6 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -40,6 +40,8 @@ footer {
 
 .navlist {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -47,8 +49,6 @@ footer {
 
 .navlink {
   display: inline-block;
-  width: 100%;
-  height: 100%;
   color: inherit;
   text-decoration: none;
 }

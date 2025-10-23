@@ -11,45 +11,82 @@
 
 <body>
 <header>
-  <nav class="container">
-    <ul class="navlist row-between">
-      <li>
-        <a class="navlink py1" href="../" title="Homepage">
-          <img
-            class="image-icon"
-            src="../images/gaming_logo_idea.jpg"
-            width="30"
-            alt="Homepage">
-        </a>
-      </li>
-      <li>
-        <a class="navlink py1" href="../" title="Homepage">Home</a>
-      </li>
-      <li>
-        <a class="navlink py1" href="../categories" title="Categories">Categories</a>
-          <ul>
-              <li><a class="navlink py1" href="#">Indie</a></li>
-              <li><a class="navlink py1" href="#">Action</a></li>
-              <li><a class="navlink py1" href="#">Adventure</a></li>
-              <li><a class="navlink py1" href="#">Casual</a></li>
-              <li><a class="navlink py1" href="#">Singleplayer</a></li>
-              <li><a class="navlink py1" href="#">RPG</a></li>
-              <li><a class="navlink py1" href="#">Simulation</a></li>
-              <li><a class="navlink py1" href="#">Strategy</a></li>
-          </ul>
-      </li>
-      <li>
-        <a class="navlink py1" href="../questions" title="Questions">Questions</a>
-      </li>
-      <li>
-        <a class="navlink py1" href="./" title="Random Game">Random Game</a>
-      </li>
-    </ul>
-  </nav>
-  <form class="search" role="search" action="#" method="get">
-        <input type="search" name="q" placeholder="Search games…" aria-label="Search">
-        <button type="submit">Search</button>
+  <div class="container">
+    <div class="row-between">
+      <a
+        class="navlink py1"
+        href="../"
+        title="Homepage"
+      >
+        <img
+          class="image-icon"
+          src="../images/gaming_logo_idea.jpg"
+          width="30"
+          alt="Homepage">
+      </a>
+      <nav>
+        <ul class="navlist">
+          <li>
+            <a class="navlink py1" href="../" title="Homepage">Home</a>
+          </li>
+          <li>
+            <a class="navlink py1" href="../categories" title="Categories">Categories</a>
+              <ul>
+                  <li><a class="navlink py1" href="#">Indie</a></li>
+                  <li><a class="navlink py1" href="#">Action</a></li>
+                  <li><a class="navlink py1" href="#">Adventure</a></li>
+                  <li><a class="navlink py1" href="#">Casual</a></li>
+                  <li><a class="navlink py1" href="#">Singleplayer</a></li>
+                  <li><a class="navlink py1" href="#">RPG</a></li>
+                  <li><a class="navlink py1" href="#">Simulation</a></li>
+                  <li><a class="navlink py1" href="#">Strategy</a></li>
+              </ul>
+          </li>
+          <li>
+            <a class="navlink py1" href="../questions" title="Questions">Questions</a>
+          </li>
+          <li>
+            <a class="navlink py1" href="./" title="Random Game">Random Game</a>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="navlist">
+          <li>
+            <a
+              class="navlink py1"
+              href=""
+              title=""
+            >
+              <img src="../images/search_icon.svg">
+            </a>
+          </li>
+          <li>
+            <a
+              class="navlink py1"
+              href=""
+              title=""
+            >
+              <img src="../images/globe_pin_icon.svg">
+            </a>
+          </li>
+          <li>
+            <a
+              class="navlink py1"
+              href=""
+              title=""
+            >
+              <img src="../images/login_icon.svg">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <form class="search" role="search" action="#" method="get">
+          <input type="search" name="q" placeholder="Search games…" aria-label="Search">
+          <button type="submit">Search</button>
       </form>
+  </div>
 </header>
   
  <main class="container game-page">
