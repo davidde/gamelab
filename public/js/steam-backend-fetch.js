@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from 'fs';
 
 
 const COLLECTIONS = [
@@ -27,8 +27,8 @@ async function fetchSteamData(collection) {
   if (!result.ok) throw new Error(`Steam fetch failed: ${result.status}`);
   const data = await result.json();
 
-  const outputfile = `public/steam-data/${collection.name}.json`;
-  fs.mkdirSync("public/steam-data", { recursive: true });
+  const outputfile = `public/data/steam/${collection.name}.json`;
+  fs.mkdirSync("public/data/steam", { recursive: true });
   fs.writeFileSync(
     outputfile,
     JSON.stringify(data, null, 2)

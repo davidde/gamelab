@@ -1,7 +1,7 @@
 const COLLECTIONS = ['trending', 'top-selling', 'on-sale']
 
 function initSteamData(collection) {
-  fetch(`./steam-data/${collection}.json`)
+  fetch(`./data/steam/${collection}.json`)
   .then(r => r.json())
   .then(data => {
     document.getElementById(collection).innerHTML = data.results_html;

@@ -5,6 +5,7 @@
 - [Gamegrid](#gamegrid)
   - [Git Intro](#git-intro)
   - [Steam API Scripts](#steam-api-scripts)
+  - [IGDB (= Internet Game Database)](#igdb--internet-game-database)
   - [GitLab CI](#gitlab-ci)
   - [GitLab User or Group Pages](#gitlab-user-or-group-pages)
   - [Did you fork this project?](#did-you-fork-this-project)
@@ -43,6 +44,18 @@
   ```
   It writes the steam data to `.json` files inside `public/steam-data`.
 * `steam-frontend-init.js`: This script is called in the `<head>` of `index.html` and writes the steam data from the above `.json` files into the corresponding `id`'s of `index.html`.
+
+## IGDB (= Internet Game Database)
+We'll replace the Steam API by the IGDB API because this allows more fine-grained control. It does require a Twitch developer account with accompanying Client_ID and Access_token. For local API querying, create an .env file with your keys:
+```.env
+TWITCH_CLIENT_ID=uvw
+TWITCH_ACCESS_TOKEN=xyz
+```
+Then run the backend_fetch script:
+```shell
+node --env-file=.env public/js/igdb-backend-fetch.js
+```
+On Gitlab, these keys should go in CI/CD variables under `Settings > CI/CD > Variables`.
 
 ## GitLab CI
 This project's static Pages are built by [GitLab CI][ci], following the steps
