@@ -10,5 +10,5 @@ create-pages:
     # will trigger a Pages deploy:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
   script:
-    # Run Steam data fetch script:
-    - node public/js/steam-backend-fetch.js
+    # Run data fetch script:
+    - node public/js/backend-igdb-fetch.js

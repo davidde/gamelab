@@ -4,7 +4,6 @@
 
 - [Gamegrid](#gamegrid)
   - [Git Intro](#git-intro)
-  - [Steam API Scripts](#steam-api-scripts)
   - [IGDB (= Internet Game Database)](#igdb--internet-game-database)
   - [GitLab CI](#gitlab-ci)
   - [GitLab User or Group Pages](#gitlab-user-or-group-pages)
@@ -37,25 +36,21 @@
   git pull
   ```
 
-## Steam API Scripts
-* `steam-backend-fetch.js`: This fetches the Steam data on the server (Gitlab build process). To get this data for local development, run:
-  ```shell
-  node public/js/steam-backend-fetch.js
-  ```
-  It writes the steam data to `.json` files inside `public/steam-data`.
-* `steam-frontend-init.js`: This script is called in the `<head>` of `index.html` and writes the steam data from the above `.json` files into the corresponding `id`'s of `index.html`.
-
 ## IGDB (= Internet Game Database)
-We'll replace the Steam API by the IGDB API because this allows more fine-grained control. It does require a Twitch developer account with accompanying Client_ID and Access_token. For local API querying, create an .env file with your keys:
+We're using the [IGDB API](https://www.igdb.com/api) because it allows fine-grained control over game data. It uses an SQL-like querying language [Apicalypse](https://apicalypse.io/) that allows for very specific game data filtering. IGDB is Twitch/Amazon-owned and requires a Twitch developer account with accompanying Client_ID and Access_token.
+
+To solve the infamous "Cross-Origin" errors when client-side fetching, we've integrated the API calls in the Gitlab build process. Gitlab then writes the data to `.json` files inside `public/data/igdb`.
+
+To get this data for local development, create an .env file with your keys:
 ```.env
 TWITCH_CLIENT_ID=uvw
 TWITCH_ACCESS_TOKEN=xyz
 ```
-Then run the backend_fetch script:
+Then run the fetch script to get local `.json` data:
 ```shell
-node --env-file=.env public/js/igdb-backend-fetch.js
+node --env-file=.env public/js/backend-igdb-fetch.js
 ```
-On Gitlab, these keys should go in CI/CD variables under `Settings > CI/CD > Variables`.
+On Gitlab, these keys belong in CI/CD variables under `Settings > CI/CD > Variables`.
 
 ## GitLab CI
 This project's static Pages are built by [GitLab CI][ci], following the steps

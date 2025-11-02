@@ -10,11 +10,13 @@
   scroll-behavior: smooth;
 
   /* CSS variables: */
-  --sidescroller-height: 16rem;
+  --sidescroller-height: 24rem;
   --card-width: 23.5%;
   --sidescroller-gap: 2%;
   --light-grey: oklch(96.367% 0.00182 249.214);
   --dark-grey: oklch(66.811% 0.00879 254.036);
+  --darker-grey: oklch(41.483% 0.0064 248.154);
+  --darkest-grey: oklch(31.987% 0.00455 248.155);
   --border-radius: 1rem;
 }
 
@@ -383,6 +385,7 @@ footer {
   scrollbar-width: none; /* Hide scrollbar! */
   scroll-behavior: smooth;
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   padding-inline: calc(var(--sidescroller-gap) / 2);
@@ -390,15 +393,28 @@ footer {
 }
 
 .game-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 0 auto;
   width: var(--card-width);
   height: 100%;
-  background-color: #333;
-  color: white;
+  list-style: none;
   border-radius: var(--border-radius);
-  padding: 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 auto; /* Prevent card from resizing */
+  overflow: hidden;
   cursor: pointer;
+  background-color: var(--darkest-grey);
+  color: var(--light-grey);
+
+  > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  > h2 {
+    font-size: 1rem;
+    padding-inline: 1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
 }
