@@ -5,19 +5,23 @@ import fs from 'fs';
 const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const ACCESS_TOKEN = process.env.TWITCH_ACCESS_TOKEN;
 const IGDB_URL = 'https://api.igdb.com/v4/games';
-const AMOUNT = 100; // Max 500 per request!
+const BASEQUERY = `
+  fields name, summary, storyline, genres.name, platforms.name, cover.url,
+    artworks.url, total_rating, total_rating_count, hypes, first_release_date;
+  where version_parent = null;
+`
 
 // IGDB "Apicalypse" REST queries:
 const QUERIES = [
   {
-    name: 'trending',
-    body: `
-      fields name, summary, storyline, genres.name, platforms.name, cover.url,
-        artworks.url, total_rating, total_rating_count, hypes, first_release_date;
-      where version_parent = null;
-      sort hypes desc;
-      limit ${AMOUNT};
-    `,
+    name: 'trending_top_100',
+    sort: ' sort hypes desc; ',
+    amount: 100,
+  },
+  {
+    name: 'all_time_favs',
+    sort: ' sort total_rating desc; ',
+    amount: 500,
   },
 ];
 // Notes:
@@ -44,7 +48,10 @@ async function fetchIgdbData(query) {
     return;
   }
 
-  console.log(`\nFetching Top ${AMOUNT} '${query.name}' games from IGDB ...`);
+  // Build final "Apicalypse" query:
+  let queryBody = BASEQUERY.concat(query.sort).concat(`limit ${query.amount};`);
+
+  console.log(`Fetching Top ${query.amount} '${query.name}' games from IGDB ...`);
 
   try {
     const response = await fetch(IGDB_URL, {
@@ -54,7 +61,7 @@ async function fetchIgdbData(query) {
         'Authorization': `Bearer ${ACCESS_TOKEN}`,
         'Accept': 'application/json',
       },
-      body: query.body
+      body: queryBody
     });
 
     // Check for non-200 HTTP status codes:
@@ -64,7 +71,6 @@ async function fetchIgdbData(query) {
     }
 
     const games = await response.json();
-    console.log(`Successfully fetched ${games.length} games.`);
 
     // Save games to local .json files:
     const outputfile = `public/data/igdb/${query.name}.json`;
@@ -74,12 +80,13 @@ async function fetchIgdbData(query) {
       JSON.stringify(games, null, 2)
     );
 
-    console.log(`Saved '${query.name}' data to '${outputfile}'\n`);
+    console.log(`Saved '${query.name}' data (${games.length} games) to '${outputfile}'`);
   } catch (error) {
     console.error('\nFatal Error during IGDB fetch:', error.message);
   }
 }
 
+console.log('');
 for (const query of QUERIES) {
   fetchIgdbData(query);
 }
