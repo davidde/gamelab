@@ -73,8 +73,8 @@ async function fetchIgdbData(query) {
     const games = await response.json();
 
     // Save games to local .json files:
-    const outputfile = `public/data/igdb/${query.name}.json`;
-    fs.mkdirSync("public/data/igdb", { recursive: true });
+    const outputfile = `public/assets/data/igdb/${query.name}.json`;
+    fs.mkdirSync("public/assets/data/igdb", { recursive: true });
     fs.writeFileSync(
       outputfile,
       JSON.stringify(games, null, 2)

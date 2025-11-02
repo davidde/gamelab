@@ -8,7 +8,7 @@ function initData(collection) {
     return;
   }
 
-  fetch(`./data/igdb/${collection}.json`)
+  fetch(`./assets/data/igdb/${collection}.json`)
     .then(request => {
       if (!request.ok) {
         throw new Error(`Failed to load data: ${request.status}`);

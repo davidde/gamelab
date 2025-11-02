@@ -384,12 +384,12 @@ footer {
 
   &.right {
     .chevron {
-      mask: url("./images/chevron_right.svg") no-repeat center;
+      mask: url("./assets/images/chevron_right.svg") no-repeat center;
     }
   }
   &.left {
     .chevron {
-      mask: url("./images/chevron_left.svg") no-repeat center;
+      mask: url("./assets/images/chevron_left.svg") no-repeat center;
     }
   }
 
