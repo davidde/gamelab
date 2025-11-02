@@ -11,8 +11,8 @@
 
   /* CSS variables: */
   --sidescroller-height: 16rem;
-  --sidescroller-gap: 0.5rem;
-  --card-width: 14rem;
+  --card-width: 23.5%;
+  --sidescroller-gap: 2%;
   --light-grey: oklch(96.367% 0.00182 249.214);
   --dark-grey: oklch(66.811% 0.00879 254.036);
   --border-radius: 1rem;
@@ -324,7 +324,7 @@ footer {
   padding-inline: 1rem;
 }
 
-.sidescroll-container {
+.sidescroller {
   display: flex;
   width: 100%;
   height: var(--sidescroller-height);
@@ -347,7 +347,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100%;
-  min-width: calc(var(--card-width) * 0.5);
+  min-width: calc(var(--card-width) * 0.3);
   border-radius: var(--border-radius);
   cursor: pointer;
   opacity: 0.6;
@@ -378,16 +378,17 @@ footer {
 
 .sidescroll-list {
   display: flex;
-  gap: 1rem;
+  gap: var(--sidescroller-gap);
   flex-wrap: nowrap; /* Prevent cards from wrapping */
   overflow-x: scroll; /* Enable horizontal scrolling when content overflows */
   overflow-y: hidden;
   scrollbar-width: none; /* Hide scrollbar! */
+  scroll-behavior: smooth;
   height: 100%;
   margin: 0;
   padding: 0;
-  padding-inline: var(--sidescroller-gap);
-  margin-inline: var(--sidescroller-gap);
+  padding-inline: calc(var(--sidescroller-gap) / 2);
+  margin-inline: calc(var(--sidescroller-gap) / 2);
 }
 
 .game-card {
