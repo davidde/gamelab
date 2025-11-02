@@ -5,20 +5,38 @@ import fs from 'fs';
 const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const ACCESS_TOKEN = process.env.TWITCH_ACCESS_TOKEN;
 const IGDB_URL = 'https://api.igdb.com/v4/games';
-const AMOUNT = 100;
+const AMOUNT = 100; // Max 500 per request!
 
 // IGDB "Apicalypse" REST queries:
 const QUERIES = [
   {
     name: 'trending',
     body: `
-      fields name, cover.url, total_rating, hypes, first_release_date;
+      fields name, summary, storyline, genres.name, platforms.name, cover.url,
+        artworks.url, total_rating, total_rating_count, hypes, first_release_date;
       where version_parent = null;
       sort hypes desc;
       limit ${AMOUNT};
     `,
   },
 ];
+// Notes:
+// Image sizes:
+// * By default returns `t_thumb` or thumbnail size.
+// * Other sizes: `t_cover_small`, `t_cover_big`, `t_cover_big_2x`, `t_720p`, `t_1080p`
+//   (or `t_screenshot_med` and `t_screenshot_big` for screenshots).
+// * Also, a cover is (almost) always available, artworks may not be for older games.
+
+// * `first_release_date`: UNIX timestamp
+
+// * `total_rating`: average IGDB community score for the game, ranging from 0.0 to 100.0.
+//   (i.e. games that score highly here, are highly-regarded games in general; popular in the long-term)
+// * `total_rating_count`: number of unique user votes that contributed to the total_rating.
+//   (i.e. crucial for determining the reliability of the `total_rating`; the higher the count the better)
+
+// * `hypes`: = Trending Now; tracks pre-release and recent buzz and excitement.
+
+// * `storyline`: Not always present!
 
 async function fetchIgdbData(query) {
   if (!CLIENT_ID || !ACCESS_TOKEN) {
