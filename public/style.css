@@ -8,6 +8,14 @@
   font-family: sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
+
+  /* CSS variables: */
+  --sidescroller-height: 16rem;
+  --sidescroller-gap: 0.5rem;
+  --card-width: 14rem;
+  --light-grey: oklch(96.367% 0.00182 249.214);
+  --dark-grey: oklch(66.811% 0.00879 254.036);
+  --border-radius: 1rem;
 }
 
 body {
@@ -314,4 +322,84 @@ footer {
   max-width: 80rem;
   margin-inline: auto;
   padding-inline: 1rem;
+}
+
+.sidescroll-container {
+  display: flex;
+  width: 100%;
+  height: var(--sidescroller-height);
+  margin-block: 2rem;
+}
+
+.svg {
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: currentColor;
+
+  &.large {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.chevron-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: calc(var(--card-width) * 0.5);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  opacity: 0.6;
+  background: linear-gradient(var(--gradient-direction), var(--dark-grey), var(--light-grey));
+
+  &:first-child {
+    --gradient-direction: to right;
+  }
+  &:last-child {
+    --gradient-direction: to left;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.right {
+    .chevron {
+      mask: url("./images/chevron_right.svg") no-repeat center;
+    }
+  }
+  &.left {
+    .chevron {
+      mask: url("./images/chevron_left.svg") no-repeat center;
+    }
+  }
+}
+
+.sidescroll-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap; /* Prevent cards from wrapping */
+  overflow-x: scroll; /* Enable horizontal scrolling when content overflows */
+  overflow-y: hidden;
+  scrollbar-width: none; /* Hide scrollbar! */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-inline: var(--sidescroller-gap);
+  margin-inline: var(--sidescroller-gap);
+}
+
+.game-card {
+  width: var(--card-width);
+  height: 100%;
+  background-color: #333;
+  color: white;
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto; /* Prevent card from resizing */
+  cursor: pointer;
 }
