@@ -135,7 +135,7 @@
 
     setTags(genres, categories);
     ensureSteamLink(STORE_URL(appid));
-    if (name) document.title = `${name} · Gamegrid`;
+    if (name) document.title = `${name} · GameLab`;
 
     const pos = Number(reviews?.query_summary?.total_positive) || 0;
     const neg = Number(reviews?.query_summary?.total_negative) || 0;

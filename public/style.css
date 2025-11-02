@@ -4,7 +4,8 @@
 }
 
 :root {
-  background-color: oklch(0.9961 0.0034 325.6);
+  background-color: var(--bg);
+  color: var(--primary);
   font-family: sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -13,11 +14,19 @@
   --sidescroller-height: 24rem;
   --card-width: 23.5%;
   --sidescroller-gap: 2%;
-  --light-grey: oklch(96.367% 0.00182 249.214);
-  --dark-grey: oklch(66.811% 0.00879 254.036);
-  --darker-grey: oklch(41.483% 0.0064 248.154);
-  --darkest-grey: oklch(31.987% 0.00455 248.155);
   --border-radius: 1rem;
+  --border-radius-large: 2.5rem;
+
+  /* Colors: */
+  --bg: oklch(93.822% 0.03117 248.243);
+  --primary: oklch(18.604% 0.00261 248.156);
+  --secondary: oklch(97.541% 0.00851 325.034);
+  --blue: oklch(45.676% 0.18203 261.541);
+  --light-grey: oklch(96.367% 0.00182 249.214);  
+  --gradient-bluepurple-left: oklch(17.484% 0.10724 271.243);
+  --gradient-bluepurple-mid: oklch(44.177% 0.2011 305.738);
+  --gradient-bluepurple-right: oklch(25.914% 0.11887 320.044);
+  --gradient-bluepurple: linear-gradient(to right, var(--gradient-bluepurple-left) 0%, var(--gradient-bluepurple-mid) 50%, var(--gradient-bluepurple-right) 80%);
 }
 
 body {
@@ -41,14 +50,16 @@ body {
   padding-block-end: 8vh;
 }
 
-header {
-  background-color: oklch(0.1454 0.062 264);
-  color: oklch(0.9961 0.0034 325.6);
+header, footer {
+  background: var(--gradient-bluepurple);
+  color: var(--secondary);
+  min-height: 6rem;
 }
 
 footer {
-  background-color: oklch(0.1454 0.062 264);
-  color: oklch(0.9961 0.0034 325.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navlist {
@@ -58,54 +69,60 @@ footer {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  li {
+    position: relative;
+
+    ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--blue);
+      list-style: none;
+      padding: 1rem;
+      margin: 0;
+      min-width: 300px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+      border-radius: var(--border-radius);
+
+      li {
+        a {
+          background-color: inherit;
+          width: 100%;
+          margin-block: 0.25rem;
+
+          &:hover {
+            background-color: oklch(0.668 0.116 262.011);
+          }
+        }
+      }
+    }
+
+    &:hover ul {
+      display: grid;
+    }
+  }
 }
 
 .navlink {
   display: inline-block;
   color: inherit;
   text-decoration: none;
+  border-radius: var(--border-radius-large);
+  padding-block: 0.5rem;
+  padding-inline: 2rem;
+  margin-block: 1rem;
+
+  &:hover {
+    background-color: var(--blue);
+  }
 }
 
-.title-link {
-  text-decoration: none;
-}
-
-.navlink:hover {
-  background-color: oklch(55.098% 0.13529 261.892);
-}
-
-.navlist li {
-    position: relative;
-}
-
-.navlist li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: oklch(0.479 0.116 262.137);
-    list-style: none;
-    padding: 1rem;
-    margin: 0;
-    min-width: 300px;
-    z-index: 2;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem 2rem;
-}
-
-.navlist li:hover ul {
-    display: grid;
-}
-
-.navlist li ul li a {
-    display: block;
-    padding: 0.6rem 1rem;
-    border-radius: 6px;
-    transition: background 0.2s ease, transform 0.15s ease;
-}
-
-.navlist li ul li a:hover {
-    background-color: oklch(0.668 0.116 262.011);
+.icons .navlink {
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
 }
 
 .blocklink {
@@ -135,6 +152,7 @@ footer {
 .row-between {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .row-around {
@@ -350,8 +368,8 @@ footer {
   min-width: calc(var(--card-width) * 0.3);
   border-radius: var(--border-radius);
   cursor: pointer;
-  opacity: 0.6;
-  background: linear-gradient(var(--gradient-direction), var(--dark-grey), var(--light-grey));
+  opacity: 0.5;
+  background: linear-gradient(var(--gradient-direction), oklch(from var(--blue) calc(l * 1.6) c h), var(--light-grey));
 
   &:first-child {
     --gradient-direction: to right;
@@ -361,7 +379,7 @@ footer {
   }
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   &.right {
@@ -373,6 +391,10 @@ footer {
     .chevron {
       mask: url("./images/chevron_left.svg") no-repeat center;
     }
+  }
+
+  .svg {
+    background-color: var(--gradient-bluepurple-left);
   }
 }
 
@@ -404,7 +426,7 @@ footer {
   border-radius: var(--border-radius);
   overflow: hidden;
   cursor: pointer;
-  background-color: var(--darkest-grey);
+  background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .89);
   color: var(--light-grey);
 
   > img {
