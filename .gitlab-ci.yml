@@ -11,4 +11,4 @@ create-pages:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
   script:
     # Run data fetch script:
-    - node public/js/backend-igdb-fetch.js
+    - node public/assets/js/backend-igdb-fetch.js
