@@ -30,8 +30,7 @@ function initData(collection) {
           return; // Skip game and continue the loop
         }
 
-        const li = document.createElement('li');
-        li.classList.add('game-card');
+        const div = document.createElement('div');
 
         let name = game.name;
         const img = document.createElement('img');
@@ -45,9 +44,18 @@ function initData(collection) {
         if (name.includes('-')) name = name.split('-')[0].trim();
         h2.textContent = name;
 
-        // Append img and h2 elements into the li:
-        li.appendChild(img);
-        li.appendChild(h2);
+        const a = document.createElement('a');
+        a.href = `./game/?id=${game.id}`;
+
+        // Append img, h2 and a elements to the div:
+        div.appendChild(img);
+        div.appendChild(h2);
+        div.appendChild(a);
+
+        // Append the div to the 'game-card' list item:
+        const li = document.createElement('li');
+        li.classList.add('game-card');
+        li.appendChild(div);
 
         container.appendChild(li);
       });

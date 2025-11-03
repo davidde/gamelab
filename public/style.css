@@ -4,21 +4,32 @@
 }
 
 :root {
-  background-color: var(--bg);
+  background-image: var(--gradient-bg);
   color: var(--primary);
   font-family: "Work Sans", sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
 
   /* CSS variables: */
-  --sidescroller-height: 24rem;
-  --card-width: 23.5%;
-  --sidescroller-gap: 2%;
+  --container-width: 80vw;
+  --container-card-ratio: 5.45;
+  --sidescroller-height: calc(var(--container-width) * 1.6 / var(--container-card-ratio));
+  --card-width: calc(var(--container-width) / var(--container-card-ratio));
+  --sidescroller-gap: 1vw;
   --border-radius: 1rem;
   --border-radius-large: 2.5rem;
+  --box-shadow: 0 0 .75rem .5rem oklch(0 0 0 / .5);
 
   /* Colors: */
-  --bg: oklch(92.122% 0.03995 248.325);
+  --gradient-bg-left: oklch(96.594% 0.04372 186.061);
+  --gradient-bg-mid: oklch(87.547% 0.06063 269.69);
+  --gradient-bg-right: oklch(85.589% 0.08135 297.275);
+  --gradient-bg: linear-gradient(
+    135deg in oklch shorter hue,
+    var(--gradient-bg-left),
+    var(--gradient-bg-mid),
+    var(--gradient-bg-right)
+  );
   --primary: oklch(18.604% 0.00261 248.156);
   --secondary: oklch(97.541% 0.00851 325.034);
   --blue: oklch(45.676% 0.18203 261.541);
@@ -26,7 +37,18 @@
   --gradient-bluepurple-left: oklch(17.484% 0.10724 271.243);
   --gradient-bluepurple-mid: oklch(44.177% 0.2011 305.738);
   --gradient-bluepurple-right: oklch(25.914% 0.11887 320.044);
-  --gradient-bluepurple: linear-gradient(to right, var(--gradient-bluepurple-left) 0%, var(--gradient-bluepurple-mid) 50%, var(--gradient-bluepurple-right) 80%);
+  --gradient-bluepurple: linear-gradient(
+    to right,
+    var(--gradient-bluepurple-left),
+    var(--gradient-bluepurple-mid),
+    var(--gradient-bluepurple-right)
+  );
+  --gradient-bluepurple-dark: linear-gradient(
+    to left,
+    oklch(from var(--gradient-bluepurple-left) calc(l * 0.75) c h / 1),
+    oklch(from var(--gradient-bluepurple-mid) calc(l * 0.55) c h / 1),
+    oklch(from var(--gradient-bluepurple-right) calc(l * 0.75) c h / 1)
+  );
   --gradient-title-left: oklch(61.622% 0.26444 324.155);
   --gradient-title-right: oklch(66.693% 0.14274 235.625);
   --gradient-title: linear-gradient(
@@ -93,9 +115,21 @@ p {
 }
 
 .gradient-title {
-  font-size: 3.25rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  word-spacing: .4em;
   margin-inline: 9%;
   max-width: max-content;
+
+  /* Create gradient underline effect: */
+  border-image: var(--gradient-title);
+  /* Slice 100% from the gradient bottom edge: */
+  border-image-slice: 0 0 100% 0;
+  border-width: 0.4rem;
+  border-style: solid;
+
+  /* Create gradient text effect: */
   background: var(--gradient-title);
   background-clip: text;
   color: transparent;
@@ -110,13 +144,13 @@ body {
 }
 
 .container {
-  max-width: 80rem;
+  max-width: var(--container-width);
   margin-inline: auto;
   padding-inline: 1rem;
 }
 
 .main-container {
-  max-width: 80rem;
+  max-width: var(--container-width);
   margin-inline: auto;
   padding-inline: 1rem;
   padding-block-start: 4vh;
@@ -396,39 +430,38 @@ footer {
   width: 300px;
   color: white;
   background-color: var(--gradient-bluepurple-left);
-
 }
 
 .sidebar ul {
-    list-style: none;
+  list-style: none;
 }
 
 .sidebar ul li {
-    color: white;
+  color: white;
 }
 
 .sidebar a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .sidebar a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .sidebar-container {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .sidescroller {
   display: flex;
   width: 100%;
   height: var(--sidescroller-height);
-  margin-block: 2rem;
+  margin-block: 3rem;
 }
 
 .svg {
@@ -447,7 +480,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 100%;
-  min-width: calc(var(--card-width) * 0.3);
+  min-width: calc(var(--card-width) * 0.5);
   border-radius: var(--border-radius);
   cursor: pointer;
   opacity: 0.5;
@@ -455,13 +488,22 @@ footer {
 
   &:first-child {
     --gradient-direction: to right;
+    --translate-x: -0.5rem;
   }
   &:last-child {
     --gradient-direction: to left;
+    --translate-x: 0.5rem;
   }
 
   &:hover {
     opacity: 0.7;
+    transform: scaleX(1.2) translateX(var(--translate-x));
+    transition: transform 0.3s ease-out;
+
+    .chevron {
+      transform: scaleY(1.25);
+      transition: transform 0.3s ease-out;
+    }
   }
 
   &.right {
@@ -476,7 +518,7 @@ footer {
   }
 
   .svg {
-    background-color: var(--gradient-bluepurple-left);
+    background-image: var(--gradient-bluepurple-dark);
   }
 }
 
@@ -485,7 +527,6 @@ footer {
   gap: var(--sidescroller-gap);
   flex-wrap: nowrap; /* Prevent cards from wrapping */
   overflow-x: scroll; /* Enable horizontal scrolling when content overflows */
-  overflow-y: hidden;
   scrollbar-width: none; /* Hide scrollbar! */
   scroll-behavior: smooth;
   height: 100%;
@@ -506,21 +547,51 @@ footer {
   height: 100%;
   list-style: none;
   border-radius: var(--border-radius);
-  overflow: hidden;
-  cursor: pointer;
-  background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .89);
+  scrollbar-width: none; /* Hide scrollbar on hover effect! */
+  overflow: inherit;
+  /* background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .89); */
+  background-image: var(--gradient-bluepurple-dark);
   color: var(--light-grey);
 
-  > img {
+  div {
+    position: relative;
+    transition: all 0.3s ease-out;
+    height: 100%;
     width: 100%;
-    object-fit: cover;
+
+    > img {
+      width: 100%;
+      max-height: 82%;
+      object-fit: cover;
+    }
+    > h2 {
+      font-size: 1rem;
+      padding-inline: 1rem;
+      margin-block-start: 0.3rem;
+      margin-block-end: auto;
+      line-height: 1.2;
+      text-align: center;
+    }
+    > a {
+      position: absolute;
+      inset: 0;
+      text-indent: 120%;
+      overflow: hidden;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .15);
+      }
+    }
   }
-  > h2 {
-    font-size: 1rem;
-    padding-inline: 1rem;
-    margin-block-start: auto;
-    margin-block-end: auto;
-    line-height: 1.2;
-    text-align: center;
+
+  &:hover {
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+
+    div {
+      margin-top: -0.25rem;
+      transform: translateY(-0.25rem) scale(1.025);
+    }
   }
 }

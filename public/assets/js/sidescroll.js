@@ -9,18 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Calculate the `.game-card` width in pixels:
-  const rootElement = getComputedStyle(document.documentElement);
-  // Get the `.game-card` width and gap in % as a number:
-  const cardWidth = parseFloat(rootElement.getPropertyValue('--card-width'));
-  const gap = parseFloat(rootElement.getPropertyValue('--sidescroller-gap'));
-  // Get `.sidescroll-list` size of % in pixels:
-  const percentageSize = parseFloat(document.querySelector('.sidescroll-list').clientWidth) / 100;
-  const scrollAmount = (cardWidth + gap * 0.7) * percentageSize;
+  // Get the `.game-card` width and gap in pixels as a number:
+  const cardWidth = parseFloat(window.getComputedStyle(
+    document.querySelector('.game-card')).width);
+  const gap = parseFloat(window.getComputedStyle(
+    document.querySelector('.sidescroll-list')).gap);
+  const scrollAmount = cardWidth + gap;
 
   // console.log(cardWidth);
   // console.log(gap);
-  // console.log(percentageSize);
   // console.log(scrollAmount);
 
   // Attach event listeners to all nodes:
