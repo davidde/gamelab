@@ -27,6 +27,13 @@
   --gradient-bluepurple-mid: oklch(44.177% 0.2011 305.738);
   --gradient-bluepurple-right: oklch(25.914% 0.11887 320.044);
   --gradient-bluepurple: linear-gradient(to right, var(--gradient-bluepurple-left) 0%, var(--gradient-bluepurple-mid) 50%, var(--gradient-bluepurple-right) 80%);
+  --gradient-title-left: oklch(61.622% 0.26444 324.155);
+  --gradient-title-right: oklch(66.693% 0.14274 235.625);
+  --gradient-title: linear-gradient(
+    to right in oklch shorter hue,
+    var(--gradient-title-left),
+    var(--gradient-title-right)
+  );
 }
 
 /* Typography */
@@ -85,6 +92,16 @@ p {
   margin-block: 1.5rem;
 }
 
+.gradient-title {
+  font-size: 3.25rem;
+  margin-inline: 9%;
+  max-width: max-content;
+  background: var(--gradient-title);
+  background-clip: text;
+  color: transparent;
+}
+/*----------------------------------------------------------*/
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -103,13 +120,21 @@ body {
   margin-inline: auto;
   padding-inline: 1rem;
   padding-block-start: 4vh;
-  padding-block-end: 8vh;
+  padding-block-end: 12vh;
+
+  section:has(#all_time_favs) {
+    padding-block: 2vh;
+  }
 }
 
 header, footer {
   background: var(--gradient-bluepurple);
   color: var(--secondary);
   min-height: 6rem;
+}
+
+header {
+  font-size: 1.125rem;
 }
 
 footer {
