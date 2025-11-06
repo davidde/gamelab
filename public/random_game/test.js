@@ -1,208 +1,223 @@
+const DATA_ROOT = new URL("../data/", window.location.href).pathname;
 
-(() => {
-  const CC = 'be';
-  const LANG = 'en';
+const dom = {
+  cover: document.querySelector('[data-field="cover"]'),
+  name: document.querySelector('[data-field="name"]'),
+  tags: document.querySelector('[data-field="tags"]'),
+  ratingWrap: document.querySelector('[data-field="rating-wrapper"]'),
+  ratingFill: document.querySelector('[data-field="rating-fill"]'),
+  ratingText: document.querySelector('[data-field="rating-text"]'),
+  summary: document.querySelector('[data-field="summary"]'),
+  price: document.querySelector('[data-field="price"]'),
+  notice: document.querySelector('[data-field="notice"]'),
+  form: document.querySelector("[data-search-form]"),
+  input: document.querySelector("[data-search-input]"),
+  main: document.querySelector("main.game-page"),
+};
 
-  // Steam endpoints (direct)
-  const STORE_SEARCH = (term) =>
-    `https://store.steampowered.com/api/storesearch/?term=${encodeURIComponent(term)}&cc=${CC}&l=${LANG}`;
-  const APPDETAILS = (appid) =>
-    `https://store.steampowered.com/api/appdetails?appids=${appid}&cc=${CC}&l=${LANG}`;
-  const APPREVIEWS = (appid) =>
-    `https://store.steampowered.com/appreviews/${appid}?json=1&filter=summary&language=all&purchase_type=all`;
-
-  const STORE_URL = (appid) => `https://store.steampowered.com/app/${appid}/`;
-  const HEADER_IMG = (appid) => `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`;
-
-  // Abort slow requests to keep UI responsive.
-  async function fetchJSON(url, { timeoutMs = 9000 } = {}) {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), timeoutMs);
-    try {
-      const res = await fetch(url, { signal: ctrl.signal, credentials: 'omit', cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return await res.json();
-    } finally {
-      clearTimeout(t);
-    }
-  }
-
-  function byRelevance(items, term) {
-    const q = term.toLowerCase();
-    const score = (n) => (n === q ? 0 : n.startsWith(q) ? 1 : n.includes(q) ? 2 : 3);
-    return [...items].sort((a, b) => score((a.name||'').toLowerCase()) - score((b.name||'').toLowerCase()));
-  }
-
-  function formatPrice(po) {
-    if (!po) return { now: 'Free', before: null, discount: 0 };
-    const { currency, final, initial, discount_percent } = po;
-    try {
-      const fmt = new Intl.NumberFormat(undefined, { style: 'currency', currency });
-      const now = fmt.format((final ?? 0) / 100);
-      const before = typeof initial === 'number' && initial > final ? fmt.format(initial / 100) : null;
-      return { now, before, discount: discount_percent || 0 };
-    } catch {
-      return {
-        now: typeof final === 'number' ? (final / 100).toFixed(2) + ' ' + (currency || '') : 'N/A',
-        before: typeof initial === 'number' && initial > final ? (initial / 100).toFixed(2) + ' ' + (currency || '') : null,
-        discount: discount_percent || 0
-      };
-    }
-  }
-
-  function setTags(genres = [], categories = []) {
-    const ul = document.querySelector('.tags');
-    if (!ul) return;
-    ul.innerHTML = '';
-    const top = genres.map(g => g.description).filter(Boolean).slice(0, 3);
-    const cats = categories.map(c => c.description).filter(x => /single-player|multi-player|co-op/i.test(x)).slice(0, 2);
-    [...top, ...cats].slice(0, 5).forEach(t => {
-      const li = document.createElement('li');
-      li.className = 'tag';
-      li.textContent = t;
-      ul.appendChild(li);
-    });
-  }
-
-  function setRating(positive, negative, desc) {
-    const wrap = document.querySelector('.rating');
-    const fill = document.querySelector('.rating-fill');
-    const text = document.querySelector('.rating-text');
-    if (!wrap || !fill || !text) return;
-    const total = (positive || 0) + (negative || 0);
-    if (!total) { wrap.style.display = 'none'; return; }
-    const pct = Math.round((positive / total) * 100);
-    fill.style.width = `${pct}%`;
-    text.textContent = `${desc || 'User reviews'} (${pct}%) on Steam`;
-    wrap.style.display = '';
-  }
-
-  function ensureSteamLink(url) {
-    let link = document.querySelector('.steam-link');
-    if (!link) {
-      const container = document.querySelector('.game-info');
-      if (!container) return;
-      link = document.createElement('a');
-      link.className = 'steam-link';
-      link.target = '_blank';
-      link.rel = 'noopener';
-      link.style.display = 'inline-block';
-      link.style.marginTop = '0.25rem';
-      link.textContent = 'View on Steam';
-      const nameEl = container.querySelector('.game-name');
-      if (nameEl && nameEl.nextSibling) nameEl.parentNode.insertBefore(link, nameEl.nextSibling);
-      else container.prepend(link);
-    }
-    link.href = url;
-  }
-
-  function applyToDom(appid, details, reviews) {
-    const { name, header_image, short_description, genres, categories, price_overview } = details || {};
-    const nameEl = document.querySelector('.game-name');
-    const imgEl = document.querySelector('.game-img img');
-    const expl = document.querySelector('.explanation');
-    const priceNowEl = document.querySelector('.price-now');
-
-    if (nameEl) nameEl.textContent = name || 'Unknown Game';
-    if (imgEl) {
-      imgEl.src = header_image || HEADER_IMG(appid);
-      imgEl.alt = name ? `Cover art for ${name}` : 'Game cover art';
-      imgEl.decoding = 'async';
-      imgEl.loading = 'eager';
-      imgEl.style.cursor = 'pointer';
-      imgEl.onclick = () => window.open(STORE_URL(appid), '_blank', 'noopener');
-    }
-    if (expl) expl.textContent = (short_description || '').trim() || expl.textContent;
-
-    if (priceNowEl) {
-      const { now, before, discount } = formatPrice(price_overview);
-      priceNowEl.textContent = now;
-      const priceWrap = priceNowEl.closest('.price');
-      if (priceWrap) {
-        let old = priceWrap.querySelector('.price-old');
-        let badge = priceWrap.querySelector('.price-discount');
-        if (before && discount > 0) {
-          if (!old) { old = document.createElement('span'); old.className = 'price-old'; old.style.marginLeft = '0.5rem'; priceWrap.appendChild(old); }
-          if (!badge) { badge = document.createElement('span'); badge.className = 'price-discount'; badge.style.marginLeft = '0.5rem'; priceWrap.appendChild(badge); }
-          old.textContent = before; old.style.textDecoration = 'line-through';
-          badge.textContent = `-${discount}%`;
-        } else {
-          if (old) old.remove();
-          if (badge) badge.remove();
-        }
-      }
-    }
-
-    setTags(genres, categories);
-    ensureSteamLink(STORE_URL(appid));
-    if (name) document.title = `${name} · GameLab`;
-
-    const pos = Number(reviews?.query_summary?.total_positive) || 0;
-    const neg = Number(reviews?.query_summary?.total_negative) || 0;
-    const desc = reviews?.query_summary?.review_score_desc || null;
-    setRating(pos, neg, desc);
-  }
-
-  async function searchAppId(term) {
-    const data = await fetchJSON(STORE_SEARCH(term));
-    const items = Array.isArray(data?.items) ? data.items : [];
-    if (!items.length) return null;
-    const sorted = byRelevance(items, term);
-    return sorted[0]?.id || null;
-  }
-
-  async function getAppDetails(appid) {
-    const d = await fetchJSON(APPDETAILS(appid));
-    const node = d?.[appid];
-    if (!node || node.success !== true) return null;
-    return node.data || null;
-  }
-
-  async function getAppReviews(appid) {
-    return await fetchJSON(APPREVIEWS(appid));
-  }
-
-  async function fillFromSearch(term) {
-    try {
-      const appid = await searchAppId(term);
-      if (!appid) { alert(`No results on Steam for "${term}".`); return null; }
-      const [details, reviews] = await Promise.all([ getAppDetails(appid), getAppReviews(appid) ]);
-      if (!details) { alert('Could not fetch game details.'); return null; }
-      applyToDom(appid, details, reviews);
-      return { appid, details, reviews };
-    } catch (err) {
-      // Why: If this throws a TypeError from fetch, it's likely a CORS block by Steam.
-      console.error('[steam/direct] failed:', err);
-      alert('Steam blocked the request (likely CORS). Use a same-origin reverse proxy on your GitLab host.');
-      return null;
-    }
-  }
-
-  function bindSearchForm() {
-    const form = document.querySelector('form.search');
-    const input = form?.querySelector('input[type="search"][name="q"]');
-    if (!form || !input) return;
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const term = (input.value || '').trim();
-      if (!term) return;
-      fillFromSearch(term);
-    }, false);
-
-    // Optional deep link: ?q=...
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get('q');
-    if (q) { input.value = q; fillFromSearch(q); }
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', bindSearchForm, { once: true });
+function setStatus(status, message = "") {
+  dom.main.dataset.status = status; // "loading" | "ready" | "error"
+  if (message) {
+    dom.notice.hidden = false;
+    dom.notice.textContent = message;
   } else {
-    bindSearchForm();
+    dom.notice.hidden = true;
+    dom.notice.textContent = "";
+  }
+}
+
+async function fetchJSON(path) {
+  const url = path.startsWith("/") || path.startsWith("http")
+    ? path
+    : DATA_ROOT + path.replace(/^\.\//, "");
+  const res = await fetch(url, { credentials: "same-origin" });
+  if (!res.ok) {
+    const err = new Error(`HTTP ${res.status} for ${url}`);
+    err.status = res.status;
+    throw err;
+  }
+  return res.json();
+}
+
+function toSlug(s) {
+  return String(s || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function pickRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function normalizeGame(raw) {
+  // Support either pre-normalized or IGDB-like shape.
+  const name = raw.name || raw.title || "Unknown";
+  const coverUrl =
+    raw.coverUrl ||
+    raw.cover?.url ||
+    raw.cover?.image_id
+      ? `https://images.igdb.com/igdb/image/upload/t_cover_big/${raw.cover.image_id}.jpg`
+      : null;
+
+  const tags =
+    raw.tags ||
+    raw.genres?.map(g => g.name) ||
+    raw.genres ||
+    [];
+
+  const rating =
+    typeof raw.rating === "number"
+      ? raw.rating
+      : typeof raw.aggregated_rating === "number"
+      ? raw.aggregated_rating
+      : null;
+
+  const ratingSource =
+    raw.ratingSource ||
+    (raw.aggregated_rating ? "IGDB" : raw.rating ? "User" : null);
+
+  const summary =
+    raw.summary || raw.storyline || raw.description || "No description available.";
+
+  const price =
+    raw.price?.value != null
+      ? { value: raw.price.value, currency: raw.price.currency || "USD" }
+      : null;
+
+  return { name, coverUrl, tags, rating, ratingSource, summary, price };
+}
+
+function renderTags(tags) {
+  dom.tags.innerHTML = "";
+  (tags || []).slice(0, 10).forEach(tag => {
+    const li = document.createElement("li");
+    li.className = "tag";
+    li.textContent = tag;
+    dom.tags.appendChild(li);
+  });
+}
+
+function renderRating(rating, source) {
+  if (typeof rating === "number" && rating >= 0) {
+    const pct = Math.max(0, Math.min(100, Math.round(rating)));
+    dom.ratingFill.style.width = `${pct}%`;
+    dom.ratingText.textContent = `${pct}% ${source ? `(${source})` : ""}`.trim();
+    dom.ratingWrap.hidden = false;
+  } else {
+    dom.ratingWrap.hidden = true;
+    dom.ratingFill.style.width = "0%";
+    dom.ratingText.textContent = "";
+  }
+}
+
+function renderPrice(price) {
+  if (price && typeof price.value === "number") {
+    const fmt = new Intl.NumberFormat(undefined, {
+      style: "currency",
+      currency: price.currency || "USD",
+      maximumFractionDigits: 2,
+    }).format(price.value);
+    dom.price.textContent = fmt;
+  } else {
+    dom.price.textContent = ""; // Hide via CSS if empty.
+  }
+}
+
+function fillGame(game) {
+  document.title = `${game.name} · GameLab`;
+  dom.name.textContent = game.name;
+
+  if (game.coverUrl) {
+    dom.cover.src = game.coverUrl;
+    dom.cover.alt = `Cover art for ${game.name}`;
   }
 
-  // Expose for console testing
-  window.fillFromSearch = fillFromSearch;
-})();
- 
+  renderTags(game.tags);
+  renderRating(game.rating, game.ratingSource);
+  dom.summary.textContent = game.summary || "";
+  renderPrice(game.price);
+}
+
+async function findSlugFromSearch(term) {
+  const q = term.trim().toLowerCase();
+  if (!q) return null;
+
+  const index = await fetchJSON("search-index.json"); // [{slug,name}]
+  // Prefer exact slug match, then exact name, then includes
+  const exactSlug = index.find(x => x.slug.toLowerCase() === q);
+  if (exactSlug) return exactSlug.slug;
+
+  const exactName = index.find(x => x.name?.toLowerCase() === q);
+  if (exactName) return exactName.slug;
+
+  const simplifiedQ = toSlug(q);
+  const slugBySimplify = index.find(x => toSlug(x.name) === simplifiedQ);
+  if (slugBySimplify) return slugBySimplify.slug;
+
+  const partial = index.find(
+    x => x.name?.toLowerCase().includes(q) || x.slug.toLowerCase().includes(q)
+  );
+  return partial ? partial.slug : null;
+}
+
+async function loadGameBySlug(slug) {
+  const raw = await fetchJSON(`games/${slug}.json`);
+  return normalizeGame(raw);
+}
+
+async function loadRandomGame() {
+  const list = await fetchJSON("index.json"); // ["slug", ...]
+  const slug = pickRandom(list);
+  return loadGameBySlug(slug);
+}
+
+async function main() {
+  setStatus("loading", "Loading game…");
+
+  // Wire search UX
+  dom.form?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const term = (dom.input?.value || "").trim();
+    const url = new URL(window.location.href);
+    if (term) url.searchParams.set("q", term);
+    else url.searchParams.delete("q");
+    window.location.href = url.toString();
+  });
+
+  // Persist q into input for convenience
+  const url = new URL(window.location.href);
+  const q = url.searchParams.get("q") || "";
+  if (dom.input) dom.input.value = q;
+
+  try {
+    let game;
+    if (q) {
+      // Try as slug/id direct first
+      const maybeSlug = toSlug(q);
+      try {
+        game = await loadGameBySlug(maybeSlug);
+      } catch (err) {
+        if (err.status !== 404) throw err;
+        const matched = await findSlugFromSearch(q);
+        if (!matched) {
+          throw new Error(`No results for "${q}".`);
+        }
+        game = await loadGameBySlug(matched);
+      }
+    } else {
+      game = await loadRandomGame();
+    }
+
+    fillGame(game);
+    setStatus("ready", "");
+  } catch (err) {
+    console.error(err);
+    setStatus(
+      "error",
+      err?.message || "Failed to load game. Please try again."
+    );
+  }
+}
+
+document.addEventListener("DOMContentLoaded", main);
