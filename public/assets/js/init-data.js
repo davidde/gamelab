@@ -1,4 +1,4 @@
-const COLLECTIONS = ['trending_top_100', 'all_time_favs'];
+const COLLECTIONS = ['trending', 'favourites'];
 
 function initData(collection) {
   const container = document.getElementById(collection);
@@ -45,7 +45,7 @@ function initData(collection) {
         h2.textContent = name;
 
         const a = document.createElement('a');
-        a.href = `./game/?id=${game.id}`;
+        a.href = `./game/?collection=${collection}&id=${game.id}`;
 
         // Append img, h2 and a elements to the div:
         div.appendChild(img);

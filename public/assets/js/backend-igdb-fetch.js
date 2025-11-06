@@ -14,12 +14,12 @@ const BASEQUERY = `
 // IGDB "Apicalypse" REST queries:
 const QUERIES = [
   {
-    name: 'trending_top_100',
+    name: 'trending',
     sort: ' sort hypes desc; ',
     amount: 100,
   },
   {
-    name: 'all_time_favs',
+    name: 'favourites',
     sort: ' sort total_rating desc; ',
     amount: 500,
   },
