@@ -6,130 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GameLab</title>
   <link rel="stylesheet" href="../style.css">
-  <script src="./test.js"></script>
-  </head>
-
+  <!-- Load after HTML to avoid blocking; module for clean imports -->
+  <script type="module" src="./test.js" defer></script>
+</head>
 <body>
 <header>
   <div class="container">
     <div class="row-between">
-      <a
-        class="navlink py1"
-        href="../"
-        title="Homepage"
-      >
-        <img
-          class="image-icon"
-          src="../assets/images/gaming_logo_idea.jpg"
-          width="30"
-          alt="Homepage">
+      <a class="navlink py1" href="../" title="Homepage">
+        <img class="image-icon" src="../assets/images/gaming_logo_idea.jpg" width="30" alt="Homepage">
       </a>
       <nav>
         <ul class="navlist">
-          <li>
-            <a class="navlink py1" href="../" title="Homepage">Home</a>
-          </li>
+          <li><a class="navlink py1" href="../" title="Homepage">Home</a></li>
           <li>
             <a class="navlink py1" href="../categories" title="Categories">Categories</a>
-              <ul>
-                  <li><a class="navlink py1" href="#">Indie</a></li>
-                  <li><a class="navlink py1" href="#">Action</a></li>
-                  <li><a class="navlink py1" href="#">Adventure</a></li>
-                  <li><a class="navlink py1" href="#">Casual</a></li>
-                  <li><a class="navlink py1" href="#">Singleplayer</a></li>
-                  <li><a class="navlink py1" href="#">RPG</a></li>
-                  <li><a class="navlink py1" href="#">Simulation</a></li>
-                  <li><a class="navlink py1" href="#">Strategy</a></li>
-              </ul>
+            <ul>
+              <li><a class="navlink py1" href="#">Indie</a></li>
+              <li><a class="navlink py1" href="#">Action</a></li>
+              <li><a class="navlink py1" href="#">Adventure</a></li>
+              <li><a class="navlink py1" href="#">Casual</a></li>
+              <li><a class="navlink py1" href="#">Singleplayer</a></li>
+              <li><a class="navlink py1" href="#">RPG</a></li>
+              <li><a class="navlink py1" href="#">Simulation</a></li>
+              <li><a class="navlink py1" href="#">Strategy</a></li>
+            </ul>
           </li>
-          <li>
-            <a class="navlink py1" href="../questions" title="Questions">Questions</a>
-          </li>
-          <li>
-            <a class="navlink py1" href="./" title="Random Game">Random Game</a>
-          </li>
+          <li><a class="navlink py1" href="../questions" title="Questions">Questions</a></li>
+          <li><a class="navlink py1" href="./" title="Random Game">Random Game</a></li>
         </ul>
       </nav>
       <nav>
         <ul class="navlist">
-          <li>
-            <a
-              class="navlink py1"
-              href=""
-              title=""
-            >
-              <img src="../assets/images/search_icon.svg">
-            </a>
-          </li>
-          <li>
-            <a
-              class="navlink py1"
-              href=""
-              title=""
-            >
-              <img src="../assets/images/globe_pin_icon.svg">
-            </a>
-          </li>
-          <li>
-            <a
-              class="navlink py1"
-              href=""
-              title=""
-            >
-              <img src="../assets/images/login_icon.svg">
-            </a>
-          </li>
+          <li><a class="navlink py1" href="" title=""><img src="../assets/images/search_icon.svg" alt="Search"></a></li>
+          <li><a class="navlink py1" href="" title=""><img src="../assets/images/globe_pin_icon.svg" alt="Language/Region"></a></li>
+          <li><a class="navlink py1" href="" title=""><img src="../assets/images/login_icon.svg" alt="Login"></a></li>
         </ul>
       </nav>
     </div>
-    <form class="search" role="search" action="#" method="get">
-          <input type="search" name="q" placeholder="Search games…" aria-label="Search">
-          <button type="submit">Search</button>
-      </form>
+    <form class="search" role="search" action="#" method="get" data-search-form>
+      <input type="search" name="q" placeholder="Search games…" aria-label="Search" data-search-input>
+      <button type="submit">Search</button>
+    </form>
   </div>
 </header>
 
- <main class="game-page">
+<main class="game-page" data-status="idle">
   <div class="main-container">
     <h1 class="page-title">Random game</h1>
 
-    <section class="game">
+    <section class="game" data-game>
       <div class="game-img">
-        <img src="../assets/images/gaming_logo_idea.jpg"
-             alt="Cover art of the selected game">
+        <img data-field="cover" src="../assets/images/gaming_logo_idea.jpg" alt="Cover art of the selected game">
       </div>
 
       <div class="game-info">
-        <h2 class="game-name">Game Title</h2>
+        <h2 class="game-name" data-field="name">Game Title</h2>
 
-        <ul class="tags">
-          <li class="tag">Action</li>
-          <li class="tag">Roguelike</li>
-          <li class="tag">Singleplayer</li>
+        <ul class="tags" data-field="tags">
+          <!-- tags injected here -->
         </ul>
 
-        <div class="rating">
-          <div class="rating-bar"><div class="rating-fill" style="width: 88%;"></div></div> 
-          <span class="rating-text">Very Positive (88%) on Steam</span>
+        <div class="rating" data-field="rating-wrapper" hidden>
+          <div class="rating-bar" aria-hidden="true">
+            <div class="rating-fill" data-field="rating-fill" style="width: 0%;"></div>
+          </div>
+          <span class="rating-text" data-field="rating-text">Rating</span>
         </div>
 
-        <p class="explanaiton">
-          Fast-paced combat and
-          procedural levels keep each run fresh.
+        <p class="explanaiton" data-field="summary">
+          Fast-paced combat and procedural levels keep each run fresh.
         </p>
 
-        <p class="price"><span class="price-now">$19.99</span></p>
+        <p class="price"><span class="price-now" data-field="price"></span></p>
       </div>
     </section>
+
+    <div class="notice" data-field="notice" hidden></div>
   </div>
-  </main>
+</main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 GameLab</p>
-    </div>
-  </footer>
-
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 GameLab</p>
+  </div>
+</footer>
 </body>
 </html>
-
