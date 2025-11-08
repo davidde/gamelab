@@ -17,8 +17,9 @@
   --card-width: calc(var(--container-width) / var(--container-card-ratio));
   --sidescroller-gap: 1vw;
   --border-radius: 1rem;
-  --border-radius-large: 2.5rem;
+  --border-radius-large: 3rem;
   --box-shadow: 0 0 .75rem .5rem oklch(0 0 0 / .5);
+  --header-y-spacing: 1.5em;
 
   /* Colors: */
   --gradient-bg-left: oklch(96.594% 0.04372 186.061);
@@ -33,28 +34,28 @@
   --primary: oklch(18.604% 0.00261 248.156);
   --secondary: oklch(97.541% 0.00851 325.034);
   --blue: oklch(45.676% 0.18203 261.541);
-  --light-grey: oklch(96.367% 0.00182 249.214);  
-  --gradient-bluepurple-left: oklch(17.484% 0.10724 271.243);
-  --gradient-bluepurple-mid: oklch(44.177% 0.2011 305.738);
-  --gradient-bluepurple-right: oklch(25.914% 0.11887 320.044);
+  --light-grey: oklch(96.367% 0.00182 249.214);
+  --gradient-bluepurple-blue: oklch(17.484% 0.10724 271.243);
+  --gradient-bluepurple-violet: oklch(44.177% 0.2011 305.738);
+  --gradient-bluepurple-purple: oklch(25.914% 0.11887 320.044);
   --gradient-bluepurple: linear-gradient(
     to right,
-    var(--gradient-bluepurple-left),
-    var(--gradient-bluepurple-mid),
-    var(--gradient-bluepurple-right)
+    var(--gradient-bluepurple-blue),
+    var(--gradient-bluepurple-violet),
+    var(--gradient-bluepurple-purple)
   );
   --gradient-bluepurple-dark: linear-gradient(
     to left,
-    oklch(from var(--gradient-bluepurple-left) calc(l * 0.75) c h / 1),
-    oklch(from var(--gradient-bluepurple-mid) calc(l * 0.55) c h / 1),
-    oklch(from var(--gradient-bluepurple-right) calc(l * 0.75) c h / 1)
+    oklch(from var(--gradient-bluepurple-blue) calc(l * 0.75) c h / 1),
+    oklch(from var(--gradient-bluepurple-violet) calc(l * 0.55) c h / 1),
+    oklch(from var(--gradient-bluepurple-purple) calc(l * 0.75) c h / 1)
   );
-  --gradient-title-left: oklch(61.622% 0.26444 324.155);
-  --gradient-title-right: oklch(66.693% 0.14274 235.625);
+  --gradient-title-violet: oklch(61.622% 0.26444 324.155);
+  --gradient-title-blue: oklch(66.693% 0.14274 235.625);
   --gradient-title: linear-gradient(
     to right in oklch shorter hue,
-    var(--gradient-title-left),
-    var(--gradient-title-right)
+    var(--gradient-title-violet),
+    var(--gradient-title-blue)
   );
 }
 
@@ -147,28 +148,26 @@ body {
   max-width: var(--container-width);
   margin-inline: auto;
   padding-inline: 1rem;
-}
 
-.main-container {
-  max-width: var(--container-width);
-  margin-inline: auto;
-  padding-inline: 1rem;
-  padding-block-start: 4vh;
-  padding-block-end: 12vh;
+  &.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-block-start: var(--header-y-spacing);
+  }
+  &.main {
+    padding-block-start: 4vh;
+    padding-block-end: 12vh;
 
-  section:has(#favourites) {
-    padding-block: 2vh;
+    section:has(#favourites) {
+      padding-block: 2vh;
+    }
   }
 }
 
 header, footer {
   background: var(--gradient-bluepurple);
   color: var(--secondary);
-  min-height: 6rem;
-}
-
-header {
-  font-size: 1.125rem;
 }
 
 footer {
@@ -177,68 +176,97 @@ footer {
   align-items: center;
 }
 
-.navlist {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+header {
+  font-size: 1.125rem;
 
-  li {
+  #search-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  #nav-container {
     position: relative;
+    padding-block-end: var(--header-y-spacing);
 
-    ul {
-      display: none;
+    /* Searchbar container */
+    div {
       position: absolute;
-      top: 100%;
+      z-index: 100;
+      top: 0;
       left: 0;
-      background: var(--blue);
-      list-style: none;
-      padding: 1rem;
-      margin: 0;
-      min-width: 300px;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.5rem;
-      border-radius: var(--border-radius);
-      z-index: 2;
+      width: 100%;
+      height: 100%;
+      width: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      /* Push it to the left when deactivated: */
+      margin-inline-end: auto;
 
-      li {
-        a {
-          background-color: inherit;
-          width: 100%;
-          margin-block: 0.25rem;
+      /* Searchbar: */
+      > input {
+        padding-inline: 0.75em;
+        padding-block: 0.5em;
+        border: 1px solid var(--light-grey);
+        border-radius: var(--border-radius-large);
+        width: 100%;
 
-          &:hover {
-            background-color: oklch(0.668 0.116 262.011);
-          }
+        &:focus {
+          outline: none;
         }
       }
     }
 
-    &:hover ul {
-      display: grid;
+    /* Searchbar is open: */
+    &.active {
+      div {
+        width: 100%;
+        opacity: 1;
+        padding-left: 0.5em;
+      }
+
+      .navlist {
+        a:hover {
+          background-color: initial;
+          pointer-events: none;
+        }
+      }
     }
   }
 }
 
-.navlink {
-  display: inline-block;
-  color: inherit;
-  text-decoration: none;
-  border-radius: var(--border-radius-large);
-  padding-block: 0.5rem;
-  padding-inline: 2rem;
-  margin-block: 1rem;
+.navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
-  &:hover {
-    background-color: var(--blue);
+  &.main {
+    li {
+      a {
+        color: inherit;
+        text-decoration: none;
+        padding-block: 0.5em;
+        padding-inline: 0.75em;
+        border-radius: var(--border-radius-large);
+
+        &:hover {
+          background-color: var(--secondary);
+          color: var(--gradient-bluepurple-violet);
+        }
+      }
+    }
   }
-}
-
-.icons .navlink {
-  padding-block: 0.25rem;
-  padding-inline: 0.5rem;
+  &.icons {
+    a, button {
+      display: inline-block;
+      padding: 0;
+    }
+  }
 }
 
 .blocklink {
@@ -276,9 +304,22 @@ footer {
   justify-content: space-around;
 }
 
-.image-icon {
-  width: 4em;
-  height: 4em;
+.favicon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3em;
+  height: 3em;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+
+  &.search {
+    width: 2em;
+    height: 2em;
+  }
 }
 
 .teasers {
@@ -429,7 +470,7 @@ footer {
   height: 100%;
   width: 300px;
   color: white;
-  background-color: var(--gradient-bluepurple-left);
+  background-color: var(--gradient-bluepurple-blue);
 }
 
 .sidebar ul {
