@@ -265,6 +265,7 @@ header {
     a, button {
       display: inline-block;
       padding: 0;
+      color: inherit;
     }
   }
 }
