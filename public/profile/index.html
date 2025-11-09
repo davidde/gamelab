@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="GitLab Pages">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameLab</title>
+
+  <!-- Normalize: -->
+  <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+
+  <script src="../assets/js/search.js" defer></script>
+  <script src="../assets/js/profile.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="container header">
+    <a href="../" title="Homepage">
+      <img
+        class="favicon"
+        src="../assets/images/favicon.png"
+        alt="Homepage">
+    </a>
+    <div id="nav-container">
+      <nav>
+        <ul class="navlist main">
+          <li>
+            <a href="../" title="Homepage">Home</a>
+          </li>
+          <li>
+            <a href="../categories" title="Categories">Categories</a>
+          </li>
+          <li>
+            <a href="../questions" title="Questions">Questions</a>
+          </li>
+          <li>
+            <a href="../game/random" title="Random Game">Random Game</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <input type="search" placeholder="Search games..." aria-label="Search">
+      </div>
+    </div>
+    <nav>
+      <ul class="navlist icons">
+        <li>
+          <button
+            id="search-toggle"
+            title="Find Games"
+            aria-label="Toggle Game Search"
+          >
+            <img src="../assets/images/search_icon.svg" class="icon search" alt="Search">
+          </button>
+        </li>
+        <li>
+          <a
+            href="../game/stores"
+            title="Find Game Stores"
+          >
+            <img src="../assets/images/globe_pin_icon.svg" class="icon" alt="Gamestores">
+          </a>
+        </li>
+        <li>
+          <a
+            href="../profile"
+            title="Profile Page"
+          >
+            <img src="../assets/images/profile_icon.svg" class="icon" alt="Profile">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container main">
+    <section>
+      <h1 id="profile-name">Profile</h1>
+
+      <div class="my-1 py-1">
+        <div id="auth-status"></div>
+        <button id="logout-button" class="button mt-2">Log Out</button>
+      </div>
+
+      <div class="tab-container" id="tab-container">
+        <div class="tab-buttons">
+          <button class="tab-button active" data-tab="login">Log In</button>
+          <button class="tab-button" data-tab="register">Register</button>
+        </div>
+
+        <div class="tab-content">
+          <div id="login" class="tab-pane active">
+            <h2>Log In</h2>
+
+            <form id="login-form">
+              <div class="row-around">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+              </div>
+              <div class="row-around mt-1">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+              </div>
+              <button type="submit" class="button mt-1">Log In</button>
+              <p id="login-message"></p>
+            </form>
+          </div>
+
+          <div id="register" class="tab-pane">
+            <h2>Register</h2>
+
+            <form id="register-form">
+              <div class="row-around">
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" name="username" required>
+              </div>
+              <div class="row-around mt-1">
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="password" required>
+              </div>
+              <button type="submit" class="button mt-1">Register</button>
+              <p id="register-message"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container row-around">
+    <p>&copy; 2025 GameLab</p>
+    <p></p>
+  </div>
+</footer>
+</body>
+</html>
+

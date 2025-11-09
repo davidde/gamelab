@@ -16,10 +16,11 @@
   --sidescroller-height: calc(var(--container-width) * 1.6 / var(--container-card-ratio));
   --card-width: calc(var(--container-width) / var(--container-card-ratio));
   --sidescroller-gap: 1vw;
-  --border-radius: 1rem;
-  --border-radius-large: 3rem;
-  --box-shadow: 0 0 .75rem .5rem oklch(0 0 0 / .5);
-  --header-y-spacing: 1.5em;
+  --border-radius-small: 0.5em;
+  --border-radius: 1em;
+  --border-radius-large: 3em;
+  --box-shadow: 0 0 .75em .5em oklch(0 0 0 / .5);
+  --header-y-spacing: 1.5rem;
 
   /* Colors: */
   --gradient-bg-left: oklch(96.594% 0.04372 186.061);
@@ -34,7 +35,8 @@
   --primary: oklch(18.604% 0.00261 248.156);
   --secondary: oklch(97.541% 0.00851 325.034);
   --blue: oklch(45.676% 0.18203 261.541);
-  --light-grey: oklch(96.367% 0.00182 249.214);
+  --light-grey: oklch(93.657% 0.00183 249.169);
+  --grey: oklch(85.324% 0.00268 230.193);
   --gradient-bluepurple-blue: oklch(17.484% 0.10724 271.243);
   --gradient-bluepurple-violet: oklch(44.177% 0.2011 305.738);
   --gradient-bluepurple-purple: oklch(25.914% 0.11887 320.044);
@@ -278,19 +280,27 @@ header {
   text-decoration: none;
 }
 
-.py1 {
+.py-1 {
   padding-block: 1rem;
 }
 
-.px1 {
+.px-1 {
   padding-inline: 1rem;
 }
 
-.my1 {
+.my-1 {
   margin-block: 1rem;
 }
 
-.mx1 {
+.mt-1 {
+  margin-block: 1rem;
+}
+
+.mt-2 {
+  margin-block: 2rem;
+}
+
+.mx-1 {
   margin-inline: 1rem;
 }
 
@@ -303,6 +313,7 @@ header {
 .row-around {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .favicon {
@@ -648,4 +659,72 @@ header {
   }
 }
 
+/* Profile page: */
+.button {
+  padding: 0.5em;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 0.875em;
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--grey);
+}
+
+.tab-container {
+  width: 400px;
+  margin-block: 2em;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: #fff;
+
+  /* Tab buttons styling */
+  .tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+
+    .tab-button {
+      /* Makes buttons fill the width: */
+      flex-grow: 1;
+      padding: 0.75em;
+      border: none;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #ddd;
+      }
+      /* Style for the active (selected) tab */
+      &.active {
+        background-color: #fff;
+        border-bottom: 2px solid var(--blue);
+        font-weight: bold;
+      }
+    }
+  }
+
+  /* Content Pane Styling */
+  .tab-content {
+    padding-inline: 1.25em;
+
+    .tab-pane {
+      /* Initially hide all panes: */
+      display: none;
+
+      /* Only display the active pane: */
+      &.active {
+        display: block;
+      }
+
+      input {
+        border-radius: var(--border-radius-small);
+        border: 1px solid var(--grey);
+        padding-inline: 0.75em;
+        padding-block: 0.25em;
+        outline: none;
+      }
+    }
+  }
+}
 
