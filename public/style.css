@@ -11,7 +11,7 @@
   scroll-behavior: smooth;
 
   /* CSS variables: */
-  --container-width: 80vw;
+  --container-width: 80rem;
   --container-card-ratio: 5.45;
   --sidescroller-height: calc(var(--container-width) * 1.6 / var(--container-card-ratio));
   --card-width: calc(var(--container-width) / var(--container-card-ratio));
@@ -637,3 +637,15 @@ header {
     }
   }
 }
+
+#map-container {
+  min-height: 300px;
+  max-height: 700px;
+  height: 70vh;
+
+  iframe {
+    border: none;
+  }
+}
+
+
