@@ -20,7 +20,7 @@ const QUERIES = [
   },
   {
     name: 'favourites',
-    sort: ' where total_rating_count >= 100; sort total_rating desc; ',
+    sort: ' where total_rating_count >= 350; sort total_rating desc; ',
     amount: 500,
   },
 ];
