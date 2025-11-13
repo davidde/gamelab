@@ -4,7 +4,7 @@
 }
 
 :root {
-  background-image: var(--gradient-bg);
+  background-color: white;
   color: var(--primary);
   font-family: "Work Sans", sans-serif;
   line-height: 1.6;
@@ -37,6 +37,7 @@
   --blue: oklch(45.676% 0.18203 261.541);
   --light-grey: oklch(93.657% 0.00183 249.169);
   --grey: oklch(85.324% 0.00268 230.193);
+  --dark-grey: oklch(41.283% 0.00005 271.152);
   --gradient-bluepurple-blue: oklch(17.484% 0.10724 271.243);
   --gradient-bluepurple-violet: oklch(44.177% 0.2011 305.738);
   --gradient-bluepurple-purple: oklch(25.914% 0.11887 320.044);
@@ -52,12 +53,12 @@
     oklch(from var(--gradient-bluepurple-violet) calc(l * 0.55) c h / 1),
     oklch(from var(--gradient-bluepurple-purple) calc(l * 0.75) c h / 1)
   );
-  --gradient-title-violet: oklch(61.622% 0.26444 324.155);
-  --gradient-title-blue: oklch(66.693% 0.14274 235.625);
-  --gradient-title: linear-gradient(
-    to right in oklch shorter hue,
-    var(--gradient-title-violet),
-    var(--gradient-title-blue)
+  --gradient-bluepurple-blue-light: oklch(33.717% 0.21925 270.942);
+  --gradient-bluepurple-purple-light: oklch(44.821% 0.23131 301.407);
+  --gradient-bluepurple-light: linear-gradient(
+    to left in oklch shorter hue,
+    var(--gradient-bluepurple-blue-light),
+    var(--gradient-bluepurple-purple-light)
   );
 }
 
@@ -126,14 +127,14 @@ p {
   max-width: max-content;
 
   /* Create gradient underline effect: */
-  border-image: var(--gradient-title);
+  border-image: var(--gradient-bluepurple-light);
   /* Slice 100% from the gradient bottom edge: */
   border-image-slice: 0 0 100% 0;
   border-width: 0.4rem;
   border-style: solid;
 
   /* Create gradient text effect: */
-  background: var(--gradient-title);
+  background: var(--gradient-bluepurple-light);
   background-clip: text;
   color: transparent;
 }
@@ -334,52 +335,6 @@ header {
   }
 }
 
-.teasers {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.teasers li {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.teasers h3, a, p {
-  padding-inline: 1rem;
-}
-
-.teasers a:not(.overlay-link) {
-  z-index: 1;
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.teasers li > img {
-  order: -1;
-  border-radius: 1rem 1rem 0 0;
-  width: 225px;
-}
-
-.overlay-link {
-  position: absolute;
-  background-color: oklch(82.275% 0.10674 230.175 / 0.2);
-  border-radius: 1rem;
-  inset: 0;
-  text-indent: 120%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.overlay-link:hover {
-  background-color: oklch(82.275% 0.10674 230.175 / 0.3);
-}
-
 .page-title {
   margin: 16px 0;
   font-size: 24px;
@@ -537,7 +492,7 @@ header {
   border-radius: var(--border-radius);
   cursor: pointer;
   opacity: 0.5;
-  background: linear-gradient(var(--gradient-direction), oklch(from var(--blue) calc(l * 1.6) c h), var(--light-grey));
+  background: linear-gradient(var(--gradient-direction), var(--dark-grey), var(--light-grey));
 
   &:first-child {
     --gradient-direction: to right;
@@ -571,7 +526,7 @@ header {
   }
 
   .svg {
-    background-image: var(--gradient-bluepurple-dark);
+    background-color: black;
   }
 }
 
@@ -603,7 +558,7 @@ header {
   scrollbar-width: none; /* Hide scrollbar on hover effect! */
   overflow: inherit;
   /* background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .89); */
-  background-image: var(--gradient-bluepurple-dark);
+  background-color: black;
   color: var(--light-grey);
 
   div {
