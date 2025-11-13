@@ -43,7 +43,10 @@
         </ul>
       </nav>
       <div>
-        <input type="search" placeholder="Search games..." aria-label="Search">
+        <form action="./game/" method="GET">
+          <input type="search" name="query" placeholder="Search games..." required aria-label="Search">
+          <button type="submit" class="button">Go</button>
+        </form>
       </div>
     </div>
     <nav>

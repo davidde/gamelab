@@ -17,7 +17,7 @@ searchToggle.addEventListener('click', () => {
     searchInput.focus();
   } else {
     // Clear the input field when closing:
-    searchInput.value = '';
+    // searchInput.value = '';
   }
 });
 

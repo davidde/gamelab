@@ -202,21 +202,33 @@ header {
       height: 100%;
       width: 0;
       opacity: 0;
-      overflow: hidden;
+      /* overflow: hidden; */
       transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
       /* Push it to the left when deactivated: */
       margin-inline-end: auto;
 
-      /* Searchbar: */
-      > input {
-        padding-inline: 0.75em;
-        padding-block: 0.5em;
-        border: 1px solid var(--light-grey);
-        border-radius: var(--border-radius-large);
-        width: 100%;
+      form {
+        display: flex;
+        align-items: center;
 
-        &:focus {
-          outline: none;
+        /* Searchbar: */
+        input {
+          padding-inline: 0.75em;
+          padding-block: 0.5em;
+          border: 1px solid var(--light-grey);
+          border-radius: var(--border-radius-large);
+          width: 100%;
+
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          position: absolute;
+          border-radius: var(--border-radius-large);
+          font-weight: bold;
+          top: 0;
+          right: -4rem;
         }
       }
     }
@@ -303,6 +315,10 @@ header {
 
 .mx-1 {
   margin-inline: 1rem;
+}
+
+.ml-1 {
+  margin-inline-start: 1rem;
 }
 
 .row-between {
