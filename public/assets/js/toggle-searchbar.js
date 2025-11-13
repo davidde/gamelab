@@ -1,11 +1,7 @@
-// --------------------------------------------------------------------------------------
-// Search Toggle functionality to show/hide the search bar when toggling the search icon:
+// Functionality to show the searchbar when toggling the search icon:
 const searchToggle = document.getElementById('search-toggle');
-// const searchBar = document.getElementById('search-bar');
-// const searchInput = searchBar.children[0];
-
 const navContainer = document.getElementById('nav-container');
-const searchInput = navContainer.querySelector('input')
+const searchInput = navContainer.querySelector('input');
 
 // Add event listener to the icon:
 searchToggle.addEventListener('click', () => {
@@ -17,7 +13,7 @@ searchToggle.addEventListener('click', () => {
     searchInput.focus();
   } else {
     // Clear the input field when closing:
-    // searchInput.value = '';
+    searchInput.value = '';
   }
 });
 
@@ -33,7 +29,3 @@ document.addEventListener('click', (event) => {
       searchInput.value = '';
   }
 });
-// --------------------------------------------------------------------------------------
-
-// --------------------------------------------------------------------------------------
-// Game search lookup functionality:

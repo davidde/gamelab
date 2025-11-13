@@ -45,7 +45,7 @@ function initData(collection) {
         h2.textContent = name;
 
         const a = document.createElement('a');
-        a.href = `./game/?collection=${collection}&id=${game.id}`;
+        a.href = `./games/?collection=${collection}&id=${game.id}`;
 
         // Append img, h2 and a elements to the div:
         div.appendChild(img);

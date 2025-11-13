@@ -13,7 +13,7 @@
 
   <script src="./assets/js/init-data.js" defer></script>
   <script src="./assets/js/sidescroll.js" defer></script>
-  <script src="./assets/js/search.js" defer></script>
+  <script src="./assets/js/toggle-searchbar.js" defer></script>
 </head>
 
 <body>
@@ -38,12 +38,12 @@
             <a href="./questions" title="Questions">Questions</a>
           </li>
           <li>
-            <a href="./game/random" title="Random Game">Random Game</a>
+            <a href="./games/random" title="Random Game">Random Game</a>
           </li>
         </ul>
       </nav>
       <div>
-        <form action="./game/" method="GET">
+        <form action="./games/" method="GET">
           <input type="search" name="query" placeholder="Search games..." required aria-label="Search">
           <button type="submit" class="button">Go</button>
         </form>
@@ -62,7 +62,7 @@
         </li>
         <li>
           <a
-            href="./game/stores"
+            href="./games/stores"
             title="Find Game Stores"
           >
             <img src="./assets/images/globe_pin_icon.svg" class="icon" alt="Gamestores">

@@ -35,6 +35,7 @@
   --primary: oklch(18.604% 0.00261 248.156);
   --secondary: oklch(97.541% 0.00851 325.034);
   --blue: oklch(45.676% 0.18203 261.541);
+  --red: oklch(54.045% 0.22179 29.223);
   --light-grey: oklch(93.657% 0.00183 249.169);
   --grey: oklch(85.324% 0.00268 230.193);
   --dark-grey: oklch(41.283% 0.00005 271.152);
@@ -197,13 +198,13 @@ header {
       position: absolute;
       z-index: 100;
       top: 0;
-      left: 0;
+      left: -100%;
       width: 100%;
       height: 100%;
       width: 0;
       opacity: 0;
       /* overflow: hidden; */
-      transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out, left 0.3s ease-in-out;
       /* Push it to the left when deactivated: */
       margin-inline-end: auto;
 
@@ -236,6 +237,7 @@ header {
     /* Searchbar is open: */
     &.active {
       div {
+        left: 0;
         width: 100%;
         opacity: 1;
         padding-left: 0.5em;
@@ -291,6 +293,10 @@ header {
   height: 100%;
   color: oklch(55.098% 0.13529 261.892);;
   text-decoration: none;
+}
+
+.error {
+  color: var(--red);
 }
 
 .py-1 {
