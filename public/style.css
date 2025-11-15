@@ -431,7 +431,7 @@ header {
 .tags-row {
   display: flex;
   gap: 1.5em;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .tags {
@@ -457,20 +457,21 @@ header {
   align-items: center;
   gap: 10px;
   margin: 8px 0;
-}
-.rating-bar {
-  width: 150px;
-  height: 10px;
-  background: #eee;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-}
-.rating-fill {
-  height: 100%;
-  background: #22c55e;
-}
 
+  > div {
+    width: 150px;
+    height: 10px;
+    background: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+
+    > div {
+      height: 100%;
+      background: #22c55e;
+    }
+  }
+}
 
 .explanation { margin: 10px 0; }
 
@@ -619,7 +620,7 @@ header {
       height: 100%;
       width: 100%;
 
-      .Genres-list, .Platforms-list {
+      .tags-row, .rating {
         display: none;
       }
 
@@ -678,7 +679,14 @@ header {
       width: 100%;
 
       > div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25em;
         padding: 2em;
+
+        h2 {
+          margin-block-start: 0.5rem;
+        }
 
         .Platforms-list {
           li {
@@ -686,6 +694,9 @@ header {
             color: oklch(34.6% 0.10769 145.37);
             border: 1px solid oklch(94.241% 0.09625 150.787);
           }
+        }
+        .rating {
+          margin-block-end: 1.5em;
         }
       }
 

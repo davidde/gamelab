@@ -21,16 +21,16 @@ export function injectGameHtml(game, collection, container) {
   const div1 = document.createElement('div');
   const div2 = document.createElement('div');
 
-  let gameName = game.name;
-  const h2 = document.createElement('h2');
-  // Remove part of the name after a hyphen if it has one:
+  // Remove the part of the game name after the hyphen if it has one:
   // (Some names are too long because they include useless data, like:
   // The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition)
-  if (gameName.includes('-')) gameName = gameName.split('-')[0].trim();
+  let gameName = game.name.split('-')[0].trim();
+  const h2 = document.createElement('h2');
   h2.textContent = gameName;
   div2.appendChild(h2);
 
   // Extra elements for the game detail page:
+  appendRating(div2, game.total_rating, game.total_rating_count);
   appendTagList(div2, game.genres, "Genres");
   appendTagList(div2, game.platforms, "Platforms");
 
@@ -54,6 +54,27 @@ export function injectGameHtml(game, collection, container) {
   li.appendChild(div1);
 
   container.appendChild(li);
+}
+
+function appendRating(parent, rating, rating_count) {
+  console.log("Rating = ", rating);
+  if (!(typeof rating === "number" && rating >= 0)) return;
+
+  const roundedRating = Math.round(rating * 100) / 100;
+  const ratingBar = document.createElement('div');
+  const ratingFill = document.createElement('div');
+  ratingFill.style.width = `${roundedRating}%`;
+  ratingBar.appendChild(ratingFill);
+
+  const ratingText = document.createElement('span');
+  ratingText.textContent = `${roundedRating}% (Based on ${rating_count} reviews)`;
+
+  const ratingDiv = document.createElement('div');
+  ratingDiv.classList.add('rating');
+  ratingDiv.appendChild(ratingBar);
+  ratingDiv.appendChild(ratingText);
+
+  parent.appendChild(ratingDiv);
 }
 
 function appendTagList(parent, tags, name) {
