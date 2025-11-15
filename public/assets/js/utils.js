@@ -1,3 +1,12 @@
+/** Generate HTML for the `game` json data and inject it in the `container` HTMLElement:
+    <li class='game-card'>
+      <div>
+        <img>
+        <h2></h2>
+        <a href=""></a>
+      </div>
+    </li>
+**/
 export function injectGameHtml(game, collection, container) {
   // Check if essential properties exist before trying to access them:
   if (!game.cover || !game.cover.url || !game.name) {
@@ -23,9 +32,9 @@ export function injectGameHtml(game, collection, container) {
   a.href = `./games/?collection=${collection}&id=${game.id}`;
 
   // Append img, h2 and a elements to the div:
-  div.appendChild(img);
   div.appendChild(h2);
   div.appendChild(a);
+  div.appendChild(img);
 
   // Append the div to the 'game-card' list item:
   const li = document.createElement('li');

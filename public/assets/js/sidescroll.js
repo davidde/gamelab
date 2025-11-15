@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Get the `.game-card` width and gap in pixels as a number:
   const cardWidth = parseFloat(window.getComputedStyle(
-    document.querySelector('.game-card')).width);
+    document.querySelector('.game-card')).minWidth);
   const gap = parseFloat(window.getComputedStyle(
     document.querySelector('.sidescroll-list')).gap);
   const scrollAmount = cardWidth + gap;

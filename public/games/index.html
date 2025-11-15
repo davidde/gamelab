@@ -8,8 +8,9 @@
 
   <!-- Normalize: -->
   <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
-
   <link rel="stylesheet" href="../style.css">
+
+  <script src="../assets/js/sidescroll.js" defer></script>
   <script src="../assets/js/toggle-searchbar.js" defer></script>
   <script src="../assets/js/games-display.js" type="module" defer></script>
 </head>
@@ -83,9 +84,22 @@
   <div class="container main">
     <section>
       <h1 id="games-page-title" class="gradient-title fs-2"></h1>
-      <ul id="result-list">
-        <!-- Search results displayed here -->
-      </ul>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul id="result-list" class="sidescroll-list">
+          <!-- Search results injected here -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+              it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
     </section>
   </div>
 </main>

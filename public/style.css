@@ -3,6 +3,16 @@
   /* outline: 1px solid red; */
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 :root {
   background-color: white;
   color: var(--primary);
@@ -595,12 +605,7 @@ header {
 }
 
 .game-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex: 0 0 auto;
-  width: var(--card-width);
+  min-width: var(--card-width);
   height: 100%;
   list-style: none;
   border-radius: var(--border-radius);
@@ -612,11 +617,14 @@ header {
 
   div {
     position: relative;
+    display: flex;
+    flex-direction: column;
     transition: all 0.3s ease-out;
     height: 100%;
     width: 100%;
 
     > img {
+      order: -1;
       width: 100%;
       max-height: 82%;
       object-fit: cover;

@@ -31,7 +31,8 @@ async function main() {
     return;
   }
 
-  const json = await getJsonData(collection ?? 'favourites');
+  collection = collection ?? 'favourites';
+  const json = await getJsonData(collection);
   const games = getGames(json);
   displayGames(games);
 }
