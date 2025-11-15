@@ -1,3 +1,6 @@
+import { injectGameHtml } from './utils.js';
+
+
 const COLLECTIONS = ['trending', 'favourites'];
 
 function initData(collection) {
@@ -15,50 +18,15 @@ function initData(collection) {
       }
       return request.json();
     })
-    .then(data => {
-      if (!Array.isArray(data) || data.length === 0) {
+    .then(games => {
+      if (!Array.isArray(games) || games.length === 0) {
         console.error(`Data for "${collection}" is empty or not an array.`);
         return;
       }
 
-      console.log(`Successfully loaded ${data.length} items for ${collection}. Appending now...`);
+      console.log(`Successfully loaded ${games.length} items for ${collection}. Appending now...`);
 
-      data.forEach(game => {
-        // Check if essential properties exist before trying to access them:
-        if (!game.cover || !game.cover.url || !game.name) {
-          console.warn(`Skipping game due to missing data: ${game.name || 'Unknown'}`);
-          return; // Skip game and continue the loop
-        }
-
-        const div = document.createElement('div');
-
-        let name = game.name;
-        const img = document.createElement('img');
-        img.src = game.cover.url.replace('t_thumb', 't_720p');
-        img.alt = name;
-
-        const h2 = document.createElement('h2');
-        // Remove part of the name after a hyphen if it has one:
-        // (Some names are too long because they include useless data, like:
-        // The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition)
-        if (name.includes('-')) name = name.split('-')[0].trim();
-        h2.textContent = name;
-
-        const a = document.createElement('a');
-        a.href = `./games/?collection=${collection}&id=${game.id}`;
-
-        // Append img, h2 and a elements to the div:
-        div.appendChild(img);
-        div.appendChild(h2);
-        div.appendChild(a);
-
-        // Append the div to the 'game-card' list item:
-        const li = document.createElement('li');
-        li.classList.add('game-card');
-        li.appendChild(div);
-
-        container.appendChild(li);
-      });
+      games.forEach(game => injectGameHtml(game, collection, container));
     });
 }
 

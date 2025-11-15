@@ -1,3 +1,5 @@
+import { injectGameHtml } from './utils.js';
+
 
 const FILE_PATH = '../assets/data/igdb/';
 const EXTENSION = '.json';
@@ -36,11 +38,7 @@ async function main() {
 
 function displayGames(games) {
   if (games.length > 0) {
-    games.forEach(game => {
-      const listItem = document.createElement('li');
-      listItem.textContent = game.name;
-      resultList.appendChild(listItem);
-    });
+    games.forEach(game => injectGameHtml(game, collection, resultList));
   } else {
     resultList.innerHTML = "<p>Nothing found. Too bad...</p>";
   }
