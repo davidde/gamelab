@@ -85,11 +85,15 @@
     <section>
       <h1 id="games-page-title" class="gradient-title fs-2"></h1>
 
-      <div class="sidescroller">
+      <!-- Possible errors: -->
+      <p id="games-error" class='error'></p>
+
+      <!-- Sidescroller to display search results: -->
+      <div class="sidescroller" id="games-sidescroller">
         <div class="chevron-container left">
           <span class="svg large chevron"></span>
         </div>
-        <ul id="result-list" class="sidescroll-list">
+        <ul id="search-results-list" class="sidescroll-list">
           <!-- Search results injected here -->
 
           <!-- This visually hidden list item is required for sidescroll.js;
@@ -99,6 +103,11 @@
         <div class="chevron-container right">
           <span class="svg large chevron"></span>
         </div>
+      </div>
+
+      <!-- div to display a single game result: -->
+      <div id="single-game-result" class="">
+
       </div>
     </section>
   </div>

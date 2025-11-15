@@ -33,15 +33,6 @@
   --header-y-spacing: 1.5rem;
 
   /* Colors: */
-  --gradient-bg-left: oklch(96.594% 0.04372 186.061);
-  --gradient-bg-mid: oklch(87.547% 0.06063 269.69);
-  --gradient-bg-right: oklch(85.589% 0.08135 297.275);
-  --gradient-bg: linear-gradient(
-    135deg in oklch shorter hue,
-    var(--gradient-bg-left),
-    var(--gradient-bg-mid),
-    var(--gradient-bg-right)
-  );
   --primary: oklch(18.604% 0.00261 248.156);
   --secondary: oklch(97.541% 0.00851 325.034);
   --blue: oklch(45.676% 0.18203 261.541);
@@ -49,6 +40,7 @@
   --light-grey: oklch(93.657% 0.00183 249.169);
   --grey: oklch(85.324% 0.00268 230.193);
   --dark-grey: oklch(41.283% 0.00005 271.152);
+  --darkest-grey: oklch(31.714% 0.00004 271.152);
   --gradient-bluepurple-blue: oklch(17.484% 0.10724 271.243);
   --gradient-bluepurple-violet: oklch(44.177% 0.2011 305.738);
   --gradient-bluepurple-purple: oklch(25.914% 0.11887 320.044);
@@ -602,61 +594,89 @@ header {
   padding: 0;
   padding-inline: calc(var(--sidescroller-gap) / 2);
   margin-inline: calc(var(--sidescroller-gap) / 2);
-}
 
-.game-card {
-  min-width: var(--card-width);
-  height: 100%;
-  list-style: none;
-  border-radius: var(--border-radius);
-  scrollbar-width: none; /* Hide scrollbar on hover effect! */
-  overflow: inherit;
-  /* background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .89); */
-  background-color: black;
-  color: var(--light-grey);
-
-  div {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease-out;
+  .game-card {
+    min-width: var(--card-width);
     height: 100%;
-    width: 100%;
+    list-style: none;
+    border-radius: var(--border-radius);
+    scrollbar-width: none; /* Hide scrollbar on hover effect! */
+    overflow: inherit;
+    /* background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .89); */
+    background-color: black;
+    color: var(--light-grey);
 
-    > img {
-      order: -1;
+    div {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease-out;
+      height: 100%;
       width: 100%;
-      max-height: 82%;
-      object-fit: cover;
-    }
-    > h2 {
-      font-size: 1rem;
-      padding-inline: 1rem;
-      margin-block-start: 0.3rem;
-      margin-block-end: auto;
-      line-height: 1.2;
-      text-align: center;
-    }
-    > a {
-      position: absolute;
-      inset: 0;
-      text-indent: 120%;
-      overflow: hidden;
-      white-space: nowrap;
 
-      &:hover {
-        background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .15);
+      img {
+        order: -1;
+        width: 100%;
+        max-height: 82%;
+        object-fit: cover;
+      }
+      h2 {
+        font-size: 1rem;
+        padding-inline: 1rem;
+        margin-block-start: 0.3rem;
+        margin-block-end: auto;
+        line-height: 1.2;
+        text-align: center;
+      }
+      a {
+        position: absolute;
+        inset: 0;
+        text-indent: 120%;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &:hover {
+          background-color: oklch(from var(--blue) calc(l * .5) calc(c * .6) h / .15);
+        }
+      }
+    }
+
+    &:hover {
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+
+      div {
+        margin-top: -0.25rem;
+        transform: translateY(-0.25rem) scale(1.025);
       }
     }
   }
+}
 
-  &:hover {
+#single-game-result {
+  .game-card {
+    height: 100%;
+    list-style: none;
+    border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: var(--box-shadow);
+    background: var(--darkest-grey);
+    color: var(--secondary);
 
     div {
-      margin-top: -0.25rem;
-      transform: translateY(-0.25rem) scale(1.025);
+      position: relative;
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+      h2 {
+        margin-inline: 2em;
+      }
+
+      img {
+        order: -1;
+        width: 40%;
+        object-fit: cover;
+      }
     }
   }
 }
@@ -738,5 +758,9 @@ header {
       }
     }
   }
+}
+
+.hidden {
+  display: none;
 }
 

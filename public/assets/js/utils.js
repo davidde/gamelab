@@ -1,9 +1,9 @@
 /** Generate HTML for the `game` json data and inject it in the `container` HTMLElement:
     <li class='game-card'>
       <div>
-        <img>
         <h2></h2>
         <a href=""></a>
+        <img>
       </div>
     </li>
 **/
@@ -29,7 +29,9 @@ export function injectGameHtml(game, collection, container) {
   h2.textContent = name;
 
   const a = document.createElement('a');
-  a.href = `./games/?collection=${collection}&id=${game.id}`;
+  let path = window.location.pathname;
+  path = path.endsWith('/games/') ? path : path + 'games/';
+  a.href = `${path}?collection=${collection}&id=${game.id}`;
 
   // Append img, h2 and a elements to the div:
   div.appendChild(h2);

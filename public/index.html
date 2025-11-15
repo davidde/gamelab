@@ -90,14 +90,16 @@
         </div>
         <ul id="trending" class="sidescroll-list">
           <!-- Game data injected here! -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+               it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
         </ul>
         <div class="chevron-container right">
           <span class="svg large chevron"></span>
         </div>
       </div>
     </section>
-
-    <span class="game-card" style="visibility: hidden;"></span>
 
     <section>
       <h1 class="gradient-title mx-tenth fs-3-5">All Time Favourites</h1>
