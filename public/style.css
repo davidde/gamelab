@@ -620,7 +620,7 @@ header {
       height: 100%;
       width: 100%;
 
-      .tags-row, .rating {
+      .rating, .tags-row, .game-summary {
         display: none;
       }
 
@@ -675,6 +675,7 @@ header {
     > div {
       position: relative;
       display: flex;
+      flex-direction: column;
       height: 100%;
       width: 100%;
 
@@ -687,22 +688,36 @@ header {
         h2 {
           margin-block-start: 0.5rem;
         }
-
-        .Platforms-list {
-          li {
-            background-color: oklch(96.762% 0.04211 150.734);
-            color: oklch(34.6% 0.10769 145.37);
-            border: 1px solid oklch(94.241% 0.09625 150.787);
-          }
-        }
         .rating {
           margin-block-end: 1.5em;
+        }
+        .tags-row {
+          margin-inline-start: 1.5rem;
+
+          &:nth-child(3) {
+            margin-block-end: 0.5em;
+
+            span {
+              margin-inline-end: 1.3rem;
+            }
+          }
+          .Platforms-list {
+            li {
+              background-color: oklch(96.762% 0.04211 150.734);
+              color: oklch(34.6% 0.10769 145.37);
+              border: 1px solid oklch(94.241% 0.09625 150.787);
+            }
+          }
+        }
+        .game-summary {
+          /* margin-block-start: 1rem; */
         }
       }
 
       img {
         order: -1;
-        width: 40%;
+        min-width: 50%;
+        max-width: 100%;
         object-fit: cover;
       }
     }
@@ -783,6 +798,17 @@ header {
         padding-inline: 0.75em;
         padding-block: 0.25em;
         outline: none;
+      }
+    }
+  }
+}
+
+/* Media Queries: */
+@media (min-width: 60em) {
+  #single-game-result {
+    .game-card {
+      > div {
+        flex-direction: row;
       }
     }
   }

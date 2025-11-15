@@ -3,8 +3,10 @@
       <div>
         <div>
           <h2></h2>
-          <ul class='genres-list tags></ul>
-          <ul class='platforms-list tags></ul>
+          <div class='rating'></div>
+          <ul class='genres-list tags'></ul>
+          <ul class='platforms-list tags'></ul>
+          <div class='game-summary'></div>
         </div>
         <a href=""></a>
         <img>
@@ -33,6 +35,7 @@ export function injectGameHtml(game, collection, container) {
   appendRating(div2, game.total_rating, game.total_rating_count);
   appendTagList(div2, game.genres, "Genres");
   appendTagList(div2, game.platforms, "Platforms");
+  appendSummary(div2, game.summary);
 
   div1.appendChild(div2);
 
@@ -57,7 +60,6 @@ export function injectGameHtml(game, collection, container) {
 }
 
 function appendRating(parent, rating, rating_count) {
-  console.log("Rating = ", rating);
   if (!(typeof rating === "number" && rating >= 0)) return;
 
   const roundedRating = Math.round(rating * 100) / 100;
@@ -96,4 +98,20 @@ function appendTagList(parent, tags, name) {
   tagsDiv.appendChild(tagsUl);
 
   parent.appendChild(tagsDiv);
+}
+
+function appendSummary(parent, summary) {
+  if (!summary) return;
+
+  const h3 = document.createElement('h3');
+  h3.textContent = 'Summary';
+  const p = document.createElement('p');
+  p.textContent = summary;
+
+  const summaryDiv = document.createElement('div');
+  summaryDiv.classList.add('game-summary');
+  summaryDiv.appendChild(h3);
+  summaryDiv.appendChild(p);
+
+  parent.appendChild(summaryDiv);
 }
