@@ -5,12 +5,14 @@
     :root {
       color-scheme: light dark;
     }
-    path, g {
+    path, g, circle {
       fill: black;
+      stroke: black;
     }
     @media (prefers-color-scheme: dark) {
-      path, g {
+      path, g, circle {
         fill: white;
+        stroke: white;
       }
     }
   </style>
