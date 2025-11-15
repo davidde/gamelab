@@ -21,7 +21,7 @@
   scroll-behavior: smooth;
 
   /* CSS variables: */
-  --container-width: 80rem;
+  --container-width: 100vw;
   --container-card-ratio: 5.45;
   --sidescroller-height: calc(var(--container-width) * 1.6 / var(--container-card-ratio));
   --card-width: calc(var(--container-width) / var(--container-card-ratio));
@@ -31,6 +31,10 @@
   --border-radius-large: 3em;
   --box-shadow: 0 0 .75em .5em oklch(0 0 0 / .5);
   --header-y-spacing: 1.5rem;
+
+  @media (min-width: 80em) {
+    --container-width: 80em;
+  }
 
   /* Colors: */
   --primary: oklch(18.604% 0.00261 248.156);
@@ -163,7 +167,7 @@ body {
 .container {
   max-width: var(--container-width);
   margin-inline: auto;
-  padding-inline: 1rem;
+  padding-inline: 1em;
 
   &.header {
     display: flex;
@@ -679,6 +683,10 @@ header {
       height: 100%;
       width: 100%;
 
+      @media (min-width: 60em) {
+        flex-direction: row;
+      }
+
       > div {
         display: flex;
         flex-direction: column;
@@ -798,17 +806,6 @@ header {
         padding-inline: 0.75em;
         padding-block: 0.25em;
         outline: none;
-      }
-    }
-  }
-}
-
-/* Media Queries: */
-@media (min-width: 60em) {
-  #single-game-result {
-    .game-card {
-      > div {
-        flex-direction: row;
       }
     }
   }
