@@ -7,9 +7,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-4VMRREMENR');
   </script>
+
   <meta charset="utf-8">
   <meta name="generator" content="GitLab Pages">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,6 @@
 
   <!-- Normalize: -->
   <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
-
   <link rel="stylesheet" href="../style.css">
 
   <script src="../assets/js/toggle-searchbar.js" defer></script>
@@ -29,10 +28,7 @@
 <header>
   <div class="container header">
     <a href="../" title="Homepage">
-      <img
-        class="favicon"
-        src="../assets/images/favicon.svg"
-        alt="Homepage">
+      <span class="favicon"></span>
     </a>
     <div id="nav-container">
       <nav>
@@ -52,11 +48,14 @@
         </ul>
       </nav>
       <div>
-        <input type="search" placeholder="Search games..." aria-label="Search">
+        <form action="../games/" method="GET">
+          <input type="search" name="query" placeholder="Search games..." required aria-label="Search">
+          <button type="submit" class="button">Go</button>
+        </form>
       </div>
     </div>
-    <nav>
-      <ul class="navlist icons">
+    <nav class="nav icons">
+      <ul class="navlist">
         <li>
           <button
             id="search-toggle"

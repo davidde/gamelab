@@ -7,9 +7,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-4VMRREMENR');
   </script>
+
   <meta charset="utf-8">
   <meta name="generator" content="GitLab Pages">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +29,7 @@
 <header>
   <div class="container header">
     <a href="../" title="Homepage">
-      <img
-        class="favicon"
-        src="../assets/images/favicon.svg"
-        alt="Homepage">
+      <span class="favicon"></span>
     </a>
     <div id="nav-container">
       <nav>
@@ -52,14 +49,14 @@
         </ul>
       </nav>
       <div>
-        <form action="./" method="GET">
+        <form action="../games/" method="GET">
           <input type="search" name="query" placeholder="Search games..." required aria-label="Search">
           <button type="submit" class="button">Go</button>
         </form>
       </div>
     </div>
-    <nav>
-      <ul class="navlist icons">
+    <nav class="nav icons">
+      <ul class="navlist">
         <li>
           <button
             id="search-toggle"
