@@ -205,76 +205,114 @@ footer {
 }
 
 header {
-  font-size: 1.125rem;
+  .container {
+    @media (min-width: 40em) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-  a {
-    color: inherit;
-  }
-
-  #search-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  #nav-container {
-    position: relative;
-    padding-block-end: var(--header-y-spacing);
-
-    /* Searchbar container */
-    div {
-      position: absolute;
-      z-index: 100;
-      top: 0.5em;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      width: 0;
-      opacity: 0;
-      /* overflow: hidden; */
-      transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out, left 0.3s ease-in-out;
-      /* Push it to the left when deactivated: */
-      margin-inline-end: auto;
-
-      form {
+      .navlist {
         display: flex;
-        align-items: center;
+        gap: 1em;
+        margin-block-end: 0;
 
-        /* Searchbar: */
-        input {
-          padding-inline: 0.75em;
-          padding-block: 0.5em;
-          border: 1px solid var(--light-grey);
-          border-radius: var(--border-radius-large);
-          width: 100%;
+        li {
+          a {
+            width: auto;
 
-          &:focus {
-            outline: none;
+            &[aria-current="page"] {
+              display: inline-block;
+              position: relative;
+            }
+
+            &::before {
+              width: 0;
+              margin-inline-end: 0;
+            }
+
+            &[aria-current="page"]::before {
+              content: "▾";
+              position: absolute;
+              width: 1em;
+              top: -.4em;
+              left: calc(50% - 0.5em);
+            }
           }
-        }
-        button {
-          position: absolute;
-          border-radius: var(--border-radius-large);
-          font-weight: bold;
-          top: 0;
-          right: -4rem;
         }
       }
     }
 
-    /* Searchbar is open: */
-    &.active {
+    font-size: 1.125rem;
+
+    a {
+      color: inherit;
+    }
+
+    #search-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    #nav-container {
+      position: relative;
+      padding-block-end: var(--header-y-spacing);
+
+      /* Searchbar container */
       div {
-        left: 0;
+        position: absolute;
+        z-index: 100;
+        top: 0.5em;
+        left: -100%;
         width: 100%;
-        opacity: 1;
-        padding-left: 0.5em;
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        /* overflow: hidden; */
+        transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out, left 0.3s ease-in-out;
+        /* Push it to the left when deactivated: */
+        margin-inline-end: auto;
+
+        form {
+          display: flex;
+          align-items: center;
+
+          /* Searchbar: */
+          input {
+            padding-inline: 0.75em;
+            padding-block: 0.5em;
+            border: 1px solid var(--light-grey);
+            border-radius: var(--border-radius-large);
+            width: 100%;
+
+            &:focus {
+              outline: none;
+            }
+          }
+          button {
+            position: absolute;
+            border-radius: var(--border-radius-large);
+            font-weight: bold;
+            top: 0;
+            right: -4rem;
+          }
+        }
       }
 
-      .navlist {
-        a:hover {
-          background-color: initial;
-          pointer-events: none;
+      /* Searchbar is open: */
+      &.active {
+        div {
+          left: 0;
+          width: 100%;
+          opacity: 1;
+          padding-left: 0.5em;
+        }
+
+        .navlist {
+          a:hover {
+            background-color: initial;
+            pointer-events: none;
+          }
         }
       }
     }
@@ -282,10 +320,6 @@ header {
 }
 
 .navlist {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -306,6 +340,16 @@ header {
         &:hover {
           background-color: var(--secondary);
           color: var(--gradient-bluepurple-violet);
+        }
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 1em; /* reserve space for ► arrow */
+          margin-inline-end: .5em;
+        }
+        &[aria-current="page"]::before {
+          content: "►";
+          margin-inline-end: .5em;
         }
       }
     }
