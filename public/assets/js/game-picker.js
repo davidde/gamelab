@@ -6,17 +6,17 @@ function checkAnswer(question) {
   // Check the answer from the 'question' select:
   switch (question.selectedIndex) {
     case 0: // Default no selection, so hide both follow ups:
-      followUp1.style.display = 'none';
-      followUp2.style.display = 'none';
+      followUp1.classList.add('hidden');
+      followUp2.classList.add('hidden');
       break;
     case 1: // First data option (second select field),
       // so show first question:
-      followUp1.style.display = 'block';
-      followUp2.style.display = 'none';
+      followUp1.classList.remove('hidden');
+      followUp2.classList.add('hidden');
       break;
     case 2: // Second data option (third select field),
       // so show second question:
-      followUp1.style.display = 'none';
-      followUp2.style.display = 'block';
+      followUp1.classList.add('hidden');
+      followUp2.classList.remove('hidden');
   }
 }

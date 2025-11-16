@@ -6,21 +6,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coaih8.jpg"
     },
     "first_release_date": 1607558400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 1038,
@@ -61,6 +64,24 @@
     ],
     "storyline": "In 2077, following an economic collapse sometime during the early 21st century, the United States is forced to rely on large corporations to survive. These corporations deal in a wide range of areas, such as weapons, robotics, cybernetics, pharmaceuticals, communications and biotechnology, and many of these companies operate above the law. The world in between is where decadence, sex and pop culture mix with violent crime, extreme poverty and the unattainable promise of the American Dream. You play as V, a mercenary outlaw deeply embedded in the crime-ridden city of Night City, going after a one-of-a-kind implant that is the key to immortality.",
     "summary": "Cyberpunk 2077 is an open-world action-adventure game set in Night City, a sprawling metropolis driven by power, glamour, and body modification. Players assume the role of V, a mercenary outlaw in pursuit of a unique implant that holds the key to immortality. The game allows extensive customization of cyberware, skills, and playstyle. Choices made throughout the journey influence both the narrative and the world.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 78.7440784507431,
     "total_rating_count": 1363
   },
@@ -71,21 +92,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coabe0.jpg"
     },
     "first_release_date": 1757894400,
+    "game_modes": [
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      },
+      {
+        "id": 5,
+        "name": "Massively Multiplayer Online (MMO)"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       },
       {
         "id": 24,
-        "name": "Tactical",
-        "slug": "tactical"
+        "name": "Tactical"
       }
     ],
     "hypes": 990,
@@ -97,6 +129,20 @@
       }
     ],
     "summary": "Arena Breakout: Infinite is an ultra-real immersive military simulation. Join a fight to shoot, loot, and raid your path to fortune.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 79.96854113307029,
     "total_rating_count": 93
   },
@@ -107,16 +153,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coa98y.jpg"
     },
     "first_release_date": 1733356800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      },
+      {
+        "id": 5,
+        "name": "Massively Multiplayer Online (MMO)"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 24,
-        "name": "Tactical",
-        "slug": "tactical"
+        "name": "Tactical"
       }
     ],
     "hypes": 894,
@@ -144,6 +206,16 @@
       }
     ],
     "summary": "Delta Force is a free-to-play multiplayer tactical first-person shooter reboot of the Delta Force series.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 77.34286122532018,
     "total_rating_count": 83
   },
@@ -154,31 +226,40 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coarsl.jpg"
     },
     "first_release_date": 1377820800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 5,
+        "name": "Massively Multiplayer Online (MMO)"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 13,
-        "name": "Simulator",
-        "slug": "simulator"
+        "name": "Simulator"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       }
     ],
     "hypes": 594,
@@ -191,6 +272,32 @@
     ],
     "storyline": "The hum of the fusion drive reverberates through the ship's hull. It reminds you that you should probably replace it soon. A quick check on the MobiGlas says there's an Aegis showroom on the planet you're heading to. Couldn't hurt to see what they got, right?\n\nWith the Credits you make delivering this cargo, you should be able to buy your ship a little treat. Besides, she's your bread and butter. You roll on your side and look out the window at the vast yawning space outside. A distant planet silently orbits a dying sun.",
     "summary": "Star Citizen is a sandbox open-world MMO \"SpaceSim\" by Cloud Imperium Games. Explore the 'verse, fight, trade, and more when you play Star Citizen!",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 90.57820310459292,
     "total_rating_count": 54
   },
@@ -201,21 +308,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co5pxn.jpg"
     },
     "first_release_date": 1732060800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 348,
@@ -236,6 +346,24 @@
     ],
     "storyline": "Yevhen \"Skif\" Martynenko, a veteran of the Ukrainian Marine Corps, has returned from a 3-year deployment in an unspecified conflict. He awakens to find his apartment has been destroyed by an anomaly that has mysteriously appeared outside of the Zone, leaving an unknown artifact in its wake. Looking to earn money for a new home, he is smuggled into the Zone by a scientist, Professor Hermann, along with a piece of technology called the 'Scanner' that creates local anomalies and can apparently \"recharge\" depleted artifacts. Venturing into the Zone, he finds his initial team he was to make contact with have been killed and sets out alone to use the Scanner in special coordinates where it works. On the third and successful attempt, he is interrupted by an investigation from soldiers of the faction called 'Ward', dedicated to controlling the Zone and stopping its expansion. The soldiers themselves are killed by an unknown third party, who steal Skif's belongings and knock him unconscious.\n\nSkif awakens and sets out to recover the Scanner and artifact, aided by a friendly loner named Richter. He finds himself on the trail of Solder, who sold him and the scientists the coordinates of where to place the Scanner, collaborating with either the local Stalkers or the Ward in the process. Following the trail, he is led to Scar, the protagonist of S.T.A.L.K.E.R.: Clear Sky, who leads an anarchistic faction called Spark that opposes the Ward and believes the Zone can be transformed into a utopian 'Shining Zone', as well as the Noontide faction, consisting of the formerly-brainwashed soldiers of the Monolith from previous games, who seek to make their own lives, having no memory of their pre-zone life or enslavement to the Monolith. They are divided between Strider, who aims to make the Zone a safer place, and Faust, who still preaches the original mindset of the Monolith.",
     "summary": "S.T.A.L.K.E.R. 2: Heart of Chornobyl is the unforgiving FPS survival adventure in a dark science-fiction open world. Scavenge for gear and resources, hunt for wonders, make hard decisions to survive and pave the path through the Chornobyl Anomalous Zone.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 84.35760560890178,
     "total_rating_count": 111
   },
@@ -246,11 +374,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coa5zt.jpg"
     },
     "first_release_date": 1760054400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       }
     ],
     "hypes": 336,
@@ -271,6 +408,16 @@
     ],
     "storyline": "The story of Battlefield 6 is set in 2027, where the collapse of NATO has led to the rise of a powerful private military corporation called Pax Armata. Players join the elite U.S. Marine Raiders unit, Dagger 1-3, as they fight against Pax Armata forces to prevent a new global conflict. The campaign spans multiple locations, uncovering a conspiracy while battling the corporation's destabilizing influence on the world.",
     "summary": "The ultimate all-out warfare experience. In a war of tanks, fighter jets, and massive combat arsenals, your squad is the deadliest weapon.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 78.7298365413302,
     "total_rating_count": 71
   },
@@ -281,16 +428,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co5ziw.jpg"
     },
     "first_release_date": 1592524800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 326,
@@ -307,6 +458,24 @@
     ],
     "storyline": "Five years after their dangerous journey across the post-pandemic United States, Ellie and Joel have settled down in Jackson, Wyoming. Living amongst a thriving community of survivors has allowed them peace and stability, despite the constant threat of the infected and other, more desperate survivors. When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry out justice and find closure. As she hunts those responsible one by one, she is confronted with the devastating physical and emotional repercussions of her actions.",
     "summary": "The Last of Us Part II is an action-adventure game set five years after the events of The Last of Us. The player traverses post-apocalyptic environments such as buildings and forests to advance the story. They can use firearms, improvised weapons, and stealth to defend against hostile humans and cannibalistic creatures infected by a mutated strain of the Cordyceps fungus. The game intermittently switches control between Ellie and Abby, and also briefly Joel in the opening sequence. The nimble nature of the player character introduces platforming elements, allowing the player to jump and climb to traverse environments and gain advantages during combat.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      }
+    ],
     "total_rating": 93.03547495190733,
     "total_rating_count": 1475
   },
@@ -317,26 +486,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1veb.jpg"
     },
     "first_release_date": 1617235200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      }
+    ],
     "genres": [
       {
         "id": 4,
-        "name": "Fighting",
-        "slug": "fighting"
+        "name": "Fighting"
       },
       {
         "id": 13,
-        "name": "Simulator",
-        "slug": "simulator"
+        "name": "Simulator"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       }
     ],
     "hypes": 282,
@@ -380,6 +555,20 @@
       }
     ],
     "summary": "A physics based medieval battle simulator which lets you pit wacky waving armies against each other. In Totally Accurate Battle Simulator you pit waving arm men against each other and watch them fight it out.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 27,
+        "name": "Comedy"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 73.30949884909276,
     "total_rating_count": 99
   },
@@ -390,21 +579,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1q1f.jpg"
     },
     "first_release_date": 1540512000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 257,
@@ -429,6 +629,20 @@
     ],
     "storyline": "America, 1899. The end of the wild west era has begun as lawmen hunt down the last remaining outlaw gangs. Those who will not surrender or succumb are killed.\n\nAfter a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.",
     "summary": "Red Dead Redemption 2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 31,
+        "name": "Drama"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 93.6623200769121,
     "total_rating_count": 3145
   },
@@ -439,11 +653,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coaufr.jpg"
     },
     "first_release_date": 1733443200,
+    "game_modes": [
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       }
     ],
     "hypes": 252,
@@ -468,6 +691,12 @@
     ],
     "storyline": "The merciless clash between tyrannical dictator Doctor Doom and his future counterpart from the year 2099 has forced countless universes to collide in the Timestream Entanglement, creating new worlds and crises unknown.\n\nNow, Super Heroes and Villains from across the multiverse must fight together and against one another as disparate groups each seek to best both Dooms before one achieves domination of these realities. Familiar faces become newfound foes while former enemies become the greatest of allies in Marvel Rivals!",
     "summary": "Marvel Rivals is a super hero team-based PvP shooter developed by NetEase Games! Assemble an all-star Marvel squad, devise countless strategies by combining powers to form unique Team-Up skills and fight in destructible, ever-changing battlefields across the continually evolving Marvel universe!",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      }
+    ],
     "total_rating": 77.18881673075268,
     "total_rating_count": 271
   },
@@ -478,16 +707,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coa9dq.jpg"
     },
     "first_release_date": 1754524800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 238,
@@ -508,6 +741,12 @@
     ],
     "storyline": "Uncover the origins of organized crime in Mafia: The Old Country, a gritty mob story set in the brutal underworld of 1900s Sicily. Fight to survive as Enzo Favara and prove your worth to the Cosa Nostra in this immersive third-person action-adventure set during a dangerous, unforgiving era.\n\nEnzo will do anything for a better life. After a brutal childhood of forced labor, he's ready to risk everything to become a man of honor in the Torrisi crime family.",
     "summary": "Mafia: The Old Country is an action-adventure game part of the Mafia series. It is a prequel to the first Mafia game. The game lets players descend into Sicily's criminal underworld during the 1900s.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      }
+    ],
     "total_rating": 79.06910468919955,
     "total_rating_count": 51
   },
@@ -518,16 +757,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co87cu.jpg"
     },
     "first_release_date": 1742428800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 234,
@@ -552,6 +795,24 @@
     ],
     "storyline": "Live the intertwined stories of Naoe, an adept shinobi Assassin from Iga Province, and Yasuke, the powerful African samurai of historical legend. Against the backdrop of the turbulent late Sengoku period, this remarkable duo will discover their common destiny as they usher in a new era for Japan.",
     "summary": "Experience an epic historical action-adventure story set in feudal Japan! Become a lethal shinobi Assassin and a powerful legendary samurai as you explore a beautiful open world in a time of chaos. Switch seamlessly between two unlikely allies as you discover their common destiny. Master complementary playstyles, create your shinobi league, customize your hideout, and usher in a new era for Japan.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 78.37491909327383,
     "total_rating_count": 95
   },
@@ -562,16 +823,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1qxr.jpg"
     },
     "first_release_date": 1586476800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 228,
@@ -596,6 +861,20 @@
     ],
     "storyline": "The world has fallen under the control of the Shinra Electric Power Company, a shadowy corporation controlling the planet’s very life force as mako energy.\n\nIn the sprawling city of Midgar, an anti-Shinra organization calling themselves Avalanche have stepped up their resistance. Cloud Strife, a former member of Shinra’s elite SOLDIER unit now turned mercenary, lends his aid to the group, unaware of the epic consequences that await him.",
     "summary": "A spectacular re-imagining of one of the most visionary games ever, Final Fantasy VII Remake rebuilds and expands the legendary RPG for today. The first game in this project is set in the eclectic city of Midgar and presents a fully standalone gaming experience.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 88.6138143931162,
     "total_rating_count": 467
   },
@@ -606,31 +885,40 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coacrk.jpg"
     },
     "first_release_date": 1470700800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 13,
-        "name": "Simulator",
-        "slug": "simulator"
+        "name": "Simulator"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       },
       {
         "id": 33,
-        "name": "Arcade",
-        "slug": "arcade"
+        "name": "Arcade"
       }
     ],
     "hypes": 226,
@@ -682,6 +970,28 @@
       }
     ],
     "summary": "Inspired by the adventure and imagination that we love from classic science-fiction, No Man's Sky presents you with a galaxy to explore, filled with unique planets and lifeforms, and constant danger and action.\n\nIn No Man's Sky, every star is the light of a distant sun, each orbited by planets filled with life, and you can go to any of them you choose. Fly smoothly from deep space to planetary surfaces, with no loading screens, and no limits. In this infinite procedurally generated universe, you'll discover places and creatures that no other players have seen before - and perhaps never will again.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 72.50383602700633,
     "total_rating_count": 596
   },
@@ -692,21 +1002,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coaend.jpg"
     },
     "first_release_date": 1756944000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       }
     ],
     "hypes": 220,
@@ -751,8 +1064,18 @@
     ],
     "storyline": "Play as Hornet, princess-protector of Hallownest, and adventure through a whole new kingdom ruled by silk and song! Captured and brought to this unfamiliar world, Hornet must battle foes and solve mysteries as she ascends on a deadly pilgrimage to the kingdom’s peak.",
     "summary": "Hollow Knight: Silksong is the epic sequel to Hollow Knight, the epic action-adventure of bugs and heroes. As the lethal hunter Hornet, journey to all-new lands, discover new powers, battle vast hordes of bugs and beasts and uncover ancient secrets tied to your nature and your past.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 91.53344921081685,
-    "total_rating_count": 226
+    "total_rating_count": 227
   },
   {
     "id": 25657,
@@ -761,21 +1084,36 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coa8q3.jpg"
     },
     "first_release_date": 1504656000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      },
+      {
+        "id": 5,
+        "name": "Massively Multiplayer Online (MMO)"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 204,
@@ -808,6 +1146,28 @@
     ],
     "storyline": "Humanity's last safe city has fallen to an overwhelming invasion force, led by Ghaul, the imposing commander of the brutal Red Legion. He has stripped the city's Guardians of their power and forced the survivors to flee.",
     "summary": "Dive into the world of Destiny 2 to explore the mysteries of the solar system and experience responsive first-person shooter combat. Unlock powerful elemental abilities and collect unique gear to customize your Guardian's look and playstyle. Enjoy Destiny 2’s cinematic story, challenging co-op missions, and a variety of PvP modes alone or with friends. Download for free today and write your legend in the stars.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 78.50086335997881,
     "total_rating_count": 611
   },
@@ -818,31 +1178,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co8kr5.jpg"
     },
     "first_release_date": 1512691200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       }
     ],
     "hypes": 199,
@@ -879,6 +1240,32 @@
     ],
     "storyline": "In Hello Neighbor, the player finds themselves moving into a new house across the street of a mysterious neighbor, Theodore Peterson, who seems to be keeping a secret in his basement. The player's task is to break into the neighbor's home and gather items needed to unlock the elusive basement door. As the player explores their creepy neighbor's house, they must try not to be spotted by Mr. Peterson, or they will be chased down and, if the player is not quick enough to escape, caught. If the player is caught, they are sent back to their own house and will have to break in again.",
     "summary": "Hello Neighbor is a stealth horror game about sneaking into your creepy neighbor's house to figure out what horrible secrets he's hiding in his basement. You play against an AI that adapts from your actions. Really enjoying climbing through that backyard window? Expect a bear trap there. Sneaking through the front door? There'll be cameras there soon. Trying to escape? Your neighbor will find a shortcut and catch you.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 20,
+        "name": "Thriller"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 27,
+        "name": "Comedy"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      }
+    ],
     "total_rating": 41.15518686740854,
     "total_rating_count": 94
   },
@@ -889,11 +1276,16 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co9b3o.jpg"
     },
     "first_release_date": 1747267200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       }
     ],
     "hypes": 197,
@@ -913,6 +1305,20 @@
       }
     ],
     "summary": "DOOM: The Dark Ages is the prequel to the critically acclaimed DOOM (2016) and DOOM Eternal that tells the epic cinematic origin story of the DOOM Slayer’s rage. Players will step into the blood-stained boots of the DOOM Slayer, in this never-before-seen dark and sinister medieval war against Hell.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 85.35288063312285,
     "total_rating_count": 96
   },
@@ -923,11 +1329,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1rdj.jpg"
     },
     "first_release_date": 1509580800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      },
+      {
+        "id": 4,
+        "name": "Split screen"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       }
     ],
     "hypes": 192,
@@ -948,6 +1371,20 @@
     ],
     "storyline": "On June 6, 1944, United States Army Private First Class Ronald \"Red\" Daniels of the 1st Infantry Division takes part in the storming of Normandy Beach with his squad, consisting of: Private First Class Robert Zussman, who is his best friend, Private Drew Stiles, Technician Fifth Grade Frank Aiello, Technical Sergeant William Pierson and First Lieutenant Joseph Turner. During the operation, Zussman is stabbed, keeping him on the sideline.\n\nZussman returns to duty to partake in Operation Cobra, where the Allied forces successfully push to reclaim the town of Marigny. The squad is ordered by Colonel Davis to conduct a joint operation with Special Operations Executive British officers Major Arthur Crowley and Vivian Harris to intercept a German train carrying V2 rockets, near Argentan. Daniels and Zussman derail the train, before being escorted back to their squad by a French Resistance leader named Rousseau.\n\nA week later, Rousseau and Crowley infiltrate a German garrison in Paris to retrieve explosives, in preparation of the squad's assault on the garrison. Midway, Rousseau kills SS-und Polizeiführer Heinrich, in retaliation for killing her family. The squad then successfully liberates Paris.\n\nTwo months later, the squad takes over a German-occupied hotel in the city of Aachen. They discover civilians inside the hotel, and Turner orders their evacuation, to Pierson's dismay. A young girl named Anna goes missing, and Daniels searches for her. German soldiers open fire on a truck carrying the civilians, killing Anna's older sister. Pierson sends the truck away without protection, creating a rift with Turner.\n\nAt the Battle of Hürtgen Forest, the platoon is ordered to take Hill 493. Turner splits the platoon into two groups; Pierson and Zussman are tasked with advancing towards the hill, while Turner and Daniels cover them until they can meet at the bottom. Turner's squad soon receives a transmission revealing that Pierson ordered an attack on the hill against Turner's orders. The platoon destroys an artillery position but the Germans counter-attack with a Tiger II tank. Daniels is knocked out trying to disable the tank, which is destroyed by tank commander Staff Sergeant Augustine Pérez. Turner is fatally wounded rescuing Daniels, and orders Daniels to abandon him while he covers the platoon's escape. Pierson becomes head of the platoon and makes Daniels his second-in-command, promoting him to Corporal.\n\nAt the height of the Battle of the Bulge, the platoon is surrounded by Germans. Daniels meets an African-American technician, Howard, who helps the platoon contact air support. The platoon captures several German soldiers and discovering that the Germans were ordered to destroy a bridge at Remagen, the last bridge over the Rhine. After destroying the explosives in transit, Pierson orders the platoon to attack a nearby air base to destroy the remaining explosives. The attack fails, resulting in Daniels and Zussman surrounded by enemy troops. Daniels is saved by Howard, while Zussman is captured and taken to a German POW camp, Stalag IX-B. In Stalag IX-B, Zussman is interrogated on his Jewish heritage by SS officer Metz, then beaten and sent to a POW labor camp. Daniels is hospitalized due to his wounds.\n\nIn the hospital, Daniels learns from Davis about the events that changed Pierson in the Battle of Kasserine Pass. After recovering, Daniels confronts Pierson in his tent and tears up his honorable discharge papers in order to rejoin the platoon. They successfully capture the last bridge over the Rhine. The platoon heads into Germany, liberating concentration camps in search for Zussman, eventually reaching the Berga labor camp, which they find abandoned. The camp's survivors were sent on a death march. Daniels finds and saves Zussman by killing Metz before he can execute him.\n\nAt the end of the war, Daniels parts ways with his platoon and returns to Texas, reuniting with his wife and newborn son. Daniels names his son Joseph Turner to honor the late lieutenant. He visits the grave of his older brother, Paul, who died fighting off a wolf to protect Red when the latter was still a kid. He places his Bronze Star medal on the grave, saying that his brother deserves it for showing him what it means to be a hero.",
     "summary": "Call of Duty: WWII creates the definitive World War II next generation experience across three different game modes: Campaign, Multiplayer, and Co-Operative. Featuring stunning visuals, the Campaign transports players to the European theater as they engage in an all-new Call of Duty story set in iconic World War II battles. Multiplayer marks a return to original, boots-on-the ground Call of Duty gameplay. Authentic weapons and traditional run-and-gun action immerse you in a vast array of World War II-themed locations. The Co-Operative mode unleashes a new and original story in a standalone game experience full of unexpected, adrenaline-pumping moments.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 74.82243912666655,
     "total_rating_count": 572
   },
@@ -958,16 +1395,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co4aqi.jpg"
     },
     "first_release_date": 1518480000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 187,
@@ -992,6 +1433,28 @@
     ],
     "storyline": "\"The years is 1403, the region Bohemia, located in the heart of Europe, rich in culture, silver and sprawling castles. The game is based on a true story – a story of kings, heirs, a kingdom, castle sieges and bloody battles.\n\nThe King is dead and his eldest son Wenceslas IV becomes the new King of Bohemia.\n\nWenceslas’s enraged half-brother Sigismund imprisons Wenceslas and invades the country with his mighty army. Unfortunately, in the midst of this chaos, your character Henry suffers. The mercenary army destroys your home and kills your family, you are the sole survivor of the bloodbath and it is here that your road to redemption starts. Enjoy the detailed reconstruction of the 15th century landscape. Use weapons that were used by knights. Take part in epic historical battles that happened in Middle Europe and in castle sieges!\"",
     "summary": "Story-driven open-world RPG that immerses you in an epic adventure in the Holy Roman Empire. Avenge your parents' death as you battle invading forces, go on game-changing quests, and make influential choices. Explore castles, forests, villages and other realistic settings in medieval Bohemia!",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 76.35103624055611,
     "total_rating_count": 404
   },
@@ -1002,16 +1465,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co65yk.jpg"
     },
     "first_release_date": 1643846400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 181,
@@ -1040,6 +1515,24 @@
     ],
     "storyline": "It’s been 15 years since humanity lost to the virus.\n\nThe last great human settlement exists within an unforgiving, infected world, plunged into a modern dark age. During the day, bandits, factions and starving survivors roam the streets scavenging for scraps - or someone to take them from, by violence if necessary. At night the infected roam free, evacuating their dark hideouts to prey on the living.\n\nYou are Aiden Caldwell, an infected survivor. Your exceptional agility and brutal combat skills make you a powerful ally and a valuable commodity in this dangerous world. You can achieve things no one else can. Enter places no one else dares. With your unique abilities you have the power to be an agent of change within this decaying metropolis.",
     "summary": "The last great human settlement exists within an unforgiving, infected world. Exceptional agility and combat skills make you a powerful ally and a valuable commodity. With your unique abilities you have the power to be an agent of change within this decaying metropolis. Use it wisely.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 74.14227802051846,
     "total_rating_count": 193
   },
@@ -1050,21 +1543,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co8h3y.jpg"
     },
     "first_release_date": 1724112000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 180,
@@ -1084,6 +1580,16 @@
       }
     ],
     "summary": "Black Myth: Wukong is an action RPG rooted in Chinese mythology. The story is based on Journey to the West, one of the Four Great Classical Novels of Chinese literature. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 88.66007839453204,
     "total_rating_count": 185
   },
@@ -1094,16 +1600,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1rse.jpg"
     },
     "first_release_date": 1621900800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 180,
@@ -1136,6 +1646,16 @@
     ],
     "storyline": "\"A plague is ruining the land and the Tree-of-Life is bleeding death from its roots. The Tribes stand divided, in need of someone strong enough to unite them or bring them all down…\"",
     "summary": "Biomutant is an open-world, post-apocalyptic Kung-Fu fable RPG, with a unique martial arts styled combat system allowing you to mix melee, shooting and mutant ability action. A plague is ruining the land and the Tree-of-Life is bleeding death from its roots. The Tribes stand divided. Explore a world in turmoil and define its fate, will you be its savior or lead it to an even darker destiny?",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 66.08938432523215,
     "total_rating_count": 91
   },
@@ -1146,16 +1666,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coaarl.jpg"
     },
     "first_release_date": 1431993600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 179,
@@ -1188,6 +1712,20 @@
     ],
     "storyline": "The Witcher 3: Wild Hunt concludes the story of the witcher Geralt of Rivia, the series' protagonist, whose story to date has been covered in the previous installments. Geralt's new mission comes in dark times as the mysterious and otherworldly army known as the Wild Hunt invades the Northern Kingdoms, leaving only blood soaked earth and fiery ruin in its wake; and it seems the Witcher is the key to stopping their cataclysmic rampage.",
     "summary": "The Witcher 3: Wild Hunt is an open-world action role-playing game developed by CD Projekt Red.\n\nSet in a dark fantasy world, the game follows Geralt of Rivia, a monster hunter searching for his adopted daughter, Ciri, while navigating political conflicts and supernatural threats. Gameplay features exploration, combat, character progression, and branching narratives shaped by player choices. Widely acclaimed for its writing, world-building, and depth, it is considered one of the most influential RPGs of its generation.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 92.86731008820567,
     "total_rating_count": 4875
   },
@@ -1198,21 +1736,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co39vk.jpg"
     },
     "first_release_date": 1490054400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 177,
@@ -1233,6 +1782,16 @@
     ],
     "storyline": "Mass Effect: Andromeda starts around 2185, as the Andromeda Initiative embarked on an ambitious goal to settle the Andromeda galaxy by traveling in large vessels known as arks. A coalition of Milky Way races — which includes humans, asari, turians, salarians and the krogan — participates in this 600-year expedition and placed in cryostasis to ensure that they do not age during the trip. Prior to the journey, the Initiative had identified 'golden worlds' in Andromeda's Heleus cluster, locations that are deemed highly viable for habitation. Each ark consists of a team that are led by a Pathfinder who is tasked to explore and ensure these worlds or any other potential locations are hospitable before settlement can begin.",
     "summary": "A new adventure awaits in the Mass Effect universe. With stunning visuals and a new galaxy to discover, BioWare delivers the next generation of space exploration.\n\nCommander Shepard's story may be over, but there are many more stories to tell in the Mass Effect universe. Mass Effect Andromeda will be set in a new galaxy, with new characters, new quests and a whole load of new consequence-laden decisions to make.\n\nMass Effect: Andromeda takes you to the Andromeda galaxy, far beyond the Milky Way. There, you'll lead our fight for a new home in hostile territory - where WE are the aliens.\n\nPlay as the Pathfinder - a leader of a squad of military-trained explorers - with deep progression and customisation systems. This is the story of humanity’s next chapter, and your choices throughout the game will ultimately determine our survival in the Andromeda Galaxy.\n\nAs you unfold the mysteries of the Andromeda Galaxy and the hope for humanity lies on your shoulders – You must ask yourself… How far will you go?\n\nKey Features:\n\nReturn to the Mass Effect universe. Lead the first humans in Andromeda on a desperate search for our new home. In this new chapter of Mass Effect, meet and recruit all-new, interesting characters caught up in an epic space saga filled with mystery and galactic conflict.\n\nFight for survival. Battle with your Pathfinder team against terrifying enemies and creatures. New additions like destructible environments, boosted jumps for added verticality, and all-new weapons and Biotics make combat more thrilling than ever.\n\nBuild your hero. Create a formidable hero with amazing weapons, powers and tech. A much more flexible skill and weapon progression tree means you can replicate your play style to make you unstoppable against new, powerful alien enemies.\n\nExplore a new galaxy. Chart your own course in a dangerous new region. Unravel the mysteries of the Andromeda galaxy as you discover rich, alien worlds in the search for humanity’s new home.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 71.80605418647319,
     "total_rating_count": 531
   },
@@ -1243,16 +1802,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2gvu.jpg"
     },
     "first_release_date": 1645142400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 173,
@@ -1273,6 +1836,20 @@
     ],
     "storyline": "Aloy treks into an arcane region and faces with new hostile enemies and threat in the search for the cause of a mysterious, dangerous blight.",
     "summary": "Horizon Forbidden West continues Aloy’s story as she moves west to a far-future America to brave a majestic, but dangerous frontier where she’ll face awe-inspiring machines and mysterious new threats.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 88.7185553540574,
     "total_rating_count": 331
   },
@@ -1283,21 +1860,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co5vq8.jpg"
     },
     "first_release_date": 1573171200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 172,
@@ -1314,6 +1894,28 @@
     ],
     "storyline": "Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world one step at a time.\n\nWith spectral creatures plaguing the landscape, and humanity on the verge of a mass extinction, it’s up to Sam to journey across the ravaged continent and save mankind from impending annihilation.\n\nWhat is the mystery of the Death Stranding? What will Sam discover on the road ahead? An unprecedented gameplay experience holds these answers and more.",
     "summary": "Death Stranding is an action game set in a post-apocalyptic United States.\n\nPlayers control Sam Porter Bridges, a courier tasked with reconnecting isolated cities via a communication network while delivering essential cargo. The gameplay blends traversal, resource management, and narrative elements, with a focus on social connectivity through asynchronous multiplayer. It is known for its unique mechanics, atmospheric world, and philosophical themes.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 85.39349732353745,
     "total_rating_count": 805
   },
@@ -1324,21 +1926,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2edq.jpg"
     },
     "first_release_date": 1599177600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 168,
@@ -1371,6 +1984,16 @@
     ],
     "storyline": "Marvel’s Avengers begins at A-Day, as San Francisco celebrates the opening of an Avengers West Coast Headquarters and an all-new helicarrier, powered by new experimental technology. The day turns tragic when a terrible accident results in mass destruction. Blamed for the tragedy, the Avengers disband.\n\nIron Man, Hulk, Black Widow, and Thor blame themselves for the mass devastation and the loss of Captain America. In the five years following A-Day, the team’s absence has devastating consequences worldwide. A new organization has risen - Advanced Idea Mechanics, otherwise known as AIM. AIM believes that science – not Super Heroes – is the key to protecting the world.\n\nA teenager Kamala finds herself developing extraordinary polymorphic and healing powers as a direct result of exposure to Terrigen Mists during the A-day incident. With the Avengers disbanded and Advanced Idea Mechanics turning public sentiment against Super Heroes, Kamala hides her abilities from the world.\n\nKamala’s unwavering loyalty to the Avengers, intelligence, inquisitive nature, and ever-optimistic personality lead to a huge discovery when she uncovers a shocking conspiracy. As Kamala learns to harness and embrace her powers, she finds the will and the way to reassemble Earth’s Mightiest Heroes.",
     "summary": "Marvel’s Avengers is an action-adventure game developed by Crystal Dynamics and published by Square Enix in 2020. It features both a single-player campaign and multiplayer missions, combining narrative-driven gameplay with cooperative online play. The story follows Kamala Khan as she reunites the Avengers after a catastrophic event. Players can control multiple heroes, each with unique abilities and skill trees.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 66.42060636453286,
     "total_rating_count": 159
   },
@@ -1381,21 +2004,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co8gj5.jpg"
     },
     "first_release_date": 1730332800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 165,
@@ -1416,6 +2042,16 @@
     ],
     "storyline": "Rise as Rook, Dragon Age’s newest hero. Be who you want to be and play how you want to play as you fight back and lead your team of seven companions, each with their own rich story. Together, you will become the Veilguard.",
     "summary": "Select from different races and combat classes, customize your appearance, choose your character’s backstory and begin your journey as Rook, Dragon Age’s newest hero.\n\nSelect from three classes (Warrior, Mage, and Rogue), each with two distinct weapon types and unique abilities you can select between mid-combat. Experience new strategic depth as you combine fast-paced attacks, parries, and dodges with the companion ability wheel to exploit enemy weaknesses and seize victory with devastating combat combos.\n\nThe Veilguard contains several different factions, any of these could prove to be important ally during the story. Your faction choice will influence Rook's backstory, conversation options and more.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 80.19882218878587,
     "total_rating_count": 123
   },
@@ -1426,31 +2062,44 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1yvf.jpg"
     },
     "first_release_date": 1457308800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      },
+      {
+        "id": 5,
+        "name": "Massively Multiplayer Online (MMO)"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       },
       {
         "id": 24,
-        "name": "Tactical",
-        "slug": "tactical"
+        "name": "Tactical"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 163,
@@ -1471,8 +2120,34 @@
     ],
     "storyline": "A devastating pandemic sweeps through New York City, and one by one, basic services fail. In only days, without food or water, society collapses into chaos. The Division, a classified unit of self-supported tactical agents, is activated. Leading seemingly ordinary lives among us, Division agents are trained to operate independently in order to save society. When society falls, your mission begins.",
     "summary": "Tom Clancy’s The Division is a revolutionary experience that combines robust RPG customization with tactical action combat. There’s never been a better time to jump in and join the fight to save NYC.\n\nJoin other agents to combat the outbreak in Manhattan across a wide-range of story missions and open-world activities.\n\nEnter the Dark Zone to earn high-level gear and face off against other players. Just be sure to watch your back.\n\nCustomize your agent, get cutting-edge gear, build a unique arsenal to gain an edge on Manhattan’s deadliest inhabitants.",
-    "total_rating": 76.69194016663243,
-    "total_rating_count": 403
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
+    "total_rating": 76.69213425405964,
+    "total_rating_count": 404
   },
   {
     "id": 36950,
@@ -1481,21 +2156,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2n94.jpg"
     },
     "first_release_date": 1550793600,
+    "game_modes": [
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 161,
@@ -1516,6 +2198,16 @@
     ],
     "storyline": "A famed Freelancer named Haluk rallies an army of Freelancers to enter the Heart of Rage and deactivate the Cenotaph. Among them is the player's unnamed character, a rookie undertaking their first mission. Accompanying them is Faye, Haluk's own wife and Cypher. Shortly into the mission, all the other Freelancers are killed, prompting Faye to call a retreat, with the player evacuating a wounded Haluk. The resounding failure causes people to lose faith in the Freelancers, whose ranks are now decimated.\n\nTwo years later, the player has settled in Fort Tarsis, a frontier city between The Heart of Rage and Antium, Bastion’s capital. Partnered with a young Cypher named Owen, they make a living completing modest Freelancer contracts for the locals. Owen aspires to be a Freelancer, despite his psychic abilities being a hindrance to piloting a Javelin.\n\nAn agent of Corvus named Tassyn hires the player to locate a spy who went missing while undercover with a smuggling gang called the Regulators. At a devastated Regulator hideout, they encounter a Dominion leader called The Monitor. The Monitor is a powerful Cypher, a skilled Javelin pilot, and participated in the assault on Freemark that created the Heart of Rage. The Monitor executes Tassyn's spy and takes a Shaper relic that they were hiding. Tassyn surmises that The Dominion is collecting relics for another attempt to reach the Cenotaph, and rehires the player to reach the Cenotaph first. She also notes that Haluk and Faye have spent the past two years developing a new plan to deactivate the Cenotaph, recruiting the pair to Tassyn's mission.\n\nFaye and Haluk believe that the only Javelin able to survive the Heart of Rage is General Tarsis’s legendary Javelin of Dawn. Using clues found in the tombs of Tarsis’s Legionnaires, they locate Tarsis’s secret tomb. Within her tomb, the player's obtains Taris's signet, which acts as a key to the Fortress of Dawn- the site of Tarsis's last stand and the Javelin of Dawn's resting place. At the Temple of Dawn, the player is challenged by trials of skill and resolve. After reenacting Tarsis’s last stand, an apparition of General Tarsis declares the player to possess the qualities of a Legionnaire of Dawn and grants access to her Javelin. Before the player can take possession of the Javelin of Dawn, their own Javelin freezes up. Owen appears and takes credit for sabotaging their Javelin so he can take the Javelin of Dawn for himself. He plans to accept The Monitor's offer to spare Fort Tarsis in exchange for assisting him with the Javelin of Dawn, and accuses the player of keeping him from his dream to be a Freelancer. Before Owen leaves in the Javelin of Dawn, Faye scans its unique shielding module, the Shield of Dawn, hoping that it can be duplicated so the player can enter the Heart of Rage with their own Javelin.\n\nHaluk and Faye succeed in building a copy of the Shield of Dawn, but are unable to activate it. At the same time, Tassyn arrives to announce that The Dominion are nearing the Heart of Rage. Tassyn also reveals that she hired the player at Faye's own request in order to replace Haluk's role as a Javelin pilot. Upset, Haluk flies his Javelin to the Fortress of Dawn to find a way to activate the Shield of Dawn, but is ambushed by The Dominion. The player arrives to find that Haluk was saved by Owen, who apologizes for his betrayal. As a peace offering, Owen gives up his own Shield of Dawn before leaving.\n\nAfter activating the Shield of Dawn on their Javelin, the player returns to the Heart of Rage, with Faye and Haluk providing remote support. The player discovers that The Monitor has used the conduit to merge with the Anthem, and is forced to fight him. After The Monitor dies, Faye uses her powers to deactivate the Cenotaph and close the Heart of Rage.\n\nWhile celebrating in Fort Tarsis, the player is pulled away by Tassyn to see the corpse of a Urgoth recently discovered and killed inside of Bastion's borders. Suspecting another crisis, the player is asked to be ready to help again.",
     "summary": "Anthem is a shared-world action RPG, where players can delve into a vast landscape teeming with amazing technology and forgotten treasures. This is a world where Freelancers are called upon to defeat savage beasts, ruthless marauders, and forces plotting to conquer humanity.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 61.68505584225773,
     "total_rating_count": 145
   },
@@ -1526,16 +2218,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co7nbb.jpg"
     },
     "first_release_date": 1739836800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 160,
@@ -1552,6 +2248,16 @@
     ],
     "storyline": "You are the envoy of Aedyr, a distant land, sent to investigate rumors of a spreading plague throughout the Living Lands - an island full of mysteries and secrets, danger and adventure, and choices and consequences, and untamed wilderness. You discover a personal connection to the Living Lands and an ancient secret that threatens to destroy everything. Can you save this unknown frontier and your soul from the forces threatening to tear them asunder?",
     "summary": "Welcome to the Living Lands, a mysterious island filled with adventure and danger.\n\nSet in the fictional world of Eora that was first introduced to players in the Pillars of Eternity franchise, Avowed is a first-person fantasy action RPG from the award-winning team at Obsidian Entertainment.\n\nThe Living Lands is a place that feels foreign yet somewhat intrinsic to you as it feels the island itself is calling out to you for help. Explore an island home to many different environments and landscapes, each with their own unique ecosystem.\n\nMix and match swords, spells, guns, and shields to fight your way. Dig into your grimoire for spells to trap, freeze or burn enemies, bash them with your shield, or use range bows to attack from a distance.\n\nCompanions from a spread of species will fight alongside you, with their own unique set of abilities. From a former mercenary to an eccentric wizard, they will be part of your journey with your choices shaping them as you help them with their quests.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 80.96286959333713,
     "total_rating_count": 64
   },
@@ -1562,16 +2268,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co28r2.jpg"
     },
     "first_release_date": 1465257600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      }
+    ],
     "genres": [
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 153,
@@ -1591,6 +2305,20 @@
       }
     ],
     "summary": "Mirror's Edge Catalyst is an action-adventure game and the reboot to Mirror's Edge. The story in the game explores the past of the protagonist Faith. Like in the previous game, the main gameplay in Mirror's Edge Catalyst involves traversing the city using parkour to reach certain objectives. Unlike the linear levels in Mirror's Edge, Mirror's Edge Catalyst features an open-world free-roaming environment. Combat has been overhauled and emphasized compared to the first game and Catalyst no longer allows the player to use weapons, instead focusing on melee attacks.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 20,
+        "name": "Thriller"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 69.24719560869866,
     "total_rating_count": 310
   },
@@ -1601,16 +2329,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2dto.jpg"
     },
     "first_release_date": 1638921600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 151,
@@ -1630,6 +2370,24 @@
       }
     ],
     "summary": "The Master Chief returns in Halo Infinite – the next chapter of the legendary franchise. When all hope is lost and humanity’s fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he’s ever faced. Step inside the armor of humanity’s greatest hero to experience an epic adventure and explore the massive scale of the Halo ring.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 84.31124033764411,
     "total_rating_count": 274
   },
@@ -1640,26 +2398,36 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co5469.jpg"
     },
     "first_release_date": 1682035200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 150,
@@ -1691,6 +2459,28 @@
       }
     ],
     "summary": "Dead Island 2 is a survival horror first-person shooter set in a zombie apocalypse in Los Angeles. Players explore an open world, gathering resources, interacting with survivors, and battling swarms of zombies in fast-paced combat. Set fifteen years after the events of Dead Island: Riptide, the game features a new cast of characters and narrative, while maintaining the series’ signature blend of brutal melee action and immersive environments.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 27,
+        "name": "Comedy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 71.54808631231724,
     "total_rating_count": 124
   },
@@ -1701,16 +2491,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co3p2d.jpg"
     },
     "first_release_date": 1488499200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 142,
@@ -1727,6 +2521,28 @@
     ],
     "storyline": "Link is awakened in a room by a voice calling him and learns that he has been asleep for 100 years after failing to stop a monster called Calamity Ganon. Although the monster is being held in Hyrule Castle by Princess Zelda, Calamity Ganon's power continues to grow and if not stopped he will eventually break free with enough power to destroy the entire world. Link embarks on his quest to defeat Calamity Ganon and save Hyrule and Zelda.",
     "summary": "The Legend of Zelda: Breath of the Wild is the first 3D open-world game in the Zelda series. Link can travel anywhere and be equipped with weapons and armor found throughout the world to grant him various bonuses. Unlike many games in the series, Breath of the Wild does not impose a specific order in which quests or dungeons must be completed. While the game still has environmental obstacles such as weather effects, inhospitable lands, or powerful enemies, many of them can be overcome using the right method. A lot of critics ranked Breath of the Wild as one of the best video games of all time.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 95.12302069316014,
     "total_rating_count": 2693
   },
@@ -1737,16 +2553,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coaav6.jpg"
     },
     "first_release_date": 1675987200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 141,
@@ -1783,6 +2603,20 @@
     ],
     "storyline": "Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart. You have received a late acceptance to the Hogwarts School of Witchcraft and Wizardry and soon discover that you are no ordinary student: you possess an unusual ability to perceive and master Ancient Magic. Only you can decide if you will protect this secret for the good of all, or yield to the temptation of more sinister magic.",
     "summary": "Hogwarts Legacy is an immersive, open-world action RPG set in the world first introduced in the Harry Potter books. Now you can take control of the action and be at the center of your own adventure in the wizarding world. Embark on a journey through familiar and new locations as you explore and discover fantastic beasts, customize your character and craft potions, master spell casting, upgrade talents, and become the wizard you want to be. Discover the feeling of living at Hogwarts as you make allies, battle Dark wizards, and ultimately decide the fate of the wizarding world. Your legacy is what you make of it.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 82.46318922038245,
     "total_rating_count": 529
   },
@@ -1793,16 +2627,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co9nh7.jpg"
     },
     "first_release_date": 1724976000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 139,
@@ -1826,6 +2664,20 @@
       }
     ],
     "summary": "Experience the first-ever open world Star Wars game, set between the events of The Empire Strikes Back and Return of the Jedi. Explore distinct planets across the galaxy, both iconic and new. Risk it all as Kay Vess, an emerging scoundrel seeking freedom and the means to start a new life, along with her companion Nix. Fight, steal, and outwit your way through the galaxy’s crime syndicates as you join the galaxy’s most wanted.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 77.54811776963211,
     "total_rating_count": 70
   },
@@ -1836,21 +2688,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co39vv.jpg"
     },
     "first_release_date": 1693958400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 136,
@@ -1866,6 +2721,24 @@
       }
     ],
     "summary": "In this next generation role-playing game set amongst the stars, create any character you want and explore with unparalleled freedom as you embark on an epic journey to answer humanity’s greatest mystery.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 80.93671878637537,
     "total_rating_count": 319
   },
@@ -1876,21 +2749,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co7nbc.jpg"
     },
     "first_release_date": 1733702400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 132,
@@ -1915,6 +2791,16 @@
     ],
     "storyline": "The year is 1937, sinister forces are scouring the globe for the secret to an ancient power connected to the Great Circle, and only one person can stop them - Indiana Jones.",
     "summary": "Uncover one of history’s greatest mysteries in Indiana Jones and the Great Circle, a first-person, single-player adventure set between the events of Raiders of the Lost Ark and The Last Crusade. You’ll become the legendary archaeologist in this cinematic action-adventure game from MachineGames, the award-winning studio behind the recent Wolfenstein series, and executive produced by Hall of Fame game designer Todd Howard.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      }
+    ],
     "total_rating": 88.7942343530682,
     "total_rating_count": 172
   },
@@ -1925,16 +2811,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co9gam.jpg"
     },
     "first_release_date": 1745452800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 131,
@@ -1955,8 +2845,18 @@
     ],
     "storyline": "“Year by year, She erases us.”\n\nOnce a year, the Paintress wakes and paints upon her monolith. Paints her cursed number. And everyone of that age turns to smoke and fades away. Year by year, that number ticks down and more of us are erased. Tomorrow she’ll wake and paint “33.” And tomorrow we depart on our final mission - Destroy the Paintress, so she can never paint death again.\n\nWe are Expedition 33.",
     "summary": "Lead the members of Expedition 33 on their quest to destroy the Paintress so that she can never paint death again. Explore a world of wonders inspired by Belle Époque France and battle unique enemies in this turn-based RPG with real-time mechanics.",
-    "total_rating": 90.03337480701467,
-    "total_rating_count": 471
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
+    "total_rating": 90.03375214305053,
+    "total_rating_count": 472
   },
   {
     "id": 19561,
@@ -1965,16 +2865,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co94bn.jpg"
     },
     "first_release_date": 1556236800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 131,
@@ -1991,6 +2895,28 @@
     ],
     "storyline": "Deacon St. John, a former outlaw and drifter, searches for purpose in a world ravaged by a pandemic that has turned much of humanity into mindless, violent creatures called Freakers. Driven by the hope that his wife, Sarah, may still be alive, he navigates the dangers of the Pacific Northwest, facing hostile factions, freakish threats, and his own haunting memories. As he fights for survival, Deacon forms new alliances, confronts his past, and seeks answers about his wife’s fate, uncovering harsh truths about resilience and loss in a world on the edge.",
     "summary": "Days Gone is an open-world action-adventure game developed by Bend Studio and published by Sony Interactive Entertainment. Released in April 2019 for PlayStation 4 and later for PC in May 2021, the game is set in a post-apocalyptic world where players control Deacon St. John, a drifter and bounty hunter navigating a landscape overrun by \"Freakers,\" zombie-like creatures created by a global pandemic.\n\nThe gameplay focuses on exploration, combat, and survival elements, with players able to use various weapons, craft supplies, and upgrade Deacon’s motorcycle, essential for travelling across the vast and hostile environment. Days Gone combines narrative-driven missions with an open world filled with dynamic events, enemy camps, and environmental challenges.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 77.1315751295385,
     "total_rating_count": 541
   },
@@ -2001,11 +2927,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co3p5n.jpg"
     },
     "first_release_date": 1584576000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       }
     ],
     "hypes": 124,
@@ -2041,6 +2976,28 @@
       }
     ],
     "summary": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 85.51249420814068,
     "total_rating_count": 670
   },
@@ -2051,21 +3008,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2crj.jpg"
     },
     "first_release_date": 1594944000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 117,
@@ -2078,6 +3038,28 @@
     ],
     "storyline": "The year is 1274. Samurai warriors are the legendary defenders of Japan — until the fearsome Mongol Empire invades the island of Tsushima, wreaking havoc and conquering the local population. As one of the last surviving samurai, you rise from the ashes to fight back. But, honorable tactics won’t lead you to victory. You must move beyond your samurai traditions to forge a new way of fighting — the way of the Ghost — as you wage an unconventional war for the freedom of Japan.",
     "summary": "Uncover the hidden wonders of Tsushima in this open-world action adventure. Forge a new path and wage an unconventional war for the freedom of Tsushima. Challenge opponents with your katana, master the bow to eliminate distant threats, develop stealth tactics to ambush enemies in order to win over the mongols.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 31,
+        "name": "Drama"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 90.35378183221974,
     "total_rating_count": 880
   },
@@ -2088,21 +3070,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co8qmv.jpg"
     },
     "first_release_date": 1738627200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 13,
-        "name": "Simulator",
-        "slug": "simulator"
+        "name": "Simulator"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 115,
@@ -2123,6 +3108,20 @@
     ],
     "storyline": "You are Henry of Skalitz – an ordinary man doing extraordinary things – caught in a gripping tale of revenge, betrayal and discovery as he embarks on an epic journey, 'from a humble blacksmith's forge to the court of Kings', as he searches for purpose in this beautiful but brutal medieval world.",
     "summary": "A thrilling story-driven action RPG, with a rich open world, set in 15th century Medieval Europe. Experience the ultimate medieval adventure - through the eyes of young Henry - as you embark on a journey of epic proportions.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 92.35360499591454,
     "total_rating_count": 119
   },
@@ -2133,16 +3132,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co9wy4.jpg"
     },
     "first_release_date": 1758758400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 114,
@@ -2163,6 +3166,16 @@
     ],
     "storyline": "In 1960s Japan, Shimizu Hinako's secluded town of Ebisugaoka is consumed by a sudden fog, transforming her home into a haunting nightmare.\n\nAs the town falls silent and the fog thickens, Hinako must navigate the twisted paths of Ebisugaoka, solving complex puzzles and confronting grotesque monsters to survive.",
     "summary": "Hinako's hometown is engulfed in fog, driving her to fight grotesque monsters and solve eerie puzzles. Uncover the disturbing beauty hidden in terror.\n\nSilent Hill f is set in 1960s Japan featuring a beautiful, yet horrifying world.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      }
+    ],
     "total_rating": 78.90729134270325,
     "total_rating_count": 60
   },
@@ -2173,16 +3186,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coaroh.jpg"
     },
     "first_release_date": 1550188800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 110,
@@ -2223,6 +3240,28 @@
     ],
     "storyline": "The year is 2036. A quarter-century after nuclear war devastated the earth, a few thousand survivors still cling to existence beneath the ruins of Moscow, in the tunnels of the Metro. They have struggled against the poisoned elements, fought mutated beasts and paranormal horrors, and suffered the flames of civil war. But now, as Artyom, you must flee the Metro and lead a band of Spartan Rangers on an incredible, continent-spanning journey across post-apocalyptic Russia in search of a new life in the East.",
     "summary": "Metro Exodus is an epic, story-driven first person shooter from 4A Games that blends deadly combat and stealth with exploration and survival horror in one of the most immersive game worlds ever created. Explore the Russian wilderness across vast, non-linear levels and follow a thrilling story-line that spans an entire year through spring, summer and autumn to the depths of nuclear winter. Inspired by the novels of Dmitry Glukhovsky, Metro Exodus continues Artyom’s story in the greatest Metro adventure yet.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      }
+    ],
     "total_rating": 83.2991144190814,
     "total_rating_count": 602
   },
@@ -2233,21 +3272,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1tpy.jpg"
     },
     "first_release_date": 1548374400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 110,
@@ -2272,6 +3314,24 @@
     ],
     "storyline": "Through countless adventures across many worlds in his long battle against the darkness, Sora, once a little boy who only dreamed worlds beyond his island even existed, has grown up to a dashing young man. Now he is realizing that that battle has played out exactly as Master Xehanort had planned, and the second Keyblade War, the final struggle between light and dark, looms ahead. To counter the overwhelming darkness, Sora and his friends must gather the seven guardians of light. His best friend Riku and King Mickey seek out a battle-scarred Keyblade wielder, while Sora, Donald, and Goofy set off on a journey to find “the Key to Return Hearts.” Never-before-featured Disney worlds set the stage for another daring adventure to save the universe!\n\nChosen by the Keyblade, he is the one whose heart’s light never fails to shine as a beacon of hope.\n\nSora, the brave hero chosen by the Keyblade, has always had a strong sense of justice. Through his many battles against darkness, he has grown and learned about the world immensely. Drawn to his light, many friends have lent him their support and granted him their powers to counter the darkness: Riku, the childhood friend he grew up with on Destiny Islands; Donald and Goofy, the two brave comrades with whom he has shared his adventures from the very beginning; and King Mickey, who gives Sora his unfailing support. As the world becomes enveloped in another battle against darkness, the Keyblade wielder and his friends must rise up against Master Xehanort and thwart his plot to incite another Keyblade War.",
     "summary": "Kingdom Hearts III is the third main installment in the Kingdom Hearts series developed and published by Square Enix. It was initially released January 2019 for the PlayStation 4 and the Xbox One. An expansion, Kingdom Hearts III Re Mind was released in January 2020.\n\nThe story takes place after the events of Kingdom Hearts 3D: Dream Drop Distance. It features an older Sora as the main protagonist, who sets forth on a new adventure to search for seven guardians of light in an attempt to stop Xehanort from bringing about a second Keyblade War. Sora is joined by Donald Duck, Goofy, Mickey Mouse, Riku, Kairi, and others. Along the way, Sora travels to many worlds from Disney and Pixar intellectual properties, and cross paths with the real Organization XIII.\n\nKingdom Hearts III features hack and slash combat reminiscent of Kingdom Hearts II, with elements from later handheld entries, allowing the player to control Sora in a party with Donald, Goofy, and up to two other Disney characters from the various worlds he visits. A major addition compared is the Formchange mechanic, which allows his currently equipped Keyblade to grant him special abilities and change shape. Sora can equip up to three Keyblades at a time, and cycle between them to use his abilities. Another addition is the Attractions mechanic, which occasionally allows Sora to summon and pilot a vehicle inspired by Disney theme park attractions. At certain points throughout the game, the player will be able to control other characters.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 31,
+        "name": "Drama"
+      },
+      {
+        "id": 35,
+        "name": "Kids"
+      }
+    ],
     "total_rating": 82.43316641960459,
     "total_rating_count": 239
   },
@@ -2282,11 +3342,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co9rk1.jpg"
     },
     "first_release_date": 1761782400,
+    "game_modes": [
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       }
     ],
     "hypes": 107,
@@ -2307,6 +3376,16 @@
     ],
     "storyline": "You play as one of the Raiders, a rogue group of resistance fighters. With the help of a patchwork early warning system, you fight to protect our home against enemies dropping from orbit. ARC is faceless and unfeeling, but no one could accuse ARC of being unresponsive. In fact, ARC responds to resistance with ever-increasing destruction.",
     "summary": "ARC Raiders is a multiplayer, extraction adventure, set in a lethal future earth, ravaged by a mysterious mechanized threat known as ARC.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 88.81318884573093,
     "total_rating_count": 53
   },
@@ -2317,21 +3396,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1v8w.jpg"
     },
     "first_release_date": 1508198400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 106,
@@ -2356,6 +3438,16 @@
     ],
     "storyline": "After the events of South Park: The Stick of Truth, the children of South Park become role-playing superheroes. However, a falling-out over Cartman's planned film franchise splinters the boys split into two groups, with some calling for a civil war to make their own franchise. The player again controls The New Kid, though they can now change his gender to female if they wish.",
     "summary": "Players will once again assume the role of the New Kid, and join South Park favorites Stan, Kyle, Kenny and Cartman in a new hilarious and outrageous adventure. This time, players will delve into the crime-ridden underbelly of South Park with Coon and Friends.\n\nThis dedicated group of crime fighters was formed by Eric Cartman whose superhero alter-ego, The Coon, is half man, half raccoon. As the New Kid, players will join Mysterion, Toolshed, Human Kite, Mosquito, Mint Berry Crunch and a host of others to battle the forces of evil while Coon strives to make his team the most beloved superheroes in history.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 27,
+        "name": "Comedy"
+      }
+    ],
     "total_rating": 82.24809164496989,
     "total_rating_count": 334
   },
@@ -2366,21 +3458,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co904o.jpg"
     },
     "first_release_date": 1740700800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 104,
@@ -2400,6 +3503,20 @@
       }
     ],
     "summary": "The unbridled force of nature runs wild and relentless, with environments transforming drastically from one moment to the next. This is a story of monsters and humans and their struggles to live in harmony in a world of duality.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 87.85195113618519,
     "total_rating_count": 53
   },
@@ -2410,16 +3527,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2558.jpg"
     },
     "first_release_date": 1521504000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 13,
-        "name": "Simulator",
-        "slug": "simulator"
+        "name": "Simulator"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 102,
@@ -2443,6 +3572,20 @@
       }
     ],
     "summary": "Sea of Thieves offers the essential pirate experience, from sailing and fighting to exploring and looting – everything you need to live the pirate life and become a legend in your own right. With no set roles, you have complete freedom to approach the world, and other players, however you choose.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 69.10663640998374,
     "total_rating_count": 256
   },
@@ -2453,21 +3596,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co68ag.jpg"
     },
     "first_release_date": 1676937600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 99,
@@ -2496,6 +3642,24 @@
     ],
     "storyline": "Set in an alternate version of the 1950s, Atomic Heart takes place in the Soviet Union in which robotics and other technologies have gone rogue. These bioengineering experiments have taken over a manufacturing facility and are running rampant. You play as KGB special age P-3 who is sent to this facility to investigate it after it had fallen silent.",
     "summary": "Atomic Heart is an adventure first-person shooter, events of which unfolds in an alternate universe during the high noon of the Soviet Union. The principal character of the game is a special agent P-3, who after an unsuccessful landing on enterprise \"3826\" is trying to figure out what went wrong.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      },
+      {
+        "id": 43,
+        "name": "Mystery"
+      }
+    ],
     "total_rating": 70.22603326950207,
     "total_rating_count": 184
   },
@@ -2506,11 +3670,16 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co81i4.jpg"
     },
     "first_release_date": 1716249600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 98,
@@ -2530,6 +3699,20 @@
       }
     ],
     "summary": "The sequel to the award winning Hellblade: Senua’s Sacrifice, Senua returns in a brutal journey of survival through the myth and torment of Viking Iceland. Intent on saving those who have fallen victim to the horrors of tyranny, Senua faces a battle of overcoming the darkness within and without.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      }
+    ],
     "total_rating": 75.42009371890393,
     "total_rating_count": 154
   },
@@ -2540,31 +3723,40 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co62ao.jpg"
     },
     "first_release_date": 1506643200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       },
       {
         "id": 33,
-        "name": "Arcade",
-        "slug": "arcade"
+        "name": "Arcade"
       }
     ],
     "hypes": 98,
@@ -2592,6 +3784,20 @@
       }
     ],
     "summary": "Cuphead is a classic run and gun action game heavily focused on boss battles. Inspired by cartoons of the 1930s, the visuals and audio are painstakingly created with the same techniques of the era, i.e. traditional cel animation (hand drawn & hand inked!), watercolor backgrounds, and original jazz recordings. Play as Cuphead or Mugman (in single player or co-op) as you traverse strange worlds, acquire new weapons, learn powerful super moves, and discover hidden secrets. Cuphead is all action, all the time.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 27,
+        "name": "Comedy"
+      }
+    ],
     "total_rating": 85.77760141173935,
     "total_rating_count": 843
   },
@@ -2602,16 +3808,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co4jni.jpg"
     },
     "first_release_date": 1645747200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 96,
@@ -2644,6 +3862,20 @@
     ],
     "storyline": "Elden Ring takes place in the Lands Between, a fictional realm over which several demigods rule. It was previously ruled over by the immortal Queen Marika, who acted as keeper of the Elden Ring, a powerful force that manifested itself as the physical concept of order. When Marika shattered the Elden Ring and disappeared, her demigod children began fighting over pieces of the Ring in an event called The Shattering. Each demigod has a shard of the Ring called a Great Rune, which corrupts them with power. In the game, the player character is a Tarnished, one of a group of exiles from the Lands Between who are summoned back after the Shattering. The player must traverse the realm to repair the Elden Ring and become the Elden Lord.",
     "summary": "Elden Ring is an action RPG developed by FromSoftware and published by Bandai Namco Entertainment, released in February 2022. Directed by Hidetaka Miyazaki, with world-building contributions from novelist George R. R. Martin, the game features an expansive open world called the Lands Between. Players assume the role of a customisable character known as the Tarnished, who must explore this world, battle formidable enemies, and seek to restore the Elden Ring to become the Elden Lord.\n\nThe game builds on the challenging gameplay mechanics familiar from the Dark Souls series but introduces a more open-ended structure with vast exploration, dynamic weather, and a day-night cycle. It offers deep lore, complex characters, and an interconnected world filled with secrets, dungeons, and powerful bosses.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 95.89649576485401,
     "total_rating_count": 1771
   },
@@ -2654,21 +3886,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2una.jpg"
     },
     "first_release_date": 1488240000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 95,
@@ -2684,6 +3919,28 @@
       }
     ],
     "summary": "Welcome to a vibrant world rich with the beauty of nature – but inhabited by awe-inspiring, highly advanced machines. As a young machine hunter named Aloy, you must unravel the mysteries of this world and find your own destiny.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 31,
+        "name": "Drama"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 88.21619794742585,
     "total_rating_count": 2226
   },
@@ -2694,21 +3951,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2oyq.jpg"
     },
     "first_release_date": 1603929600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 93,
@@ -2741,8 +4009,26 @@
     ],
     "storyline": "London’s fallen into a technological nightmare, but you’re sharp enough to adapt. Rally the resistance to use the city’s tech against the powers that be.\n\nWhere will you find your army? How about everywhere? Every Londoner has a reason to fight back. Play as literally any character – a bartender, an ex-spy, a graffiti artist, a fallen boxer, a well-connected lawyer, a stark raving mad grandma, anyone.",
     "summary": "In Watch Dogs: Legion, near future London is facing its downfall... Unless you do something about it. Build a resistance, fight back, and give the city back to the people. It's time to rise up.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 73.60292638325427,
-    "total_rating_count": 138
+    "total_rating_count": 139
   },
   {
     "id": 28552,
@@ -2751,16 +4037,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co21a6.jpg"
     },
     "first_release_date": 1522022400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 93,
@@ -2785,8 +4083,22 @@
     ],
     "storyline": "The game is set in the fictional Hope County, Montana, where a preacher named Joseph Seed has risen to prominence in the region. Seed believes that he has been chosen to protect the people of Hope County from an \"inevitable collapse\" and has established a congregation called Eden's Gate. Ostensibly, this is to fulfill his mission of leading the people to salvation; in reality, Seed is a radical preacher and Eden's Gate is a militaristic doomsday cult. Under his rule, Eden's Gate has used both coercion and violence to forcibly convert the residents of Hope County, and intimidation to keep them from contacting the federal government for help. When an attempt to arrest Seed ends with the deaths of several lawmen, the player is swept into the armed conflict between Eden's Gate and the remaining Hope County residents who are organizing themselves into a resistance movement. The player takes on the role of a sheriff's deputy who is sent to Hope County to arrest Seed. Seed has assumed the title of \"the Father\" and maintains control over Hope County with the aid of his siblings, known as \"the Heralds\": Jacob, a former military officer that oversees their armed soldiers; John, a lawyer that has been able to acquire much of the land in Hope County for Eden's Gate; and Faith, who acts as a pacifist to bring the people to believe and trust in her older brother. The residents of Hope County opposed to Seed include Pastor Jerome, a local church leader that has seen his congregation taken by Eden's Gate; Mary May, a bartender whose father was murdered by the cult; and Nick Rye, a cropduster pilot who wants to eliminate the influence of the cult in order to build a better future for his children.",
     "summary": "Welcome to Hope County, Montana, land of the free and the brave, but also home to a fanatical doomsday cult known as The Project at Eden’s Gate that is threatening the community's freedom. Stand up to the cult’s leader, Joseph Seed and the Heralds, and spark the fires of resistance that will liberate the besieged community.\n\nIn this expansive world, your limits and creativity will be tested against the biggest and most ruthless baddest enemy Far Cry has ever seen. It’ll be wild and it’ll get weird, but as long as you keep your wits about you, the residents of Hope County can rest assured knowing you’re their beacon of hope.",
-    "total_rating": 80.03865799445049,
-    "total_rating_count": 785
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
+    "total_rating": 80.03521138029546,
+    "total_rating_count": 786
   },
   {
     "id": 19560,
@@ -2795,21 +4107,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1tmu.jpg"
     },
     "first_release_date": 1524182400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 92,
@@ -2826,6 +4141,20 @@
     ],
     "storyline": "Many years have passed since Kratos, Spartan warrior and former Greek God of War, took his vengeance against the Greek Gods, and he now lives with his young son Atreus in ancient Norway in the realm of Midgard. The game begins after the death of the Jötunn warrior Faye, Kratos' second wife and Atreus' mother, whose last request was for her ashes to be spread at the highest speak of the nine realms. Kratos and Atreus prepare a funeral pyre for her, mourn her death and soon go on a hunt as per Kratos' desire. However much to Kratos' disappointment, Atreus proves his incompetence and lack of focus, making Kratos reconsider taking Atreus in his journey. Kratos is soon attacked by a mysterious stranger with godlike powers, and who cannot feel anything physically. After seemingly killing him, Kratos reluctantly takes Atreus with him and begins their journey.",
     "summary": "God of War is the sequel to God of War III as well as a continuation of the canon God of War chronology. Unlike previous installments, this game focuses on Norse mythology and follows an older and more seasoned Kratos and his son Atreus in the years since the third game. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      }
+    ],
     "total_rating": 94.28683128499442,
     "total_rating_count": 3092
   },
@@ -2836,16 +4165,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1rst.jpg"
     },
     "first_release_date": 1516924800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 90,
@@ -2866,6 +4207,16 @@
     ],
     "storyline": "The player takes the role of a player-created character who travels to the \"New World\", an unpopulated landmass filled with monsters, to join the Research Commission that studies the land from their central command base of Astera.",
     "summary": "Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breathing ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand. Hunt alone or in co-op with up to three other players, and use materials collected from fallen foes to craft new gear and take on even bigger, badder beasts!",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 88.86130545212484,
     "total_rating_count": 558
   },
@@ -2876,16 +4227,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co8d9b.jpg"
     },
     "first_release_date": 1727308800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 89,
@@ -2901,6 +4256,16 @@
       }
     ],
     "summary": "The people of Hyrule are being stolen away by strange rifts that have appeared, and with a certain swordsman among those missing, it’s up to Princess Zelda to save her kingdom.\n\nTeam up with the mysterious fairy, Tri, and use the power of the Tri Rod to learn how to create echoes, imitations of things found in the environment. You can then recreate those echoes whenever you like to solve puzzles and defeat enemies.\n\nCreate echoes like water blocks to reach new heights, make bridges out of old beds, throw rocks at foes, or find your own creative combination of echoes to do things your way. You can even create echoes of monsters to fight at your side in combat!",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 84.86905286877169,
     "total_rating_count": 67
   },
@@ -2911,16 +4276,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co8lrg.jpg"
     },
     "first_release_date": 1528070400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 89,
@@ -2945,6 +4314,16 @@
     ],
     "storyline": "Vampyr is set in early 20th century Britain as the country is gripped by the lethal Spanish flu and the streets of London are crippled by disease, violence and fear. In a disorganized and ghostly city, those foolish, desperate, or unlucky enough to walk the streets lay prey to Britain’s most elusive predators: the vampires. Emerging from the chaos, a tormented figure awakens. You are Jonathan E. Reid, a high-ranking military surgeon transformed into a vampire upon his return home from the frontline.\n\nExplore the darkly atmospheric streets of early 20th century London, and interact with a multitude of characters with their own identities and importance. Accept and fulfill the missions they give you, but don’t forget: sooner or later, you will have to feed, and make a difficult choice... who will be your prey? Absolutely all characters in the game are potential victims of your vampiric lust. Carefully study the habits of your next victim, his or her relationships with other characters, and set up your strategy to feed, unnoticed: seduce them, change their daily habits, or make sure they end up alone in a dark street...\n\nBe careful who you choose to hunt, as they will be gone forever, and their death will impact in a meaningful way the world that surrounds you. Feeding on human blood will not just keep you \"alive\"; it will also unlock new vampiric powers to use.\n\nThere will be times when exploration and seduction will only get you so far, and you'll need to resort to engaging in Vampyr's dynamic real-time combat. It blends hard-hitting melee combat with ranged shooting mechanics and the supernatural vampire powers. You'll face many types of enemies: different species of vampires and creatures, as well as vampire hunters who want to hunt you down with their weapons, tools and traps. In Vampyr, your health and the \"energy\" that drives your supernatural powers are one and same! Using powers will drain your own blood, giving you an edge in battle but also leaving you weaker. You will have to find a way to feed during combat to replenish your strength.\n\nVampyr also offers a deep crafting system. Find and loot materials and components from the fresh corpses of your victims or during exploration, in order to craft and improve tools, melee and ranged weapons, as well as special ammunitions and coating to exploit the weaknesses of your enemies.\n\nAs you cling to what remains of your humanity, your decisions will ultimately shape the fate of your hero while searching for answers in the coughing, foggy aftermath of the Spanish Flu.",
     "summary": "London, 1918. You are newly-turned Vampyr Dr. Jonathan Reid. As a doctor, you must find a cure to save the city’s flu-ravaged citizens. As a Vampyr, you are cursed to feed on those you vowed to heal.\n\nWill you embrace the monster within? Survive and fight against Vampyr hunters, undead skals, and other supernatural creatures. Use your unholy powers to manipulate and delve into the lives of those around you, to decide who will be your next victim. Struggle to live with your decisions… your actions will save or doom London.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      }
+    ],
     "total_rating": 70.33627559077448,
     "total_rating_count": 274
   },
@@ -2955,11 +4334,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2res.jpg"
     },
     "first_release_date": 1447718400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       }
     ],
     "hypes": 89,
@@ -2983,6 +4375,16 @@
       }
     ],
     "summary": "In 2004, the original Star Wars: Battlefront came onto the scene and took gamers – and Star Wars fans – by surprise. It was an ambitious action shooter that gave players the opportunity to step into the shoes of their favorite Star Wars characters, pilot quintessential Star Wars vehicles, and relive classic Star Wars battles.\n\nFast forward nearly 10 years and gamers still have many of those same Star Wars gaming fantasies – but now they wish to experience those larger-than-life battles in magnificent high definition, with all of the amazing special effects, vehicle physics and gameplay intensity that the next-generation has to offer.\n\nStar Wars Battlefront, developed by DICE on Frostbite 3, will surprise and delight fans yet again with a new experience inside this beloved universe made with our signature DICE craftsmanship and commitment to excellence.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 68.10864329538224,
     "total_rating_count": 434
   },
@@ -2993,16 +4395,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coaaju.jpg"
     },
     "first_release_date": 1749772800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 13,
-        "name": "Simulator",
-        "slug": "simulator"
+        "name": "Simulator"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 88,
@@ -3023,6 +4429,16 @@
     ],
     "storyline": "This is the story of Jan Dolski, a simple worker facing circumstances that lead him to a life-changing crossroads. Crash landing on a distant planet, stranded and alone, Jan finds himself in a daunting life and death situation. His only hope for survival is to bring helping hands on board. Not yet understanding the weight of his choice, Jan must create alternate versions of himself if he is to forge ahead: the alters.",
     "summary": "Explore an emotional sci-fi game with a unique blend of survival, adventure, and base-building elements. Help Jan Dolski, the sole survivor of an ill-fated space expedition, create alternative versions of himself to escape a hostile planet and tackle personal turmoils with this unconventional crew.",
+    "themes": [
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      }
+    ],
     "total_rating": 82.56272172532121,
     "total_rating_count": 56
   },
@@ -3033,16 +4449,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1rbe.jpg"
     },
     "first_release_date": 1508976000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 88,
@@ -3075,6 +4495,24 @@
     ],
     "storyline": "IT ALL STARTS WITH ONE\n\nAncient Egypt. Once a prosperous and influential empire, now a crumbling civilization.\nDelve into this mysterious part of history and uncover the thrilling and dangerous tale behind the creation of the Assassins’ Brotherhood.",
     "summary": "For the last four years, the team behind Assassin’s Creed IV Black Flag has been crafting a new beginning for the Assassin’s Creed franchise.\n\nSet in Ancient Egypt, players will journey to the most mysterious place in history, during a crucial period that will shape the world and give rise to the Assassin’s Brotherhood. Plunged into a living, systemic and majestic open world, players are going to discover vibrant ecosystems, made of diverse and exotic landscapes that will provide them with infinite opportunities of pure exploration, adventures and challenges.\n\nPowered by a new fight philosophy, Assassin's Creed Origins embraces a brand new RPG direction where players level up, loot, and choose abilities to shape and customize their very own skilled Assassin as they grow in power and expertise while exploring the entire country of Ancient Egypt.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 83.6829006335238,
     "total_rating_count": 1027
   },
@@ -3085,16 +4523,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1mxf.jpg"
     },
     "first_release_date": 1509062400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 88,
@@ -3110,6 +4556,24 @@
       }
     ],
     "summary": "Explore incredible places far from the Mushroom Kingdom as you join Mario and his new ally Cappy on a massive, globe-trotting 3D adventure. Use amazing new abilities, like the power to capture and control objects, animals, and enemies to collect Power Moons so you can power up the Odyssey airship and save Princess Peach from Bowser’s wedding plans!",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 92.86414030260377,
     "total_rating_count": 1706
   },
@@ -3120,16 +4584,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co39tg.jpg"
     },
     "first_release_date": 1635379200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 11,
-        "name": "Real Time Strategy (RTS)",
-        "slug": "real-time-strategy-rts"
+        "name": "Real Time Strategy (RTS)"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       }
     ],
     "hypes": 87,
@@ -3141,6 +4617,16 @@
       }
     ],
     "summary": "One of the most beloved real-time strategy games returns to glory with Age of Empires IV, putting you at the center of epic historical battles that shaped the world. Featuring both familiar and innovative new ways to expand your empire in vast landscapes with stunning 4K visual fidelity, Age of Empires IV brings an evolved real-time strategy game to a new generation.",
+    "themes": [
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
     "total_rating": 76.89724983877119,
     "total_rating_count": 115
   },
@@ -3151,21 +4637,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co4v5c.jpg"
     },
     "first_release_date": 1665705600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       }
     ],
     "hypes": 87,
@@ -3185,6 +4674,16 @@
       }
     ],
     "summary": "Scorn is an atmospheric first person horror adventure game set in a nightmarish universe of odd forms and somber tapestry. It is designed around an idea of \"being thrown into the world\". Isolated and lost inside this dream-like world you will explore different interconnected regions in a non-linear fashion. The unsettling environment is a character itself. Every location contains its own theme (story), puzzles and characters that are integral in creating a cohesive lived in world. Throughout the game you will open up new areas, acquire different skill sets, weapons, various items and try to comprehend the sights presented to you.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      }
+    ],
     "total_rating": 68.39857684653903,
     "total_rating_count": 134
   },
@@ -3195,21 +4694,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co95gf.jpg"
     },
     "first_release_date": 1741219200,
+    "game_modes": [
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      },
+      {
+        "id": 4,
+        "name": "Split screen"
+      }
+    ],
     "genres": [
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 85,
@@ -3234,6 +4744,20 @@
     ],
     "storyline": "Mio and Zoe are contrasting writers – one writes sci-fi and the other writes fantasy – who become trapped in their own stories after being hooked up to a machine designed to steal their creative ideas. They’ll have to rely on each other to break free with their memories in-tact, working together to master a variety of abilities and overcome diverse challenges while jumping between sci-fi and fantasy worlds in this unexpected tale of friendship.",
     "summary": "Split Fiction is a 2025 cooperative multiplayer game. It follows two writers, Mio Hudson and Zoe Foster, as they become trapped in their imaginations.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 90.62772065168983,
     "total_rating_count": 135
   },
@@ -3244,21 +4768,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co20ud.jpg"
     },
     "first_release_date": 1559779200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 13,
-        "name": "Simulator",
-        "slug": "simulator"
+        "name": "Simulator"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       },
       {
         "id": 33,
-        "name": "Arcade",
-        "slug": "arcade"
+        "name": "Arcade"
       }
     ],
     "hypes": 84,
@@ -3282,6 +4809,12 @@
       }
     ],
     "summary": "Experience the world of restaurant cooking in a highly polished, realistic kitchen. Use ovens, gas stands, pots, pans, bowls and plates, everything you need. Prepare dozens of lifelike ingredients - from vegetables through fish to steaks and poultry - to cook over thirty real dishes, or anything you like.",
+    "themes": [
+      {
+        "id": 32,
+        "name": "Non-fiction"
+      }
+    ],
     "total_rating": 71.38988796834126,
     "total_rating_count": 51
   },
@@ -3292,16 +4825,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coagib.jpg"
     },
     "first_release_date": 1435017600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 84,
@@ -3326,8 +4863,30 @@
     ],
     "storyline": "In the explosive finale to the Arkham series, Batman faces the ultimate threat against the city he is sworn to protect. The Scarecrow returns to unite an impressive roster of supervillains, including Penguin, Two-Face, Harley Quinn, Firefly, Poison Ivy, and Riddler to destroy The Dark Knight forever. The most intriguing member of this alliance, however, is the deadly and enigmatic Arkham Knight.",
     "summary": "Batman: Arkham Knight is an action-adventure game developed by Rocksteady Studios, released in 2015. It is the final installment in the Arkham series. Players control Batman as he faces Scarecrow, who unites Gotham's criminals to destroy the Dark Knight. The mysterious Arkham Knight, a new adversary, aids Scarecrow in his plan.\n\nThe game features open-world exploration, stealth, combat, and puzzle-solving. A key addition is the Batmobile, used for traversal and combat. The story explores Batman’s psychological struggles and the collapse of his alliances as Gotham spirals into chaos.",
-    "total_rating": 88.31334292830641,
-    "total_rating_count": 1415
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 20,
+        "name": "Thriller"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 31,
+        "name": "Drama"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
+    "total_rating": 88.31288710551125,
+    "total_rating_count": 1416
   },
   {
     "id": 119388,
@@ -3336,16 +4895,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co5vmg.jpg"
     },
     "first_release_date": 1683849600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 79,
@@ -3358,6 +4921,28 @@
     ],
     "storyline": "While exploring the caves underneath Hyrule Castle to investigate the origins of the gloom (a dangerous substance which appeared all over the kingdom), Link and Zelda not only find old archeological remains of the Zonai, an ancient race said to have descended from the sky, but also an maleficent mummy held by a bodiless arm, who suddenly reanimates, defeats Link, breaks the Master Sword and rise large structures, once found underground, to the skies above Hyrule, with Zelda vanishing with a spark from a strange amulet found on the site.\nSome time later, Link awakens in an unknown place on a floating sky island and meets a mysterious spirit called Rauru, which transplanted his arm (the same arm which was holding the mummy) onto Link, since his right arm was beyond saving. Guided by this new ally, Link sets out in an adventure to protect Hyrule, find Princess Zelda and uncover the mysteries of the Zonai.",
     "summary": "The Legend of Zelda: Tears of the Kingdom is the sequel to The Legend of Zelda: Breath of the Wild. The setting for Link’s adventure has been expanded to include the skies above the vast lands of Hyrule.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 94.23356111864501,
     "total_rating_count": 736
   },
@@ -3368,21 +4953,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1ppo.jpg"
     },
     "first_release_date": 1567987200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 79,
@@ -3410,6 +4998,20 @@
       }
     ],
     "summary": "Explore a fresh new world as you set foot - alongside many other settlers, mercenaries and treasure hunters - on a remote island seeping with magic, rumored to be filled with riches and lost secrets.\n\nGreedFall aims for a very unique visual identity, inspired by Baroque art from 17th Century Europe, depicting grandiose sceneries in muted warm colors and dark undertones.\n\nA grand journey filled with mystery follows, as you find yourself in the middle of ever-increasing tensions between the invading settlers and the locals, protected by supernatural beings, manifestation of the island's earthly magic.\n\nWith a strong focus on its core RPG identity, GreedFall follows Spiders’ experience in building intricate worlds filled with mysteries to discover, weaving deep character interactions, and offering players great freedom to achieve quests and objectives in a multitude of different ways – through combat of course, but also through diplomacy, deception or stealth.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 43,
+        "name": "Mystery"
+      }
+    ],
     "total_rating": 72.01774376547777,
     "total_rating_count": 182
   },
@@ -3420,16 +5022,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co20pq.jpg"
     },
     "first_release_date": 1507593600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 78,
@@ -3450,6 +5056,20 @@
     ],
     "storyline": "The world of men is ending.\n\nIn fires of Mount Doom, a ranger, and wraith bound together in death. Crafted the one thing that could challenge Sauron, a Ring of Power.\n\nBut power can blind those who seek it, The Great Deceiver has returned to Middle-Earth, to rebuild his armies. To rule all.\n\nThe corruption will be contained no longer.\n\nThe war for Mordor begins.",
     "summary": "Go behind enemy lines to forge your army, conquer Fortresses and dominate Mordor from within. Experience how the award winning Nemesis System creates unique personal stories with every enemy and follower, and confront the full power of the Dark Lord Sauron and his Ringwraiths in this epic new story of Middle-earth.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 82.12236541727802,
     "total_rating_count": 452
   },
@@ -3460,21 +5080,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co6nz1.jpg"
     },
     "first_release_date": 1480377600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 78,
@@ -3503,6 +5130,32 @@
     ],
     "storyline": "The game takes place in a world similar to modern-day Earth. The nations of the world once waged war over control of the world's crystals, and all but the nation of Lucis have lost theirs and regressed to medieval societies. Noctis Lucis Caelum, Crown Prince of the kingdom of Lucis—having gained magical power from a near-death experience—is driven from his home when the empire of Niflheim invades Lucis on the eve of the final peace negotiations between the two nations. Now on the run with his companions, Noctis begins to work towards defeating the forces of Niflheim and rescuing the crystal from their control.",
     "summary": "Play as Noctis, the Crown Prince of the Kingdom of Lucis, as you seek to reclaim your homeland from the imperial army. With your closet friends along for the ride, you’ll travel through the breath-taking world of Eos encountering larger-than-life beasts and unforgiving enemies. Face thrilling combat as you learn to master your weaponry and magic skills by channeling the power of your ancestors.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 33,
+        "name": "Sandbox"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 78.87618766116364,
     "total_rating_count": 580
   },
@@ -3513,21 +5166,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co5s5v.jpg"
     },
     "first_release_date": 1667952000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 77,
@@ -3548,6 +5204,20 @@
     ],
     "storyline": "The freezing winds of Fimbulwinter have come to Midgard, making survival for Kratos, Atreus, and Mimir in the Norse wilds even more challenging than before.\n\nWhile the last game built an enormous amount of trust and understanding between father and son, there is still a great deal of complexity in their interactions – especially after the revelation of Atreus’ Giant heritage and the hidden prophecy only Kratos saw.\n\nAtreus is desperately curious. Like most young people, he wants to understand who he is more than anything. In this case, he wants to understand who he could be. The mystery of Loki’s role in the upcoming conflict is something that Atreus cannot let go of. He wants to keep his family safe, but Atreus also doesn’t want to stand by and do nothing while conflict consumes the Nine Realms.\n\nKratos, still bearing the knowledge of his past mistakes, wants to spare Atreus the bloody lessons he learned from his conflict with gods. He wants to keep his son safe, above all, and their confrontation with Baldur has vindicated the belief that only tragedy will come from further entanglements with the Aesir.\n\nTogether, Kratos and Atreus will have to make a choice about which path they will take. Whatever they choose will define the fate of all those living in the Nine Realms as Ragnarök approaches.",
     "summary": "God of War: Ragnarök is the ninth installment in the God of War series and the sequel to 2018's God of War. Continuing with the Norse mythology theme, the game is set in ancient Norway and features series protagonists Kratos, the former Greek God of War, and his young son Atreus. The game kicked off the events of Ragnarök, where Kratos and Atreus must journey to each of the Nine Realms in search of answers as they prepare for the prophesied battle that will end the world.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 92.81141314945023,
     "total_rating_count": 851
   },
@@ -3558,11 +5228,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co8zis.jpg"
     },
     "first_release_date": 1729814400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       }
     ],
     "hypes": 76,
@@ -3590,8 +5273,18 @@
       }
     ],
     "summary": "Developed by Treyarch and Raven, Black Ops 6 is a spy action thriller set in the early 90s, a period of transition and upheaval in global politics, characterized by the end of the Cold War and the rise of the United States as a single superpower. With a mind-bending narrative, and unbound by the rules of engagement, this is signature Black Ops.\n\nThe Black Ops 6 Campaign provides dynamic moment-to-moment gameplay that includes a variety of play spaces with blockbuster set pieces and action-packed moments, high-stakes heists, and cloak-and-dagger spy activity.\n\nIn a best-in-class Multiplayer experience, players will test their skills across 16 new maps at launch, including 12 core 6v6 maps and 4 Strike maps that can be played 2v2 or 6v6.\n\nBlack Ops 6 also marks the epic return of Round-Based Zombies, the fan-favorite mode where players will take down hordes of the undead in two brand-new maps at launch. Post-launch, players can look forward to even more exciting maps and groundbreaking experiences dropping into both Multiplayer and Zombies.",
-    "total_rating": 78.86321803919188,
-    "total_rating_count": 160
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
+    "total_rating": 78.77906724341685,
+    "total_rating_count": 161
   },
   {
     "id": 11118,
@@ -3600,21 +5293,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co9e29.jpg"
     },
     "first_release_date": 1478822400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 73,
@@ -3635,8 +5331,18 @@
     ],
     "storyline": "Dishonored 2 is set 15 years after the Lord Regent has been vanquished and the dreaded Rat Plague has passed into history. An otherworldly usurper has seized the throne from Empress Emily Kaldwin, leaving the fate of the Isles hanging in the balance. As either Emily Kaldwin or Corvo Attano, travel beyond the legendary streets of Dunwall to Karnaca, a once-dazzling coastal city that holds the key to restoring Emily to power. Armed with the mark of the Outsider and powerful new supernatural abilities, hunt down your enemies and forever alter the fate of the Empire.",
     "summary": "Dishonored 2 is a first-person action video game and the sequel to Dishonored. It borrows many of the gameplay elements from the first opus: players define their own play style by blending action, assassination, stealth, mobility and combat. Combining tools at their disposal, players are allowed options to eliminate enemies, whether they choose to pursue them unseen or ruthlessly attack head on. Dishonored 2 features the same campaign style as its predecessor in which the protagonist must advance through a series of missions.",
-    "total_rating": 85.321943105429,
-    "total_rating_count": 739
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      }
+    ],
+    "total_rating": 85.3220156226535,
+    "total_rating_count": 740
   },
   {
     "id": 222341,
@@ -3645,16 +5351,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co5l7s.jpg"
     },
     "first_release_date": 1728345600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 72,
@@ -3671,6 +5381,28 @@
     ],
     "storyline": "Having received a letter from his deceased wife, James Sunderland heads to where they shared so many memories, in the hope of seeing her one more time: Silent Hill. There, by the lake, he finds a woman eerily similar to her… \"My name... is Maria,\" the woman smiles. Her face, her voice... She's just like her.",
     "summary": "Silent Hill 2 Remake is a ground-up reimagining of the 2001 psychological horror game. It follows James Sunderland as he searches for his deceased wife in the fog-shrouded town of Silent Hill. The remake features entirely rebuilt visuals in Unreal Engine 5, over-the-shoulder gameplay, reworked combat, and new voice acting.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 31,
+        "name": "Drama"
+      },
+      {
+        "id": 43,
+        "name": "Mystery"
+      }
+    ],
     "total_rating": 88.86926351401242,
     "total_rating_count": 199
   },
@@ -3681,26 +5413,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/td1t8kb33gyo8mvhl2pc.jpg"
     },
     "first_release_date": 1647388800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       },
       {
         "id": 32,
-        "name": "Indie",
-        "slug": "indie"
+        "name": "Indie"
       }
     ],
     "hypes": 68,
@@ -3737,6 +5471,16 @@
     ],
     "storyline": "Tunic is an action adventure game about a small fox in a big world, who must explore the countryside, fight monsters, and discover secrets. Crafted to evoke feelings of classic action adventure games, Tunic will challenge the player with unique items, skillful combat techniques, and arcane mysteries as our hero forges their way through an intriguing new world.",
     "summary": "Tunic is an action adventure about a tiny fox in a big world. Explore the wilderness, discover spooky ruins, and fight terrible creatures from long ago.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 87.01951517059182,
     "total_rating_count": 204
   },
@@ -3747,16 +5491,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1r77.jpg"
     },
     "first_release_date": 1536278400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 68,
@@ -3768,6 +5516,24 @@
       }
     ],
     "summary": "Starring the world’s most iconic Super Hero, Spider-Man features the acrobatic abilities, improvisation and web-slinging that the wall-crawler is famous for, while also introducing elements never-before-seen in a Spider-Man game. From traversing with parkour and utilizing the environment, to new combat and blockbuster set pieces, it’s Spider-Man unlike any you’ve played before.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      },
+      {
+        "id": 31,
+        "name": "Drama"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 88.37802703956808,
     "total_rating_count": 1886
   },
@@ -3778,16 +5544,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1sod.jpg"
     },
     "first_release_date": 1629763200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 67,
@@ -3824,6 +5594,16 @@
     ],
     "storyline": "Razputin Aquato, trained acrobat and powerful young psychic, has realized his life long dream of joining the international psychic espionage organization known as the Psychonauts! But these psychic super spies are in trouble. Their leader hasn't been the same since he was kidnapped, and what's worse, there's a mole hiding in headquarters. Raz must use his powers to stop the mole before they execute their secret plan--to bring the murderous psychic villain, Maligula, back from the dead!",
     "summary": "Psychonauts 2 is a platform-adventure game developed by Double Fine Productions and released in 2021. It continues the story of Razputin “Raz” Aquato, a young psychic who joins the international psychic espionage agency known as the Psychonauts.\nGameplay combines platforming, exploration, and combat with psychic abilities such as telekinesis, pyrokinesis, and mental connection. Players journey through imaginative levels set inside characters’ minds, each reflecting their personalities and struggles.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 27,
+        "name": "Comedy"
+      }
+    ],
     "total_rating": 87.22825207329532,
     "total_rating_count": 188
   },
@@ -3834,31 +5614,36 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/coaar4.jpg"
     },
     "first_release_date": 1585526400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 13,
-        "name": "Simulator",
-        "slug": "simulator"
+        "name": "Simulator"
       },
       {
         "id": 15,
-        "name": "Strategy",
-        "slug": "strategy"
+        "name": "Strategy"
       },
       {
         "id": 24,
-        "name": "Tactical",
-        "slug": "tactical"
+        "name": "Tactical"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 67,
@@ -3887,6 +5672,20 @@
     ],
     "storyline": "The horns sound, the ravens gather. An empire is torn by civil war. Beyond its borders, new kingdoms rise. Gird on your sword, don your armour, summon your followers and ride forth to win glory on the battlefields of Calradia. Establish your hegemony and create a new world out of the ashes of the old.",
     "summary": "Mount & Blade II: Bannerlord is the eagerly awaited sequel to the acclaimed medieval combat simulator and role-playing game Mount & Blade: Warband. Set 200 years before, it expands both the detailed fighting system and the world of Calradia. Bombard mountain fastnesses with siege engines, establish secret criminal empires in the back alleys of cities, or charge into the thick of chaotic battles in your quest for power.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 79.4153893387467,
     "total_rating_count": 132
   },
@@ -3897,16 +5696,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2e1l.jpg"
     },
     "first_release_date": 1583798400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 66,
@@ -3930,6 +5733,16 @@
       }
     ],
     "summary": "The little spirit Ori is no stranger to peril, but when a fateful flight puts the owlet Ku in harm’s way, it will take more than bravery to bring a family back together, heal a broken land, and discover Ori’s true destiny. From the creators of the acclaimed action-platformer Ori and the Blind Forest comes the highly anticipated sequel. Embark on an all-new adventure in a vast world filled with new friends and foes that come to life in stunning, hand-painted artwork. Set to a fully orchestrated original score, Ori and the Will of the Wisps continues the Moon Studios tradition of tightly crafted platforming action and deeply emotional storytelling.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 88.89353735277895,
     "total_rating_count": 525
   },
@@ -3940,11 +5753,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co95gk.jpg"
     },
     "first_release_date": 1748563200,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       }
     ],
     "hypes": 65,
@@ -3972,6 +5794,20 @@
       }
     ],
     "summary": "Elden Ring: Nightreign is a standalone adventure within the ELDEN RING universe, crafted to offer players a new gaming experience by reimagining the game’s core design.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 80.9792541094953,
     "total_rating_count": 68
   },
@@ -3982,16 +5818,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co69sm.jpg"
     },
     "first_release_date": 1686009600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       }
     ],
     "hypes": 65,
@@ -4020,6 +5868,20 @@
     ],
     "storyline": "As the battle between the High Heavens and Burning Hells rages on, hatred devours Sanctuary as evil spreads and a new wave of cultists and worshippers arise to embrace Lilith’s coming. Only a brave few dare to face this threat and bring light to the all-consuming darkness.",
     "summary": "Endless demons to slaughter. Deep customization through Talents, Skill Points, Runes, and Legendary loot. Randomized dungeons contained in a dynamic open world. Survive and conquer darkness—or succumb to the shadows.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      }
+    ],
     "total_rating": 83.48412057575626,
     "total_rating_count": 321
   },
@@ -4030,21 +5892,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co9s0t.jpg"
     },
     "first_release_date": 1714089600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 25,
-        "name": "Hack and slash/Beat 'em up",
-        "slug": "hack-and-slash-beat-em-up"
+        "name": "Hack and slash/Beat 'em up"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 64,
@@ -4060,6 +5925,16 @@
       }
     ],
     "summary": "Eve and her comrades land on the surface to reclaim the extinct Earth and cross paths with a survivor named Adam. Eve is then led by Adam to the last surviving city, Xion, where she meets the elder of the town Orcal and is told many stories. In order to serve her mission to save Earth, Eve develops close relationships with the key members of Xion and contributes to rebuilding the city.\n\nOn a mission to save Earth from the NA:tive, Eve is also faced with helping out the citizens of Xion. Whether you will help the survivors or not, depends purely on your decision as the player.\n\nThe game originally was announced as \"Project Eve\" in 2019. It was set to release for PS4/Xbox One consoles and PC, but a September 2022 State of Play revealed the game would instead launch only on PS5 and PC.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 84.00805084320774,
     "total_rating_count": 97
   },
@@ -4070,11 +5945,16 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2a23.jpg"
     },
     "first_release_date": 1553212800,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 64,
@@ -4099,6 +5979,24 @@
     ],
     "storyline": "The game takes place in a re-imagined late 16th century Sengoku period Japan. At the end of the Sengoku era, warlord Isshin Ashina stages a bloody coup and seizes the land of Ashina. During this time, a nameless orphan is adopted by the wandering shinobi Owl, who names the orphan \"Wolf\".\n\nTwenty years later, the Ashina clan are on the brink of collapse due to a combination of the now elderly Isshin having fallen ill and the clan's enemies steadily closing in from all sides. Desperate to find a way to prevent the fall of his clan, Isshin's grandson Genichiro captures the Divine Heir Kuro, in hopes of using his \"Dragon Heritage\" to create an immortal army.",
     "summary": "Sekiro: Shadows Die Twice is an action-adventure game set in a reimagined late 1500s Sengoku-era Japan.\n\nPlayers control Wolf, a shinobi on a mission to rescue his kidnapped lord and seek revenge on his enemies. The game emphasizes precise sword combat, stealth, and mobility, replacing traditional RPG elements with a posture-based dueling system.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      }
+    ],
     "total_rating": 90.62291447908683,
     "total_rating_count": 1185
   },
@@ -4109,11 +6007,16 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1rbi.jpg"
     },
     "first_release_date": 1573776000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 64,
@@ -4145,6 +6048,20 @@
       }
     ],
     "summary": "Star Wars Jedi: Fallen Order is a narratively driven, single-player game puts you in the role of a Jedi Padawan who narrowly escaped the purge of Order 66 following the events of Episode III: Revenge of the Sith. On a quest to rebuild the Jedi Order, you must pick up the pieces of your shattered past to complete your training, develop new powerful Force abilities and master the art of the iconic lightsaber - all while staying one step ahead of the Empire and its deadly Inquisitors.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 81.78353800525339,
     "total_rating_count": 929
   },
@@ -4155,16 +6072,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1r7h.jpg"
     },
     "first_release_date": 1462838400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 64,
@@ -4176,6 +6101,24 @@
       }
     ],
     "summary": "Several years after his last adventure, retired fortune hunter, Nathan Drake, is forced back into the world of thieves. With the stakes much more personal, Drake embarks on a globe-trotting journey in pursuit of a historical conspiracy behind a fabled pirate treasure. His greatest adventure will test his physical limits, his resolve, and ultimately what he's willing to sacrifice to save the ones he loves.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 23,
+        "name": "Stealth"
+      }
+    ],
     "total_rating": 91.91272513330415,
     "total_rating_count": 2368
   },
@@ -4186,16 +6129,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co7w0e.jpg"
     },
     "first_release_date": 1721174400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 63,
@@ -4216,6 +6163,20 @@
     ],
     "storyline": "Experience a noir adventure in an alternate future of New York City in 2329; technology has advanced to offer humans eternal life, allowing consciousness to be stored in memory banks or transferred from one body to another. That is, if you can afford the subscription.\n\nSee through the eyes of Mortality Department Detective James Karra on his hunt for a serial killer who targets the city’s elite citizens. Investigate crime scenes using his time manipulation augmentation and advanced technology to reconstruct events leading up to each murder and uncover clues that lead to the horrifying truth behind the murders.",
     "summary": "Lose yourself in the dystopian world of New York, 2329; immortality comes at a price that someone has to pay. In this interactive noir story, lead the investigation using advanced technology, as Detective James Karra who risks it all in pursuit of a serial killer targeting the city’s elite.",
+    "themes": [
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 20,
+        "name": "Thriller"
+      },
+      {
+        "id": 43,
+        "name": "Mystery"
+      }
+    ],
     "total_rating": 75.61536365023832,
     "total_rating_count": 51
   },
@@ -4226,16 +6187,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co7sly.jpg"
     },
     "first_release_date": 1718928000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 63,
@@ -4267,6 +6240,20 @@
       }
     ],
     "summary": "The Shadow of the Erdtree is a fully-fledged expansion that features an all-new story set in the Land of Shadow. It adds a whole new map with 70 new weapons, ten new shields, 39 new Talismans, 14 new sorceries, 28 new incantations, 20 new Spirit Ashes, 25 New Ashes of War, 30 new armour sets, and new consumables and craftables.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 92.44974164212339,
     "total_rating_count": 114
   },
@@ -4277,21 +6264,32 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co5vab.jpg"
     },
     "first_release_date": 1725840000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      },
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 63,
@@ -4312,6 +6310,16 @@
     ],
     "storyline": "The galaxy is in peril. Entire worlds are falling. The Imperium needs you.\n\nEmbody the superhuman skill and brutality of a Space Marine, the greatest of the Emperor’s warriors. Unleash deadly abilities and an arsenal of devastating weaponry to obliterate the relentless Tyranid hordes.\n\nHold at bay the horrors of the galaxy in epic battles on far-flung planets. Uncover dark secrets and drive back the everlasting night to prove your ultimate loyalty to humanity.\n\nHeed the call of battle.\n\nFor there is only war.",
     "summary": "The galaxy is in peril. Entire worlds are falling. The Imperium needs you. Embody the superhuman skill and brutality of a Space Marine, the greatest of the Emperor's warriors, with Clive Standen (Vikings, Taken) as the iconic Captain Titus. Unleash deadly abilities and an arsenal of devastating weaponry to obliterate the relentless Tyranid hordes. Hold at bay the horrors of the galaxy in epic battles on far-flung planets. Uncover dark secrets and drive back the everlasting night to prove your ultimate loyalty to humanity.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      }
+    ],
     "total_rating": 79.08566688290331,
     "total_rating_count": 116
   },
@@ -4322,16 +6330,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co2evj.jpg"
     },
     "first_release_date": 1566864000,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 63,
@@ -4364,6 +6376,28 @@
     ],
     "storyline": "After a secretive agency in New York is invaded by an otherworldly threat, you become the new Director struggling to regain Control.\n\nControl is Jesse Faden’s story and her personal search for answers as she grows into the role of the Director. The world of Control has its own story, as do the allies Jesse meets along the way. Jesse works with other Bureau agents and discovers strange experiments and secrets.",
     "summary": "Control is a supernatural 3rd person action-adventure will challenge you to master the combination of supernatural abilities, modifiable loadouts and reactive environments while fighting through a deep and unpredictable world.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 20,
+        "name": "Thriller"
+      }
+    ],
     "total_rating": 83.43178743675054,
     "total_rating_count": 842
   },
@@ -4374,16 +6408,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co6mzf.jpg"
     },
     "first_release_date": 1527206400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 63,
@@ -4400,6 +6438,28 @@
     ],
     "storyline": "Detroit 2038. Technology has evolved to a point where human like androids are everywhere. They speak, move and behave like human beings, but they are only machines serving humans. Play three distinct androids and see a world at the brink of chaos, perhaps our future, through their eyes. Your very decisions will dramatically alter how the game’s intense, branching narrative plays out. You will face moral dilemmas and decide who lives or dies. With thousands of choices and dozens of possible endings, how will you affect the future of Detroit and humanity’s destiny?",
     "summary": "Detroit: Become Human puts the destiny of both mankind and androids in your hands, taking you to a near future where machines have become more intelligent than humans. Every choice you make affects the outcome of the game, with one of the most intricately branching narratives ever created.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 20,
+        "name": "Thriller"
+      },
+      {
+        "id": 31,
+        "name": "Drama"
+      },
+      {
+        "id": 43,
+        "name": "Mystery"
+      }
+    ],
     "total_rating": 80.05568283129695,
     "total_rating_count": 1129
   },
@@ -4410,21 +6470,24 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co271e.jpg"
     },
     "first_release_date": 1480982400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 63,
@@ -4436,6 +6499,12 @@
       }
     ],
     "summary": "In a strange and mystical land, a young boy discovers a mysterious creature with which he forms a deep, unbreakable bond. The unlikely pair must rely on each other to journey through towering, treacherous ruins filled with unknown dangers. Experience the journey of a lifetime in this touching, emotional story of friendship and trust.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      }
+    ],
     "total_rating": 81.52856389589121,
     "total_rating_count": 314
   },
@@ -4446,16 +6515,20 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co8bot.jpg"
     },
     "first_release_date": 1744070400,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 8,
-        "name": "Platform",
-        "slug": "platform"
+        "name": "Platform"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 61,
@@ -4472,6 +6545,16 @@
     ],
     "storyline": "A DARK MODERN FOLKTALE\n\nWhen a hurricane rips through Prospero, Hazel is pulled into a Southern Gothic world where reality and fantasy are interwoven, and ancient creatures from folklore emerge. In this coming-of-age adventure, Hazel journeys forth to rescue her mother and delves into a haunting web of folklore and family secrets, untangling her own identity.",
     "summary": "South of Midnight is a new action-adventure from Compulsion Games. Explore the mythos and confront mysterious creatures of the Deep South in this modern folktale while learning to weave an ancient power to surmount obstacles and face the pain haunting your hometown.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 17,
+        "name": "Fantasy"
+      }
+    ],
     "total_rating": 80.76967324573101,
     "total_rating_count": 50
   },
@@ -4482,26 +6565,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co7kpe.jpg"
     },
     "first_release_date": 1561593600,
+    "game_modes": [
+      {
+        "id": 1,
+        "name": "Single player"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 9,
-        "name": "Puzzle",
-        "slug": "puzzle"
+        "name": "Puzzle"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       },
       {
         "id": 31,
-        "name": "Adventure",
-        "slug": "adventure"
+        "name": "Adventure"
       }
     ],
     "hypes": 61,
@@ -4534,6 +6619,24 @@
     ],
     "storyline": "The city trembles on the brink of madness. Can you investigate this beleaguered town and untangle the tragic extent of its failings or will you be driven beyond madness yourself?",
     "summary": "The Sinking City is a game of investigation genre taking place in a fictional open world inspired by the works of H.P. Lovecraft.\nThe player incarnates a private investigator in 1920s, who finds himself in a city of New England, Oakmont Massachusetts. It's currently suffering from extensive waterflood, and its cause is clearly supernatural.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 19,
+        "name": "Horror"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      },
+      {
+        "id": 43,
+        "name": "Mystery"
+      }
+    ],
     "total_rating": 70.24039456388475,
     "total_rating_count": 120
   },
@@ -4544,16 +6647,28 @@
       "url": "//images.igdb.com/igdb/image/upload/t_thumb/co1yc4.jpg"
     },
     "first_release_date": 1542153600,
+    "game_modes": [
+      {
+        "id": 2,
+        "name": "Multiplayer"
+      },
+      {
+        "id": 3,
+        "name": "Co-operative"
+      },
+      {
+        "id": 5,
+        "name": "Massively Multiplayer Online (MMO)"
+      }
+    ],
     "genres": [
       {
         "id": 5,
-        "name": "Shooter",
-        "slug": "shooter"
+        "name": "Shooter"
       },
       {
         "id": 12,
-        "name": "Role-playing (RPG)",
-        "slug": "role-playing-rpg"
+        "name": "Role-playing (RPG)"
       }
     ],
     "hypes": 60,
@@ -4581,6 +6696,24 @@
       }
     ],
     "summary": "Bethesda Game Studios welcome you to Fallout 76. Twenty-five years after the bombs fall you and your fellow Vault Dwellers, chosen from the nation’s best and brightest, emerge into post-nuclear America on Reclamation Day, 2102. Play solo or join together as you explore, quest, build, and triumph against the wasteland’s greatest threats. Explore a vast wasteland, devastated by nuclear war, in this open-world multiplayer addition to the Fallout story. Experience the largest, most dynamic world ever created in the legendary Fallout universe.",
+    "themes": [
+      {
+        "id": 1,
+        "name": "Action"
+      },
+      {
+        "id": 18,
+        "name": "Science fiction"
+      },
+      {
+        "id": 21,
+        "name": "Survival"
+      },
+      {
+        "id": 38,
+        "name": "Open world"
+      }
+    ],
     "total_rating": 56.05881175361243,
     "total_rating_count": 267
   }

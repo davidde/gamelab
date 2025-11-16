@@ -152,24 +152,24 @@ const QUERIES = [
 ];
 /*
 Example latest output:
-Saved 'game_modes' data (6 games) to 'public/assets/data/igdb/game_modes.json'
-Saved 'themes' data (22 games) to 'public/assets/data/igdb/themes.json'
-Saved 'player_perspectives' data (7 games) to 'public/assets/data/igdb/player_perspectives.json'
+Saved 'game_modes' data (6 game_modes) to 'public/assets/data/igdb/game_modes.json'
+Saved 'themes' data (22 themes) to 'public/assets/data/igdb/themes.json'
 Saved 'genres' data (23 genres) to 'public/assets/data/igdb/genres.json'
-Saved 'shooter' data (264 games) to 'public/assets/data/igdb/shooter.json'
-Saved 'trending' data (100 games) to 'public/assets/data/igdb/trending.json'
+Saved 'player_perspectives' data (7 player_perspectives) to 'public/assets/data/igdb/player_perspectives.json'
 Saved 'fighting' data (176 games) to 'public/assets/data/igdb/fighting.json'
-Saved 'platform' data (221 games) to 'public/assets/data/igdb/platform.json'
-Saved 'racing' data (193 games) to 'public/assets/data/igdb/racing.json'
-Saved 'rpg' data (319 games) to 'public/assets/data/igdb/rpg.json'
-Saved 'strategy' data (256 games) to 'public/assets/data/igdb/strategy.json'
+Saved 'trending' data (100 games) to 'public/assets/data/igdb/trending.json'
 Saved 'sport' data (163 games) to 'public/assets/data/igdb/sport.json'
-Saved 'favourites' data (497 games) to 'public/assets/data/igdb/favourites.json'
 Saved 'hack-and-slash' data (190 games) to 'public/assets/data/igdb/hack-and-slash.json'
+Saved 'racing' data (193 games) to 'public/assets/data/igdb/racing.json'
 Saved 'indie' data (282 games) to 'public/assets/data/igdb/indie.json'
-Saved 'simulator' data (283 games) to 'public/assets/data/igdb/simulator.json'
-Saved 'puzzle' data (293 games) to 'public/assets/data/igdb/puzzle.json'
 Saved 'adventure' data (296 games) to 'public/assets/data/igdb/adventure.json'
+Saved 'strategy' data (256 games) to 'public/assets/data/igdb/strategy.json'
+Saved 'platform' data (221 games) to 'public/assets/data/igdb/platform.json'
+Saved 'simulator' data (284 games) to 'public/assets/data/igdb/simulator.json'
+Saved 'favourites' data (497 games) to 'public/assets/data/igdb/favourites.json'
+Saved 'shooter' data (264 games) to 'public/assets/data/igdb/shooter.json'
+Saved 'puzzle' data (293 games) to 'public/assets/data/igdb/puzzle.json'
+Saved 'rpg' data (319 games) to 'public/assets/data/igdb/rpg.json'
 */
 
 // Notes:
@@ -196,6 +196,8 @@ async function fetchIgdbData(query) {
     return;
   }
 
+  let logName = '';
+  let logType = query.name;
   let FIELD_QUERY, URL;
   switch (query.name) {
     case 'genres':
@@ -217,15 +219,13 @@ async function fetchIgdbData(query) {
     default:
       FIELD_QUERY = GAMES_FIELD_QUERY;
       URL = IGDB_GAMES_URL;
+      logName = `'${query.name}' `;
+      logType = 'games';
   }
-  // const FIELD_QUERY = query.name === 'genres' ? GENRES_FIELD_QUERY : GAMES_FIELD_QUERY;
-  // const URL = query.name === 'genres' ? IGDB_GENRES_URL : IGDB_GAMES_URL;
 
   // Build final "Apicalypse" query:
   let queryBody = FIELD_QUERY.concat(query.sort).concat(`limit ${query.amount};`);
 
-  const logName = query.name === 'genres' ? '' : `'${query.name}' `;
-  const logType = query.name === 'genres' ? 'genres' : 'games';
   console.log(`Fetching Top ${query.amount} ${logName}${logType} from IGDB ...`);
 
   try {
