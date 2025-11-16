@@ -864,3 +864,7 @@ header {
   display: none;
 }
 
+.conditional-question {
+  display: none;
+  padding-top: 15px;
+}

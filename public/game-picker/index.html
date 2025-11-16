@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../style.css">
 
   <script src="../assets/js/toggle-searchbar.js" defer></script>
+  <script src="../assets/js/game-picker.js" defer></script>
 </head>
 
 <body>
@@ -84,7 +85,7 @@
 
 <main>
   <div class="container main">
-    <h1>Questions</h1>
+    <h1>Game Picker</h1>
     <section>
       <h2>Welcome!</h2>
       <p>Not sure what to play? Fill out this short yes/no questionnaire and discover which games fit you best!</p>
@@ -93,149 +94,184 @@
     <section>
       <h2>Questions</h2>
 
+      <form id="dynamic-survey">
+        <div class="question-group">
+          <label for="question1">Do you prefer single-player or multi-player games?</label>
+          <select id="question1" onchange="checkAnswer(this)">
+            <option value="" selected>Select...</option>
+            <option value="single-player">Single-player</option>
+            <option value="multi-player">Multi-player</option>
+          </select>
+        </div>
+
+        <div id="q1-follow-up-1" class="conditional-question">
+          <label for="q1-follow-up-1-q">Do you prefer fast-paced, action-packed games, or something light and relaxing?</label>
+          <select id="q1-follow-up-1-q" onchange="checkAnswer(this)">
+            <option value="" selected>Select...</option>
+            <option value="action">Action-packed games</option>
+            <option value="relaxing">Relaxing games</option>
+          </select>
+        </div>
+
+        <div id="q1-follow-up-2" class="conditional-question">
+          <label for="q1-follow-up-2-q">Do you prefer Co-operative gameplay, MMO's or Battle Royales?</label>
+          <select id="q1-follow-up-2-q" onchange="checkAnswer(this)">
+            <option value="" selected>Select...</option>
+            <option value="co-op">Co-op games</option>
+            <option value="mmo">MMO's</option>
+            <option value="battle-royales">Battle Royales</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <br><br><hr><br><br>
+
+
       <form action="#" method="">
-          <ol>
-              <li>
-                  <p>Do you enjoy fast-paced, action-filled games?</p>
-                  <label><input type="radio" name="q2" value="yes"> Yes</label>
-                  <label><input type="radio" name="q2" value="no"> No</label>
-              </li>
+        <ol>
+          <li>
+              <p>Do you enjoy fast-paced, action-filled games?</p>
+              <label><input type="radio" name="q2" value="yes"> Yes</label>
+              <label><input type="radio" name="q2" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like following a story in a game?</p>
-                  <label><input type="radio" name="q3" value="yes"> Yes</label>
-                  <label><input type="radio" name="q3" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like following a story in a game?</p>
+              <label><input type="radio" name="q3" value="yes"> Yes</label>
+              <label><input type="radio" name="q3" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you prefer playing alone rather than with others?</p>
-                  <label><input type="radio" name="q4" value="yes"> Yes</label>
-                  <label><input type="radio" name="q4" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you prefer playing alone rather than with others?</p>
+              <label><input type="radio" name="q4" value="yes"> Yes</label>
+              <label><input type="radio" name="q4" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you enjoy competing against other players online?</p>
-                  <label><input type="radio" name="q5" value="yes"> Yes</label>
-                  <label><input type="radio" name="q5" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you enjoy competing against other players online?</p>
+              <label><input type="radio" name="q5" value="yes"> Yes</label>
+              <label><input type="radio" name="q5" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like shooting or fighting in games?</p>
-                  <label><input type="radio" name="q6" value="yes"> Yes</label>
-                  <label><input type="radio" name="q6" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like shooting or fighting in games?</p>
+              <label><input type="radio" name="q6" value="yes"> Yes</label>
+              <label><input type="radio" name="q6" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like thinking strategically while playing?</p>
-                  <label><input type="radio" name="q7" value="yes"> Yes</label>
-                  <label><input type="radio" name="q7" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like thinking strategically while playing?</p>
+              <label><input type="radio" name="q7" value="yes"> Yes</label>
+              <label><input type="radio" name="q7" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you enjoy building or designing things (like houses, worlds, cities...)?</p>
-                  <label><input type="radio" name="q8" value="yes"> Yes</label>
-                  <label><input type="radio" name="q8" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you enjoy building or designing things (like houses, worlds, cities...)?</p>
+              <label><input type="radio" name="q8" value="yes"> Yes</label>
+              <label><input type="radio" name="q8" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like games where your choices affect the story?</p>
-                  <label><input type="radio" name="q9" value="yes"> Yes</label>
-                  <label><input type="radio" name="q9" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like games where your choices affect the story?</p>
+              <label><input type="radio" name="q9" value="yes"> Yes</label>
+              <label><input type="radio" name="q9" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Are realistic graphics important to you?</p>
-                  <label><input type="radio" name="q10" value="yes"> Yes</label>
-                  <label><input type="radio" name="q10" value="no"> No</label>
-              </li>
+          <li>
+              <p>Are realistic graphics important to you?</p>
+              <label><input type="radio" name="q10" value="yes"> Yes</label>
+              <label><input type="radio" name="q10" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like funny or light-hearted games?</p>
-                  <label><input type="radio" name="q11" value="yes"> Yes</label>
-                  <label><input type="radio" name="q11" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like funny or light-hearted games?</p>
+              <label><input type="radio" name="q11" value="yes"> Yes</label>
+              <label><input type="radio" name="q11" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you enjoy sports games (like soccer, basketball, or racing)?</p>
-                  <label><input type="radio" name="q12" value="yes"> Yes</label>
-                  <label><input type="radio" name="q12" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you enjoy sports games (like soccer, basketball, or racing)?</p>
+              <label><input type="radio" name="q12" value="yes"> Yes</label>
+              <label><input type="radio" name="q12" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like games set in the future or in space?</p>
-                  <label><input type="radio" name="q13" value="yes"> Yes</label>
-                  <label><input type="radio" name="q13" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like games set in the future or in space?</p>
+              <label><input type="radio" name="q13" value="yes"> Yes</label>
+              <label><input type="radio" name="q13" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like fantasy worlds with magic or monsters?</p>
-                  <label><input type="radio" name="q14" value="yes"> Yes</label>
-                  <label><input type="radio" name="q14" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like fantasy worlds with magic or monsters?</p>
+              <label><input type="radio" name="q14" value="yes"> Yes</label>
+              <label><input type="radio" name="q14" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you enjoy solving puzzles?</p>
-                  <label><input type="radio" name="q15" value="yes"> Yes</label>
-                  <label><input type="radio" name="q15" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you enjoy solving puzzles?</p>
+              <label><input type="radio" name="q15" value="yes"> Yes</label>
+              <label><input type="radio" name="q15" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like horror or scary games?</p>
-                  <label><input type="radio" name="q16" value="yes"> Yes</label>
-                  <label><input type="radio" name="q16" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like horror or scary games?</p>
+              <label><input type="radio" name="q16" value="yes"> Yes</label>
+              <label><input type="radio" name="q16" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like simulation games (like farming, life, or management games)?</p>
-                  <label><input type="radio" name="q17" value="yes"> Yes</label>
-                  <label><input type="radio" name="q17" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like simulation games (like farming, life, or management games)?</p>
+              <label><input type="radio" name="q17" value="yes"> Yes</label>
+              <label><input type="radio" name="q17" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you enjoy short games that can be finished quickly?</p>
-                  <label><input type="radio" name="q18" value="yes"> Yes</label>
-                  <label><input type="radio" name="q18" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you enjoy short games that can be finished quickly?</p>
+              <label><input type="radio" name="q18" value="yes"> Yes</label>
+              <label><input type="radio" name="q18" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like challenging or difficult games?</p>
-                  <label><input type="radio" name="q19" value="yes"> Yes</label>
-                  <label><input type="radio" name="q19" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like challenging or difficult games?</p>
+              <label><input type="radio" name="q19" value="yes"> Yes</label>
+              <label><input type="radio" name="q19" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you often play on your smartphone or tablet?</p>
-                  <label><input type="radio" name="q20" value="yes"> Yes</label>
-                  <label><input type="radio" name="q20" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you often play on your smartphone or tablet?</p>
+              <label><input type="radio" name="q20" value="yes"> Yes</label>
+              <label><input type="radio" name="q20" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you prefer playing on a console rather than on a computer?</p>
-                  <label><input type="radio" name="q21" value="yes"> Yes</label>
-                  <label><input type="radio" name="q21" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you prefer playing on a console rather than on a computer?</p>
+              <label><input type="radio" name="q21" value="yes"> Yes</label>
+              <label><input type="radio" name="q21" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you like games that look colorful and cheerful?</p>
-                  <label><input type="radio" name="q22" value="yes"> Yes</label>
-                  <label><input type="radio" name="q22" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you like games that look colorful and cheerful?</p>
+              <label><input type="radio" name="q22" value="yes"> Yes</label>
+              <label><input type="radio" name="q22" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you enjoy old classics or retro games?</p>
-                  <label><input type="radio" name="q23" value="yes"> Yes</label>
-                  <label><input type="radio" name="q23" value="no"> No</label>
-              </li>
+          <li>
+              <p>Do you enjoy old classics or retro games?</p>
+              <label><input type="radio" name="q23" value="yes"> Yes</label>
+              <label><input type="radio" name="q23" value="no"> No</label>
+          </li>
 
-              <li>
-                  <p>Do you prefer relaxing games instead of stressful ones?</p>
-                  <label><input type="radio" name="q24" value="yes"> Yes</label>
-                  <label><input type="radio" name="q24" value="no"> No</label>
-              </li>
-          </ol>
+          <li>
+              <p>Do you prefer relaxing games instead of stressful ones?</p>
+              <label><input type="radio" name="q24" value="yes"> Yes</label>
+              <label><input type="radio" name="q24" value="no"> No</label>
+          </li>
+        </ol>
 
-          <br>
-          <input type="submit" value="Submit Answers">
+        <br>
+        <input type="submit" value="Submit Answers">
       </form>
     </section>
   </div>

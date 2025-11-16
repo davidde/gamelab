@@ -6,16 +6,37 @@ const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const ACCESS_TOKEN = process.env.TWITCH_ACCESS_TOKEN;
 const IGDB_GAMES_URL = 'https://api.igdb.com/v4/games';
 const GAMES_FIELD_QUERY = `
-  fields name, summary, storyline, genres.name, genres.slug, platforms.name,
+  fields name, summary, storyline, genres.name, themes.name, game_modes.name, platforms.name,
     cover.url, total_rating, total_rating_count, hypes, first_release_date;
 `;
 const IGDB_GENRES_URL = 'https://api.igdb.com/v4/genres';
 const GENRES_FIELD_QUERY = `fields name, slug;`;
+const IGDB_THEMES_URL = 'https://api.igdb.com/v4/themes';
+const THEMES_FIELD_QUERY = `fields name, slug;`;
+const IGDB_MODES_URL = 'https://api.igdb.com/v4/game_modes';
+const MODES_FIELD_QUERY = `fields name, slug;`;
+const IGDB_PERSPECTIVES_URL = 'https://api.igdb.com/v4/player_perspectives';
+const PERSPECTIVES_FIELD_QUERY = `fields name, slug;`;
 
 // IGDB "Apicalypse" REST queries:
 const QUERIES = [
   { // List of all genres:
     name: 'genres',
+    sort: '',
+    amount: 50,
+  },
+  { // List of all themes:
+    name: 'themes',
+    sort: '',
+    amount: 50,
+  },
+  { // List of all game_modes:
+    name: 'game_modes',
+    sort: '',
+    amount: 50,
+  },
+  { // List of all player_perspectives:
+    name: 'player_perspectives',
     sort: '',
     amount: 50,
   },
@@ -130,7 +151,10 @@ const QUERIES = [
   },
 ];
 /*
-Latest output:
+Example latest output:
+Saved 'game_modes' data (6 games) to 'public/assets/data/igdb/game_modes.json'
+Saved 'themes' data (22 games) to 'public/assets/data/igdb/themes.json'
+Saved 'player_perspectives' data (7 games) to 'public/assets/data/igdb/player_perspectives.json'
 Saved 'genres' data (23 genres) to 'public/assets/data/igdb/genres.json'
 Saved 'shooter' data (264 games) to 'public/assets/data/igdb/shooter.json'
 Saved 'trending' data (100 games) to 'public/assets/data/igdb/trending.json'
@@ -172,8 +196,30 @@ async function fetchIgdbData(query) {
     return;
   }
 
-  const FIELD_QUERY = query.name === 'genres' ? GENRES_FIELD_QUERY : GAMES_FIELD_QUERY;
-  const URL = query.name === 'genres' ? IGDB_GENRES_URL : IGDB_GAMES_URL;
+  let FIELD_QUERY, URL;
+  switch (query.name) {
+    case 'genres':
+      FIELD_QUERY = GENRES_FIELD_QUERY;
+      URL = IGDB_GENRES_URL;
+      break;
+    case 'themes':
+      FIELD_QUERY = THEMES_FIELD_QUERY;
+      URL = IGDB_THEMES_URL;
+      break;
+    case 'game_modes':
+      FIELD_QUERY = MODES_FIELD_QUERY;
+      URL = IGDB_MODES_URL;
+      break;
+    case 'player_perspectives':
+      FIELD_QUERY = PERSPECTIVES_FIELD_QUERY;
+      URL = IGDB_PERSPECTIVES_URL;
+      break;
+    default:
+      FIELD_QUERY = GAMES_FIELD_QUERY;
+      URL = IGDB_GAMES_URL;
+  }
+  // const FIELD_QUERY = query.name === 'genres' ? GENRES_FIELD_QUERY : GAMES_FIELD_QUERY;
+  // const URL = query.name === 'genres' ? IGDB_GENRES_URL : IGDB_GAMES_URL;
 
   // Build final "Apicalypse" query:
   let queryBody = FIELD_QUERY.concat(query.sort).concat(`limit ${query.amount};`);
@@ -201,9 +247,10 @@ async function fetchIgdbData(query) {
 
     const games = await response.json();
 
+    const localPath = `public/assets/data/igdb`;
     // Save games to local .json files:
-    const outputfile = `public/assets/data/igdb/${query.name}.json`;
-    fs.mkdirSync("public/assets/data/igdb", { recursive: true });
+    const outputfile = `${localPath}/${query.name}.json`;
+    fs.mkdirSync(localPath, { recursive: true });
     fs.writeFileSync(
       outputfile,
       JSON.stringify(games, null, 2)

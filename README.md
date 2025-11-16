@@ -1,8 +1,19 @@
 # GameLab
+## Team 4
+- David Deprost
+- Kai Hellebuyck
+- Melih Kudretov
+- Robbe Servaes
+
+=> Deployed at: [gamegrid.gitlab.io](https://gamegrid.gitlab.io/).
+
+------------------------
+
 > [!Important] Link to logbook:
 > [Logbook](https://hubkaho-my.sharepoint.com/:w:/r/personal/melih_kudretov_student_odisee_be/Documents/Document.docx?d=w5fd8bbca678847b5a57894fb42c865aa&e=4%3abc6e9649e1ff418b9b34d0c18697e635&sharingv2=true&fromShare=true&at=9&xsdata=MDV8MDJ8ZGF2aWQuZGVwcm9zdEBzdHVkZW50Lm9kaXNlZS5iZXxlMjdkZmQ3MDI0NWE0YjM5MTk2NTA4ZGUwMThiOGE4Y3w1ZTc0OTAxZDMzNGY0NmUzOTZkMTQ3ZDg0MjU4NWFiZHwwfDB8NjM4OTQ5ODk2MDA1ODA2NTQ1fFVua25vd258VFdGcGJHWnNiM2Q4ZXlKRmJYQjBlVTFoY0draU9uUnlkV1VzSWxZaU9pSXdMakF1TURBd01DSXNJbEFpT2lKWGFXNHpNaUlzSWtGT0lqb2lUV0ZwYkNJc0lsZFVJam95ZlE9PXwwfHx8&sdata=U2U3bmQvRXpIYk9KKzJJYmdCZnA2VEJBZHhIbk83OFk4bWlHUGFjcTQ0QT0%3d)
 
 - [GameLab](#gamelab)
+  - [Team 4](#team-4)
   - [Git Intro](#git-intro)
   - [IGDB (= Internet Game Database)](#igdb--internet-game-database)
     - [Genres](#genres)
