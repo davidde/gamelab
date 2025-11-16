@@ -1,13 +1,11 @@
 import { injectGameHtml } from './utils.js';
 
 
-const COLLECTIONS = ['trending', 'favourites'];
-
 function initData(collection) {
-  const container = document.getElementById(collection);
+  const container = document.querySelector(`[data-collection="${collection}"]`);
 
   if (!container) {
-    console.error(`Container element with ID "${collection}" not found!`);
+    console.error(`Container element with data-collection="${collection}" not found!`);
     return;
   }
 
@@ -33,6 +31,12 @@ function initData(collection) {
     });
 }
 
-for (const collection of COLLECTIONS) {
+function getCollections() {
+  const elements = document.querySelectorAll('[data-collection]');
+  return Array.from(elements)
+    .map(element => element.dataset.collection);
+}
+
+for (const collection of getCollections()) {
   initData(collection);
 }

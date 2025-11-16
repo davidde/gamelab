@@ -179,7 +179,7 @@ body {
     padding-block-start: 4vh;
     padding-block-end: 12vh;
 
-    section:has(#favourites) {
+    section:has([data-collection="favourites"]) {
       padding-block: 2vh;
     }
   }
