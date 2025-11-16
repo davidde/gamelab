@@ -94,51 +94,173 @@
     <section>
       <h2>Questions</h2>
 
-      <form id="dynamic-survey">
+      <form id="dynamic-survey" onsubmit="validateForm(event); return false;">
         <ul>
-          <li class="question-group">
-            <label for="question1">Do you prefer single-player or multi-player games?</label>
-            <select id="question1" onchange="checkAnswer(this)">
-              <option value="" selected>Select...</option>
-              <option value="single-player">Single-player</option>
-              <option value="multi-player">Multi-player</option>
-            </select>
-          </li>
+          <div data-question-group="1">
+            <li>
+              <label for="question1">Do you prefer single-player or multi-player games?</label>
+              <select
+                data-question-main="1"
+                id="question1"
+                name="players-pref"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="single-player">Single-player</option>
+                <option value="multi-player">Multi-player</option>
+              </select>
+            </li>
 
-          <li id="q1-follow-up-1" class="conditional-question">
-            <label for="q1-follow-up-1-q">Do you prefer fast-paced, action-packed games, or something light and relaxing?</label>
-            <select id="q1-follow-up-1-q" onchange="checkAnswer(this)">
-              <option value="" selected>Select...</option>
-              <option value="action">Action-packed games</option>
-              <option value="relaxing">Relaxing games</option>
-            </select>
-          </li>
+            <li class="hidden">
+              <label for="question2">
+                Do you prefer fast-paced, action-packed games, or something light and relaxing?
+              </label>
+              <select
+                data-question-followup="1"
+                id="question2"
+                name="players-pref-single"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="action">Action-packed games</option>
+                <option value="relaxing">Relaxing games</option>
+              </select>
+            </li>
 
-          <li id="q1-follow-up-2" class="conditional-question">
-            <label for="q1-follow-up-2-q">Do you prefer co-operative gameplay, MMO's or Battle Royales?</label>
-            <select id="q1-follow-up-2-q" onchange="checkAnswer(this)">
-              <option value="" selected>Select...</option>
-              <option value="co-op">Co-op games</option>
-              <option value="mmo">MMO's</option>
-              <option value="battle-royales">Battle Royales</option>
-            </select>
-          </li>
+            <li class="hidden">
+              <label for="question3">
+                Do you prefer MMO's or Battle Royales?
+              </label>
+              <select
+                data-question-followup="2"
+                id="question3"
+                name="players-pref-multi"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="mmo">MMO's</option>
+                <option value="battle-royales">Battle Royales</option>
+              </select>
+            </li>
+          </div>
 
-          <li class="question-group">
-            <label for="question2">Do you prefer fast-paced, action-packed games, or something light and relaxing?</label>
-            <select id="question2" onchange="checkAnswer(this)">
-              <option value="" selected>Select...</option>
-              <option value="action">Action-packed games</option>
-              <option value="relaxing">Relaxing games</option>
-            </select>
-          </li>
+          <div data-question-group="2">
+            <li class="hidden">
+              <label for="question4">
+                Do you prefer a shooter, or hack-and-slash?
+              </label>
+              <select
+                data-question-followup="3"
+                id="question4"
+                name="shooter-vs-hack-slash"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="shooter">shooter</option>
+                <option value="hack-and-slash">hack-and-slash</option>
+              </select>
+            </li>
+
+            <li class="hidden">
+              <label for="question5">
+                Do you prefer a puzzle, or sports game?
+              </label>
+              <select
+                data-question-followup="4"
+                id="question5"
+                name="puzzle-vs-sports"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="puzzle">puzzle</option>
+                <option value="sports">sports</option>
+              </select>
+            </li>
+          </div>
+          <div data-question-group="3">
+            <li class="hidden">
+              <label for="question6">
+                Do you like RPGs?
+              </label>
+              <select
+                data-question-followup="5"
+                id="question6"
+                name="like-rpgs"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </li>
+
+            <li class="hidden">
+              <label for="question7">
+                Do you like shooters?
+              </label>
+              <select
+                data-question-followup="6"
+                id="question7"
+                name="like-shooters"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </li>
+          </div>
+          <div data-question-group="4">
+            <li class="hidden">
+              <label for="question8">
+                Do you prefer mobile or console gaming?
+              </label>
+              <select
+                data-question-followup="7"
+                id="question8"
+                name="mobile-vs-console"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="mobile">mobile</option>
+                <option value="console">console</option>
+              </select>
+            </li>
+
+            <li class="hidden">
+              <label for="question9">
+                Do you prefer console or PC gaming?
+              </label>
+              <select
+                data-question-followup="8"
+                id="question9"
+                name="console-vs-pc"
+                onchange="checkAnswer(this)"
+              >
+                <option value="" selected>Select...</option>
+                <option value="console">console</option>
+                <option value="pc">PC</option>
+              </select>
+            </li>
+          </div>
         </ul>
 
         <button type="submit">Submit</button>
       </form>
 
-      <br><br><hr><br><br>
+      <ul id="gamepicker-results-list" class="sidescroll-list">
+        <!-- Gamepicker results injected here -->
 
+        <!-- This visually hidden list item is required for sidescroll.js;
+            it needs it to calculate the min-width of a game-card -->
+        <li class='game-card visually-hidden'></li>
+      </ul>
+
+
+
+      <br><br><br><hr><br>
+
+      <h2>Inspiration</h2>
 
       <form action="#" method="">
         <ol>
