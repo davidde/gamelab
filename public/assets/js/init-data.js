@@ -26,7 +26,10 @@ function initData(collection) {
 
       console.log(`Successfully loaded ${games.length} items for ${collection}. Appending now...`);
 
-      games.forEach(game => injectGameHtml(game, collection, container));
+      let gamesToShow = 100;
+      for (let i = 0; i < gamesToShow && i < games.length; i++) {
+        injectGameHtml(games[i], collection, container);
+      }
     });
 }
 

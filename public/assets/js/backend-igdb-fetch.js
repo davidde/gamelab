@@ -4,23 +4,128 @@ import fs from 'fs';
 // Constants:
 const CLIENT_ID = process.env.TWITCH_CLIENT_ID;
 const ACCESS_TOKEN = process.env.TWITCH_ACCESS_TOKEN;
-const IGDB_URL = 'https://api.igdb.com/v4/games';
-const BASEQUERY = `
-  fields name, summary, storyline, genres.name, platforms.name, cover.url,
-    artworks.url, total_rating, total_rating_count, hypes, first_release_date;
-  where version_parent = null;
-`
+const IGDB_GAMES_URL = 'https://api.igdb.com/v4/games';
+const GAMES_FIELD_QUERY = `
+  fields name, summary, storyline, genres.name, genres.slug, platforms.name,
+    cover.url, total_rating, total_rating_count, hypes, first_release_date;
+`;
+const IGDB_GENRES_URL = 'https://api.igdb.com/v4/genres';
+const GENRES_FIELD_QUERY = `fields name, slug;`;
 
 // IGDB "Apicalypse" REST queries:
 const QUERIES = [
+  { // List of all genres:
+    name: 'genres',
+    sort: '',
+    amount: 50,
+  },
+
+  // Specific genres:
+  { // The `version_parent` field in the IGDB API is used to distinguish the original/main release
+    // from its subsequent versions, such as ports, remakes, or re-releases:
+    // `version_parent = [game_id]` indicates the game entry is a derivative version of another game_id.
+    name: 'fighting',
+    sort: ' where version_parent = null & genres = (4) & total_rating_count >= 5; sort total_rating desc; ',
+    // Note the parenthesis around the genre id `(4)`! This is essential to select all games with the
+    // genre `fighting`; without the parenthesis, it will select ONLY games with the `fighting` genre and
+    // WITHOUT any other genres. This excludes many games since most games actually have multiple genres!
+    amount: 500,
+  },
+  {
+    name: 'shooter',
+    sort: ' where version_parent = null & genres = (5) & total_rating_count >= 15; sort total_rating desc; ',
+    amount: 500,
+  },
+  // { // Only results in 92 games:
+  //   name: 'music',
+  //   sort: ' where version_parent = null & genres = (7) & total_rating_count >= 5; sort total_rating desc; ',
+  //   amount: 500,
+  // },
+  {
+    name: 'platform',
+    sort: ' where version_parent = null & genres = (8) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  {
+    name: 'puzzle',
+    sort: ' where version_parent = null & genres = (9) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  {
+    name: 'racing',
+    sort: ' where version_parent = null & genres = (10) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  // { // Only results in 17 games:
+  //   name: 'real-time-strategy',
+  //   sort: ' where version_parent = null & genres = (11) & total_rating_count >= 5; sort total_rating desc; ',
+  //   amount: 500,
+  // },
+  {
+    name: 'rpg',
+    sort: ' where version_parent = null & genres = (12) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  {
+    name: 'simulator',
+    sort: ' where version_parent = null & genres = (13) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  {
+    name: 'sport',
+    sort: ' where version_parent = null & genres = (14) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  {
+    name: 'strategy',
+    sort: ' where version_parent = null & genres = (15) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  // { // Only results in 9 games:
+  //   name: 'turn-based-strategy',
+  //   sort: ' where version_parent = null & genres = (16) & total_rating_count >= 5; sort total_rating desc; ',
+  //   amount: 500,
+  // },
+  // { // Only results in 3 games:
+  //   name: 'tactical',
+  //   sort: ' where version_parent = null & genres = (24) & total_rating_count >= 5; sort total_rating desc; ',
+  //   amount: 500,
+  // },
+  {
+    name: 'hack-and-slash',
+    sort: ' where version_parent = null & genres = (25) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  // { // Only results in 20 games:
+  //   name: 'quiz',
+  //   sort: ' where version_parent = null & genres = (26) & total_rating_count >= 5; sort total_rating desc; ',
+  //   amount: 500,
+  // },
+  {
+    name: 'adventure',
+    sort: ' where version_parent = null & genres = (31) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  {
+    name: 'indie',
+    sort: ' where version_parent = null & genres = (32) & total_rating_count >= 5; sort total_rating desc; ',
+    amount: 500,
+  },
+  // { // Only results in 4 games:
+  //   name: 'moba',
+  //   sort: ' where version_parent = null & genres = (36) & total_rating_count >= 5; sort total_rating desc; ',
+  //   amount: 500,
+  // },
+
+  // Other categories:
   {
     name: 'trending',
     sort: ' sort hypes desc; ',
-    amount: 100,
+    amount: 500,
   },
   {
     name: 'favourites',
-    sort: ' where total_rating_count >= 350; sort total_rating desc; ',
+    sort: ' where version_parent = null & total_rating_count >= 350; sort total_rating desc; ',
     amount: 500,
   },
 ];
@@ -48,13 +153,18 @@ async function fetchIgdbData(query) {
     return;
   }
 
-  // Build final "Apicalypse" query:
-  let queryBody = BASEQUERY.concat(query.sort).concat(`limit ${query.amount};`);
+  const FIELD_QUERY = query.name === 'genres' ? GENRES_FIELD_QUERY : GAMES_FIELD_QUERY;
+  const URL = query.name === 'genres' ? IGDB_GENRES_URL : IGDB_GAMES_URL;
 
-  console.log(`Fetching Top ${query.amount} '${query.name}' games from IGDB ...`);
+  // Build final "Apicalypse" query:
+  let queryBody = FIELD_QUERY.concat(query.sort).concat(`limit ${query.amount};`);
+
+  const logName = query.name === 'genres' ? '' : `'${query.name}' `;
+  const logType = query.name === 'genres' ? 'genres' : 'games';
+  console.log(`Fetching Top ${query.amount} ${logName}${logType} from IGDB ...`);
 
   try {
-    const response = await fetch(IGDB_URL, {
+    const response = await fetch(URL, {
       method: 'POST',
       headers: {
         'Client-ID': CLIENT_ID,
@@ -80,7 +190,7 @@ async function fetchIgdbData(query) {
       JSON.stringify(games, null, 2)
     );
 
-    console.log(`Saved '${query.name}' data (${games.length} games) to '${outputfile}'`);
+    console.log(`Saved '${query.name}' data (${games.length} ${logType}) to '${outputfile}'`);
   } catch (error) {
     console.error('\nFatal Error during IGDB fetch:', error.message);
   }
