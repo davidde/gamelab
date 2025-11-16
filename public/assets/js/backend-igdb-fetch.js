@@ -120,7 +120,7 @@ const QUERIES = [
   // Other categories:
   {
     name: 'trending',
-    sort: ' sort hypes desc; ',
+    sort: ' where version_parent = null & hypes >= 50 & total_rating_count >= 50; sort hypes desc; ',
     amount: 500,
   },
   {
