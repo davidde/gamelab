@@ -129,6 +129,14 @@ p {
   margin-inline: 10%;
 }
 
+.fs-2 {
+  font-size: 2em;
+}
+
+.fs-2-5 {
+  font-size: 2.5em;
+}
+
 .fs-3 {
   font-size: 3em;
 }

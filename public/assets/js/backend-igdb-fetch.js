@@ -25,7 +25,7 @@ const QUERIES = [
     // from its subsequent versions, such as ports, remakes, or re-releases:
     // `version_parent = [game_id]` indicates the game entry is a derivative version of another game_id.
     name: 'fighting',
-    sort: ' where version_parent = null & genres = (4) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (4) & total_rating_count >= 50; sort total_rating desc; ',
     // Note the parenthesis around the genre id `(4)`! This is essential to select all games with the
     // genre `fighting`; without the parenthesis, it will select ONLY games with the `fighting` genre and
     // WITHOUT any other genres. This excludes many games since most games actually have multiple genres!
@@ -33,94 +33,94 @@ const QUERIES = [
   },
   {
     name: 'shooter',
-    sort: ' where version_parent = null & genres = (5) & total_rating_count >= 15; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (5) & total_rating_count >= 250; sort total_rating desc; ',
     amount: 500,
   },
   // { // Only results in 92 games:
   //   name: 'music',
-  //   sort: ' where version_parent = null & genres = (7) & total_rating_count >= 5; sort total_rating desc; ',
+  //   sort: ' where version_parent = null & genres = (7) & total_rating_count >= 50; sort total_rating desc; ',
   //   amount: 500,
   // },
   {
     name: 'platform',
-    sort: ' where version_parent = null & genres = (8) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (8) & total_rating_count >= 150; sort total_rating desc; ',
     amount: 500,
   },
   {
     name: 'puzzle',
-    sort: ' where version_parent = null & genres = (9) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (9) & total_rating_count >= 100; sort total_rating desc; ',
     amount: 500,
   },
   {
     name: 'racing',
-    sort: ' where version_parent = null & genres = (10) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (10) & total_rating_count >= 50; sort total_rating desc; ',
     amount: 500,
   },
   // { // Only results in 17 games:
   //   name: 'real-time-strategy',
-  //   sort: ' where version_parent = null & genres = (11) & total_rating_count >= 5; sort total_rating desc; ',
+  //   sort: ' where version_parent = null & genres = (11) & total_rating_count >= 50; sort total_rating desc; ',
   //   amount: 500,
   // },
   {
     name: 'rpg',
-    sort: ' where version_parent = null & genres = (12) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (12) & total_rating_count >= 150; sort total_rating desc; ',
     amount: 500,
   },
   {
     name: 'simulator',
-    sort: ' where version_parent = null & genres = (13) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (13) & total_rating_count >= 75; sort total_rating desc; ',
     amount: 500,
   },
   {
     name: 'sport',
-    sort: ' where version_parent = null & genres = (14) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (14) & total_rating_count >= 50; sort total_rating desc; ',
     amount: 500,
   },
   {
     name: 'strategy',
-    sort: ' where version_parent = null & genres = (15) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (15) & total_rating_count >= 100; sort total_rating desc; ',
     amount: 500,
   },
   // { // Only results in 9 games:
   //   name: 'turn-based-strategy',
-  //   sort: ' where version_parent = null & genres = (16) & total_rating_count >= 5; sort total_rating desc; ',
+  //   sort: ' where version_parent = null & genres = (16) & total_rating_count >= 50; sort total_rating desc; ',
   //   amount: 500,
   // },
   // { // Only results in 3 games:
   //   name: 'tactical',
-  //   sort: ' where version_parent = null & genres = (24) & total_rating_count >= 5; sort total_rating desc; ',
+  //   sort: ' where version_parent = null & genres = (24) & total_rating_count >= 50; sort total_rating desc; ',
   //   amount: 500,
   // },
   {
     name: 'hack-and-slash',
-    sort: ' where version_parent = null & genres = (25) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (25) & total_rating_count >= 75; sort total_rating desc; ',
     amount: 500,
   },
   // { // Only results in 20 games:
   //   name: 'quiz',
-  //   sort: ' where version_parent = null & genres = (26) & total_rating_count >= 5; sort total_rating desc; ',
+  //   sort: ' where version_parent = null & genres = (26) & total_rating_count >= 50; sort total_rating desc; ',
   //   amount: 500,
   // },
   {
     name: 'adventure',
-    sort: ' where version_parent = null & genres = (31) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (31) & total_rating_count >= 400; sort total_rating desc; ',
     amount: 500,
   },
   {
     name: 'indie',
-    sort: ' where version_parent = null & genres = (32) & total_rating_count >= 5; sort total_rating desc; ',
+    sort: ' where version_parent = null & genres = (32) & total_rating_count >= 100; sort total_rating desc; ',
     amount: 500,
   },
   // { // Only results in 4 games:
   //   name: 'moba',
-  //   sort: ' where version_parent = null & genres = (36) & total_rating_count >= 5; sort total_rating desc; ',
+  //   sort: ' where version_parent = null & genres = (36) & total_rating_count >= 50; sort total_rating desc; ',
   //   amount: 500,
   // },
 
   // Other categories:
   {
     name: 'trending',
-    sort: ' where version_parent = null & hypes >= 50 & total_rating_count >= 50; sort hypes desc; ',
+    sort: ' where version_parent = null & hypes >= 60 & total_rating_count >= 50; sort hypes desc; ',
     amount: 500,
   },
   {
@@ -129,6 +129,25 @@ const QUERIES = [
     amount: 500,
   },
 ];
+/*
+Latest output:
+Saved 'genres' data (23 genres) to 'public/assets/data/igdb/genres.json'
+Saved 'shooter' data (264 games) to 'public/assets/data/igdb/shooter.json'
+Saved 'trending' data (100 games) to 'public/assets/data/igdb/trending.json'
+Saved 'fighting' data (176 games) to 'public/assets/data/igdb/fighting.json'
+Saved 'platform' data (221 games) to 'public/assets/data/igdb/platform.json'
+Saved 'racing' data (193 games) to 'public/assets/data/igdb/racing.json'
+Saved 'rpg' data (319 games) to 'public/assets/data/igdb/rpg.json'
+Saved 'strategy' data (256 games) to 'public/assets/data/igdb/strategy.json'
+Saved 'sport' data (163 games) to 'public/assets/data/igdb/sport.json'
+Saved 'favourites' data (497 games) to 'public/assets/data/igdb/favourites.json'
+Saved 'hack-and-slash' data (190 games) to 'public/assets/data/igdb/hack-and-slash.json'
+Saved 'indie' data (282 games) to 'public/assets/data/igdb/indie.json'
+Saved 'simulator' data (283 games) to 'public/assets/data/igdb/simulator.json'
+Saved 'puzzle' data (293 games) to 'public/assets/data/igdb/puzzle.json'
+Saved 'adventure' data (296 games) to 'public/assets/data/igdb/adventure.json'
+*/
+
 // Notes:
 // Image sizes:
 // * By default returns `t_thumb` or thumbnail size.

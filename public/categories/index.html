@@ -20,8 +20,8 @@
   <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 
-  <!-- <script src="../assets/js/init-data.js" type="module" defer></script>
-  <script src="../assets/js/sidescroll.js" defer></script> -->
+  <script src="../assets/js/init-data.js" type="module" defer></script>
+  <script src="../assets/js/sidescroll.js" defer></script>
   <script src="../assets/js/toggle-searchbar.js" defer></script>
 </head>
 
@@ -88,24 +88,163 @@
 </header>
 
 <main>
-  <div class="sidebar-container">
-    <aside class="sidebar">
-        <ul>
-            <li><a href="#">Indie</a></li>
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Adventure</a></li>
-            <li><a href="#">Casual</a></li>
-            <li><a href="#">Singleplayer</a></li>
-            <li><a href="#">RPG</a></li>
-            <li><a href="#">Simulation</a></li>
-            <li><a href="#">Strategy</a></li>
-        </ul>
-    </aside>
-    <section class="container main">
-        <h1>Categories</h1>
-        <h2>Showing category-#</h2>
-        <span class="game-card" style="visibility: hidden;"></span>
+  <div class="container main">
+    <h1 class="visually-hidden">Categories</h1>
 
+    <section>
+      <h2 class="gradient-title mx-tenth fs-3-5">Adventure Games</h2>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul class="sidescroll-list" data-collection="adventure">
+          <!-- Game data injected here by init-data.js! -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+               it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="gradient-title mx-tenth fs-3-5">Fighting Games</h2>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul class="sidescroll-list" data-collection="fighting">
+          <!-- Game data injected here by init-data.js! -->
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="gradient-title mx-tenth fs-3-5">Platform Games</h2>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul class="sidescroll-list" data-collection="platform">
+          <!-- Game data injected here by init-data.js! -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+               it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="gradient-title mx-tenth fs-3-5">Puzzle Games</h2>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul class="sidescroll-list" data-collection="puzzle">
+          <!-- Game data injected here by init-data.js! -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+               it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="gradient-title mx-tenth fs-3-5">Racing Games</h2>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul class="sidescroll-list" data-collection="racing">
+          <!-- Game data injected here by init-data.js! -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+               it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="gradient-title mx-tenth fs-3-5">RPG's</h2>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul class="sidescroll-list" data-collection="rpg">
+          <!-- Game data injected here by init-data.js! -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+               it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="gradient-title mx-tenth fs-3-5">Shooters</h2>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul class="sidescroll-list" data-collection="shooter">
+          <!-- Game data injected here by init-data.js! -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+               it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="gradient-title mx-tenth fs-3-5">Sport Games</h2>
+
+      <div class="sidescroller">
+        <div class="chevron-container left">
+          <span class="svg large chevron"></span>
+        </div>
+        <ul class="sidescroll-list" data-collection="sport">
+          <!-- Game data injected here by init-data.js! -->
+
+          <!-- This visually hidden list item is required for sidescroll.js;
+               it needs it to calculate the min-width of a game-card -->
+          <li class='game-card visually-hidden'></li>
+        </ul>
+        <div class="chevron-container right">
+          <span class="svg large chevron"></span>
+        </div>
+      </div>
     </section>
   </div>
 </main>

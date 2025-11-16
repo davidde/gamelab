@@ -13,10 +13,10 @@
       </div>
     </li>
 **/
-export function injectGameHtml(game, collection, container) {
+export function injectGameHtml(game, collection, container, projectRoot) {
   // Check if essential properties exist before trying to access them:
-  if (!game.cover || !game.cover.url || !game.name) {
-    console.warn(`Skipping game due to missing data: ${game.name || 'Unknown'}`);
+  if (!game || !game.cover || !game.cover.url || !game.name) {
+    console.warn('Skipping game due to missing game data');
     return; // Skip game and continue the loop
   }
 
@@ -41,9 +41,7 @@ export function injectGameHtml(game, collection, container) {
 
   // Default elements for both sidescroller and game detail page:
   const a = document.createElement('a');
-  let path = window.location.pathname;
-  path = path.endsWith('/games/') ? path : path + 'games/';
-  a.href = `${path}?collection=${collection}&id=${game.id}`;
+  a.href = `${projectRoot}games/?collection=${collection}&id=${game.id}`;
   div1.appendChild(a);
 
   const img = document.createElement('img');
