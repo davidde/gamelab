@@ -41,7 +41,7 @@ export function injectGameHtml(game, collection, container) {
 
   // Default elements for both sidescroller and game detail page:
   const a = document.createElement('a');
-  a.href = `/games/?collection=${collection}&id=${game.id}`;
+  a.href = `${getBasePath()}/games/?collection=${collection}&id=${game.id}`;
   a.title = "game";
   a.textContent = "Go to game";
   div1.appendChild(a);
@@ -114,4 +114,14 @@ function appendSummary(parent, summary) {
   summaryDiv.appendChild(p);
 
   parent.appendChild(summaryDiv);
+}
+
+function getBasePath() {
+  const BASE_PATH = location.hostname.includes('github.io') ?
+    // Use '/repo-name' as base path for Github Pages:
+    '/' + location.pathname.split('/')[1]
+    :
+    '';
+
+  return BASE_PATH;
 }
