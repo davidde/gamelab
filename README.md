@@ -1,5 +1,6 @@
 # GameLab
 - [GameLab](#gamelab)
+  - [⚠️ Root of project](#️-root-of-project)
   - [Login functionality](#login-functionality)
   - [IGDB (= Internet Game Database)](#igdb--internet-game-database)
     - [Genres](#genres)
@@ -7,21 +8,21 @@
 
 <br>
 
-> [!Caution] Important: Root of project
-> For local development, the root of the project needs to be correctly configured as `/public` for the dev server:
-> * For the vscode `Live Server` extension this can be done by adding the following in `.vscode/settings.json`:
->   ```json
->   {
->     "liveServer.settings.root": "public",
->   }
->   ```
-> * For the vscode `Live Preview` extension this can be done by adding the following in `.vscode/settings.json`:
->   ```json
->   {
->     "livePreview.serverRoot": "public",
->   }
->   ```
-> Alternatively, you can also just open `/public` as root in vscode / your IDE directly, and start the dev server from there.
+## ⚠️ Root of project
+For local development, the root of the project needs to be correctly configured as `/public` for the dev server:
+* For the vscode `Live Server` extension this can be done by adding the following in `.vscode/settings.json`:
+  ```json
+  {
+    "liveServer.settings.root": "public",
+  }
+  ```
+* For the vscode `Live Preview` extension this can be done by adding the following in `.vscode/settings.json`:
+  ```json
+  {
+    "livePreview.serverRoot": "public",
+  }
+  ```
+Alternatively, you can also just open `/public` as root in vscode / your IDE directly, and start the dev server from there.
 
 ## Login functionality
 Since this is a static site, the login functionality was implemented using **localStorage**.  
