@@ -49,17 +49,21 @@ async function main() {
 }
 
 function displayGames(games) {
+  const isLocalHost = window.location.hostname === 'localhost' ||
+                      window.location.hostname === '127.0.0.1';
+  const ROOT = isLocalHost ? '/public/' : '/';
+
   switch (displayMode) {
     case 'search': // `games` is an array of search results:
       if (games.length > 0) {
-        games.forEach(game => injectGameHtml(game, collection, container));
+        games.forEach(game => injectGameHtml(game, collection, container, ROOT));
       }
       else { // If `games` is empty:
         container.innerHTML = "<p>Nothing found. Too bad...</p>";
       }
       break;
     case 'game': // `games` is a single game:
-      injectGameHtml(games, collection, container)
+      injectGameHtml(games, collection, container, ROOT);
       break;
   }
 }
