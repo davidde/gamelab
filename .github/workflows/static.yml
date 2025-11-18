@@ -34,6 +34,10 @@ jobs:
         with:
           node-version: 20
       - name: Run backend fetch script
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_ACCESS_TOKEN: ${{ secrets.TWITCH_ACCESS_TOKEN }}
+
         run: node public/assets/js/backend-igdb-fetch.js
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
