@@ -1,49 +1,14 @@
 # GameLab
-## Team 4
-- David Deprost
-- Kai Hellebuyck
-- Melih Kudretov
-- Robbe Servaes
-
-=> Deployed at: [gamegrid.gitlab.io](https://gamegrid.gitlab.io/).
-
-------------------------
-
-> [!Important] Link to logbook:
-> [Logbook](https://hubkaho-my.sharepoint.com/:w:/r/personal/melih_kudretov_student_odisee_be/Documents/Document.docx?d=w5fd8bbca678847b5a57894fb42c865aa&e=4%3abc6e9649e1ff418b9b34d0c18697e635&sharingv2=true&fromShare=true&at=9&xsdata=MDV8MDJ8ZGF2aWQuZGVwcm9zdEBzdHVkZW50Lm9kaXNlZS5iZXxlMjdkZmQ3MDI0NWE0YjM5MTk2NTA4ZGUwMThiOGE4Y3w1ZTc0OTAxZDMzNGY0NmUzOTZkMTQ3ZDg0MjU4NWFiZHwwfDB8NjM4OTQ5ODk2MDA1ODA2NTQ1fFVua25vd258VFdGcGJHWnNiM2Q4ZXlKRmJYQjBlVTFoY0draU9uUnlkV1VzSWxZaU9pSXdMakF1TURBd01DSXNJbEFpT2lKWGFXNHpNaUlzSWtGT0lqb2lUV0ZwYkNJc0lsZFVJam95ZlE9PXwwfHx8&sdata=U2U3bmQvRXpIYk9KKzJJYmdCZnA2VEJBZHhIbk83OFk4bWlHUGFjcTQ0QT0%3d)
-
 - [GameLab](#gamelab)
-  - [Team 4](#team-4)
-  - [Git Intro](#git-intro)
+  - [Login functionality](#login-functionality)
   - [IGDB (= Internet Game Database)](#igdb--internet-game-database)
     - [Genres](#genres)
   - [GitLab CI](#gitlab-ci)
 
-## Git Intro
-> Install git:
-> ```
-> winget install --id Git.Git -e --source winget
-> ```
-> (https://git-scm.com/downloads/win)
-
-* General workflow:  
-  ```
-  "Save file" => git add => git commit => git push
-  ```
-
-* For example:  
-  ```
-  "Save index.html"
-  "Save stylesheet.css"
-  git add index.html stylesheet.css
-  git commit -m "Update nav element with styles"
-  git push
-  ```
-
-* To get the most recent changes from Gitlab/Github:  
-  ```bash
-  git pull
-  ```
+## Login functionality
+Since this is a static site, the login functionality was implemented using **localStorage**.  
+As such, it is for demonstration purposes only. It is local-only and **not secure**;
+anyone can inspect all logins and passwords in the browser's Devtools' Storage tab.
 
 ## IGDB (= Internet Game Database)
 We're using the [IGDB API](https://www.igdb.com/api) because it allows fine-grained control over game data. It uses an SQL-like querying language [Apicalypse](https://apicalypse.io/) that allows for very specific game data filtering. IGDB is Twitch/Amazon-owned and requires a Twitch developer account with accompanying Client_ID and Access_token.
