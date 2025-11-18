@@ -42,6 +42,8 @@ export function injectGameHtml(game, collection, container, projectRoot) {
   // Default elements for both sidescroller and game detail page:
   const a = document.createElement('a');
   a.href = `${projectRoot}games/?collection=${collection}&id=${game.id}`;
+  a.title = "game";
+  a.textContent = "Go to game";
   div1.appendChild(a);
 
   const img = document.createElement('img');

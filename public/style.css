@@ -720,6 +720,10 @@ header {
 }
 
 #single-game-result {
+  a {
+    display: none;
+  }
+
   .game-card {
     height: 100%;
     list-style: none;
