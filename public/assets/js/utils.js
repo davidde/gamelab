@@ -13,7 +13,7 @@
       </div>
     </li>
 **/
-export function injectGameHtml(game, collection, container, projectRoot) {
+export function injectGameHtml(game, collection, container) {
   // Check if essential properties exist before trying to access them:
   if (!game || !game.cover || !game.cover.url || !game.name) {
     console.warn('Skipping game due to missing game data');
@@ -41,7 +41,7 @@ export function injectGameHtml(game, collection, container, projectRoot) {
 
   // Default elements for both sidescroller and game detail page:
   const a = document.createElement('a');
-  a.href = `${projectRoot}games/?collection=${collection}&id=${game.id}`;
+  a.href = `/games/?collection=${collection}&id=${game.id}`;
   a.title = "game";
   a.textContent = "Go to game";
   div1.appendChild(a);

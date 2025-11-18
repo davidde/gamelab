@@ -9,10 +9,7 @@ function initData(collection) {
     return;
   }
 
-  const isLocalHost = window.location.hostname === 'localhost' ||
-                      window.location.hostname === '127.0.0.1';
-  const ROOT = isLocalHost ? '/public/' : '/';
-  fetch(`${ROOT}assets/data/igdb/${collection}.json`)
+  fetch(`/assets/data/igdb/${collection}.json`)
     .then(request => {
       if (!request.ok) {
         throw new Error(`Failed to load data: ${request.status}`);
@@ -29,7 +26,7 @@ function initData(collection) {
       console.log(`Successfully loaded ${games.length} items for ${collection}. Appending first ${gamesToShow} now...`);
 
       for (let i = 0; i < gamesToShow && i < games.length; i++) {
-        injectGameHtml(games[i], collection, container, ROOT);
+        injectGameHtml(games[i], collection, container);
       }
     });
 }
