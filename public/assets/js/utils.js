@@ -116,7 +116,7 @@ function appendSummary(parent, summary) {
   parent.appendChild(summaryDiv);
 }
 
-function getBasePath() {
+export function getBasePath() {
   const BASE_PATH = location.hostname.includes('github.io') ?
     // Use '/repo-name' as base path for Github Pages:
     '/' + location.pathname.split('/')[1]

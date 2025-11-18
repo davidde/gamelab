@@ -1,4 +1,4 @@
-import { injectGameHtml } from './utils.js';
+import { injectGameHtml, getBasePath } from './utils.js';
 
 
 function initData(collection) {
@@ -9,7 +9,7 @@ function initData(collection) {
     return;
   }
 
-  fetch(`../assets/data/igdb/${collection}.json`)
+  fetch(`${getBasePath()}/assets/data/igdb/${collection}.json`)
     .then(request => {
       if (!request.ok) {
         throw new Error(`Failed to load data: ${request.status}`);

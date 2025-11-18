@@ -1,7 +1,7 @@
-import { injectGameHtml } from './utils.js';
+import { injectGameHtml, getBasePath } from './utils.js';
 
 
-const FILE_PATH = '../assets/data/igdb/';
+const FILE_PATH = `${getBasePath()}/assets/data/igdb/`;
 const EXTENSION = '.json';
 const gamesPageTitle = document.getElementById('games-page-title');
 let container; // The container to fill with the game data
