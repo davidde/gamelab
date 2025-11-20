@@ -36,6 +36,8 @@ async function main() {
         id = Number(decodeURIComponent(id));
         const sidescroller = document.getElementById('games-sidescroller');
         sidescroller.classList.add('hidden');
+        const pageTitle = document.getElementById('games-page-title');
+        pageTitle.classList.add('hidden');
         break;
       }
     default:
